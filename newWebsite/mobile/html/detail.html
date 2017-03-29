@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="韩国瓷肌" />
+    <meta name="author" content="3g.chinaskin.cn">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <title>产品详情</title>
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/common.css">
+    <link rel="stylesheet" href="../public/css/detail.css">
+    <script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+    <script type="text/javascript">window.jQuery=window.Zepto;</script>
+</head>
+<body>
+<!--头部导航-->
+<!--<div class="header">-->
+    <!--<div class="cj-head clearfix">-->
+        <!--<a  href="javascript:void(0)" id="menubtn" class="hl-btn"><i class="font icon-menu"></i></a>-->
+        <!--<div class="logo">-->
+            <!--<a data-click="顶部瓷肌" href="/"><img src="../public/images/index/logo.png" alt=""><span class="logo-tip"><img src="../public/images/index/logo_b.png" alt=""></span></a>-->
+        <!--</div>-->
+        <!--<a  href="javascript:void(0)" data-click="顶部搜索" id="search" class="hr-btn" ><i class="font icon-cart"></i></a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--头部导航-->
+<div class="container">
+    <div id="m_common_header">
+        <header>
+            <div><span></span></div>
+            <ul>
+                <li class="header-tab-item"><p class="header-tab-title tab-selected">商品</p></li>
+                <li class="header-tab-item"><p class="header-tab-title ">详情</p></li>
+                <li class="header-tab-item"><p class="header-tab-title ">评价</p></li>
+                <li class="header-tab-item"><p class="header-tab-title ">商品搭配</p></li>
+            </ul>
+            <div><span></span></div>
+        </header>
+    </div>
+    <div class="com-slide" id="">
+        <div class="container-slider">
+            <li class="slider-item">
+                <div class="header-slider">
+                <div class="header-slider-con">
+                        <div class="page-content">
+                            <div class="scroll-imgs">
+                                <div class="slide" id="slide">
+                                    <ul data-slide-ul="firstUl">
+                                        <!--<li data-ul-child="child"><img src="../public/images/detail/slide_01.jpg" alt=""/></li>-->
+                                        <!--<li data-ul-child="child"><img src="../public/images/detail/slide_01.jpg" alt=""/></li>-->
+                                        <!--<li data-ul-child="child"><img src="../public/images/detail/slide_01.jpg" alt=""/></li>-->
+                                    </ul>
+                                    <div class="titup" id="tittup">
+                                        <div class="arrow-box">
+                                            <em class="arrow-01"></em>
+                                            <em class="arrow-02"></em>
+                                        </div>
+                                        <span class="inner">滑动查看详情</span>
+                                    </div>
+                                    <div class="page-nub">
+                                        <em id="slide-nub" class="fz18">1</em>
+                                        <em class="nub-bg">/</em>
+                                        <em id="slide-sum" class="fz12">4</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!--产品名称star-->
+            <div class="basic-info">
+                <div class="pro-tit"><span></span></div>
+                <a href="javascript:void(0)" class="pro-data">查看详情</a>
+                <div class="pro-price"><span><i>￥</i><em id="shop-price"></em></span> <del>￥<i id="market-price"></i></del></div>
+            </div>
+            <!--产品名称end-->
+            <!--产品参数-->
+            <div class="pro-param">
+                <dl>
+                    <dt class="param-tit"><span>产品参数</span><i class="font icon-arrow-right"></i></dt>
+                    <dd>
+                        <p><a href="" class="main-color">净白无瑕补水洁面乳（V1.0）100g</a><span>1件</span></p>
+                        <p><a href="" class="main-color">臻雪焦点密集修护霜（V1.0）20g</a><span>1件</span></p>
+                        <p><a href="" class="main-color">亮妍无瑕精华霜（V1.0）50g</a><span>1件</span></p>
+                        <p><a href="" class="main-color">美主人美白祛斑面膜（V1.0）25g</a><span>1件</span></p>
+                    </dd>
+                </dl>
+            </div>
+            <!--产品参数-->
+            <!--核心功效-->
+            <div class="pro-param pro-core">
+                <dl>
+                    <dt class="param-tit"><span>核心功效</span><i class="font icon-arrow-right"></i></dt>
+                    <dd>
+                        <p class="main-color" id="core-efficacy"></p>
+                    </dd>
+                </dl>
+            </div>
+            <!--核心功效-->
+            <!--本期优惠-->
+            <div class="pro-favo">
+                <dl>
+                    <dt class="param-tit"><span>本期优惠</span></dt>
+                    <dd>
+                        <p><i class="label-icon">减</i>在线支付，立减10元<a href="javascript:void(0)"><i class="font icon-arrow-right"></i></a></p>
+                        <p><i class="label-icon">免</i>包邮福利，满99免运费</p>
+                    </dd>
+                </dl>
+            </div>
+            <!--本期优惠-->
+            <!--购买数量-->
+            <div class="pro-count">
+                <dl>
+                    <dt>购买数量</dt>
+                    <dd>
+                        <div class="quantity-wrap">
+                            <a href="javascript:;" class="quantity-decrease" onclick="reduceCount()"><em>-</em></a>
+                            <input type="text" class="quantity" readonly value="0" />
+                            <a href="javascript:;" class="quantity-increase" onclick="addCount()"><em>+</em></a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!--购买数量-->
+            <!--立即订购-->
+            <div class="order-cart">
+                <span><i class="font icon-add-to-ShoppingCart"></i></span><a href="javascript:void(0)">立即订购</a>
+            </div>
+            <!--立即订购-->
+            <div class="pay-favo">
+                <p><i></i>包装升级：新旧包装均为正品，请放心购买</p>
+                <div class="favo-icon">
+                    <span><i class="font icon-round-check"></i>官网正品</span>
+                    <span><i class="font icon-round-check"></i>7天退换货</span>
+                    <span><i class="font icon-round-check"></i>1对1咨询</span>
+                    <span><i class="font icon-round-check"></i>闪电发货</span>
+                    <span><i class="font icon-round-check"></i>无效返券</span>
+                </div>
+            </div>
+            <!--评价-->
+            <div class="good-comment" id="showDetail">
+                <div class="info">
+                    <a href="javascript:void(0)" id="go-comment"><span class="part-note-msg">好评率 <i id="comment-rank"></i></span> <span class="good-comment-text"><i class="font icon-arrow-right"></i></span></a>
+                </div>
+                <ul class="comment-list" id="comment-list">
+                </ul>
+            </div>
+            <!--评价-->
+
+        </li>
+        <li class="slider-item">
+            <p>详情</p>
+        </li>
+        <li class="slider-item">
+            <p>评论</p>
+        </li>
+        <li class="slider-item">
+            <p>购买搭配</p>
+        </li>
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+<input type="hidden" id="currentWareId" value="837" />
+<input type="hidden" id="isShowDetail" value="true" />
+<script type="text/javascript" src="../public/js/DetailSlider.js" ></script>
+<script type="text/javascript" src="../public/js/detail.js" ></script>
+<script type="text/javascript" src="../public/js/view.js" ></script>
+<script>
+//商品整体
+var detaildlider = new DetailSlider('.com-slide');
+detaildlider.init({
+    //loadInfoFn: loadInfo   //页面初始化时加载的信息
+});
+
+    var currentId;
+    //正则获取url参数
+    function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+   currentId = getQueryString("gd");
+
+
+</script>
+

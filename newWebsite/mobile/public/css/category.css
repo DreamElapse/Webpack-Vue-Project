@@ -1,0 +1,46 @@
+
+.cj-cate-page{padding:0 0.5rem;margin-top:4rem;width: 100%;min-width: 320px;max-width: 640px;margin: 4rem auto 0;box-sizing: border-box;overflow: hidden;}
+/*筛选列表样式*/
+.search-item{background: #fff;text-align: center;position: relative;min-height: 20rem;}
+.search-item h2{text-align:left;color:#919191;font-size:0.75rem;padding:0.5rem 0 0.5rem 0.4rem;}
+.search-item h2 span{display:inline-block;position: relative;color:#000;margin-right:0.6rem;}
+.search-item h2 span:after{content: '';top: 50%;right:-0.3rem;width: 1px;height: 0.6rem;background: #919191;position: absolute;margin-top: -0.25rem;}
+.search-item .hd-item{position:relative;border: 1px solid #565656;background:#fff;/*overflow:hidden;*/height:2.2rem;z-index:40;}
+.search-item .hd-item span{display: inline-block;width: 33.3%;/*padding: 0.4rem 0 0.5rem;*/float: left;font-size: 1rem;line-height: 1.3rem;text-align: center;border-left: 1px solid #565656;color:#555555;
+    /*position: relative;*/line-height: 2.2rem;height:100%;}
+.search-item .hd-item span:nth-child(1){border-left:0;}
+/*.search-item .hd-item span:nth-child(3){border-left:0;}*/
+/*.search-item .hd-item span em:after{content: "";width: 0.5rem;height: 0.5rem;border-top:1px solid #000000;border-left:1px solid #000000;display: inline-block;vertical-align: middle;transition: all 0.3s;-webkit-transition: all 0.3s;transform: rotate(-135deg);-webkit-transform: rotate(-135deg);transform-origin:center center;-webkit-transform-origin:center center; position: absolute;top: 50%;right: 1rem;margin-top: -0.4rem;}*/
+.search-item .hd-item span .font{transition: all 0.3s;-webkit-transition: all 0.3s;display:inline-block;vertical-align:middle;margin-left:1rem; }
+.search-item .hd-item span.cur .font{-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+.search-item .hd-item span.cur{color:#c22224;}
+/*.search-item .hd-item span.cur em:after{transform: rotate(45deg);-webkit-transform: rotate(45deg);border-color:#c22224;top:60%}*/
+/*.search-item .hd-item span i{width: 100%;height: 2px;font-size: 0;position: absolute;left: 0;bottom: -1px;background: #ed3655;}*/
+
+/*下拉列表*/
+.combo-box{position: absolute;width: 100%;top: 2.2rem;}
+.combo-box > div{width: 100%;position: absolute;background:#ffffff;left: 0;z-index: 20;transition: all 0.6s;-webkit-transition: all 0.6s;padding:0 0.9rem;box-shadow:0 0 10px #EAEAEA;transform: translateY(-30%);-webkit-transform: translateY(-30%);opacity:0;}
+.combo-box > div.cur{z-index:30;top: 2.5rem;transform: translateY(0%);-webkit-transform: translateY(0%);opacity:1;}
+.combo-box p{font-size: 0.8rem;text-align: left;overflow: hidden;padding:1.5rem 0;}
+.combo-box .cj-all p:nth-child(1){border-bottom:1px solid #c2c2c2;}
+.combo-box p:nth-child(2){border-bottom:0;}
+.combo-box p a{width: 16%;border-right: 1px dotted #fff;text-align: center;color: #fff;float: left;color:#353535;position: relative;font-size:0.7rem;}
+.combo-box p a.on {color:#c22224;}
+.combo-box p a:after{position:absolute;top:50%;right:0;content:"";width:1px;height:0.6rem;background:#868686;margin-top:-0.3rem;}
+
+/*产品列表*/
+/*.combo-list{padding-top:1rem;}*/
+.combo-list{position: absolute;top: 4.5rem;bottom: 4.5rem;}
+.combo-list .product-img{width: 38.5%;display: table-cell;text-align:center;}
+.combo-list .product-img img{width:100%;max-width:225px;}
+.combo-list li .product-infor{padding: 0 0.8rem;display: table-cell;vertical-align: middle;}
+.combo-list li{padding:0.8rem 0;border-top:1px solid #d9d9d9;display: table;width: 100%;overflow: hidden;}
+.combo-list li:nth-child(1){border-top:0;}
+.combo-list li .product-infor h3{font-size:1rem;}
+.combo-list li .product-infor p{font-size:0.8rem;color:#9f9f9f;}
+.combo-list li .product-infor .cj-cart{margin-top:1rem;padding-right:0.8rem;}
+.product-infor .cj-cart a{display:inline-block;padding:0.5rem;background:#000;color:#ffffff;font-size:0.82rem;float:right;}
+.product-infor .cj-cart a .icon-cart{margin-right:0.25rem;}
+.cj-cart span.price{color:#c52429;font-size:1.2rem;line-height:2rem;}
+#wrapper {width: 100%;max-width: 640px;position: absolute;top: 8.5rem;bottom: 3rem;padding:0 0.5rem;}
+#pullUp{text-align:center;}

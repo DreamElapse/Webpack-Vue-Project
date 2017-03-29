@@ -1,0 +1,19 @@
+body{
+    font-family: "Helvetica Neue", "Hiragino Sans GB", Helvetica, "Microsoft YaHei", "微软雅黑", "宋体", Arial, sans-serif;
+}
+.clear { clear: both;}
+
+.login-panel {
+    margin: 100px auto 0px;
+    width: 300px;
+    padding: 10px 60px 40px;
+    background: #fafafa;
+    border: 1px solid #CCC;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.login-logo { line-height: 60px; text-align: left; margin: 20px auto; font-size: 36px;}
+
+.login-label { margin: 10px;}
+.login-label .login-text {height: 32px; border: none; color: #fff; padding: 0px 5px; background: #282d34;}
+.login-label .login-verify { width: 50px;}

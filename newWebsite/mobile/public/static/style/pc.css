@@ -1,0 +1,168 @@
+@import "font-awesome.min.css";
+@import "base.css";
+@import "easyui.css";
+@import "shadow.css";
+
+/*头部样式*/
+.header{
+    height: 45px;
+    background: #FFF;
+    position: relative;
+}
+.header a {
+    text-decoration: none;
+}
+.header .logo{
+    width: 179px;
+    color:#FFF;
+    background: #2d3e50;
+    line-height: 45px;
+    font-size: 24px;
+    padding-left: 20px;
+    float: left;
+}
+
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    line-height: 25px;
+    font-size: 14px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.nav li a:hover, .nav li a.active {
+    background-color: #008855;
+    font-weight: normal;
+    color: white;
+}
+.nav li a.nav-logout {
+    background-color: #e33;
+    color: #fff;
+}
+.nav li a.nav-logout:hover {
+    background-color: #c72525;
+    color: #fff;
+}
+
+/*左边菜单区*/
+.west {
+    width: 199px;
+    background: #2d3e50 none repeat scroll 0 0;
+    border-right: none;
+}
+.west h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #DDD;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+#menu li a{
+    display:block;
+    cursor: pointer;
+    padding: 10px 10px 10px 20px;
+    line-height: 20px;
+    color: #DDD;
+    font-size: 14px;
+}
+#menu li a:hover,
+#menu li a.active {
+    background-color: #34495e;
+    border-left: 3px solid #FFF;
+    padding-left: 17px;
+    color: #DDD;
+    font-weight: normal;
+}
+/*左右菜单区结束*/
+
+/*表单样式开始*/
+.form {
+    padding: 5px;
+}
+.form th{
+    line-height: 40px;
+    padding-left: 10px;
+    text-align: right;
+    font-weight: normal;
+}
+.form span.tips {
+    margin-left: 10px;
+    color: gray;
+}
+.form span.combo,
+.form span.spinner {
+    border: 1px solid #D0D0D0;
+    padding: 0px;
+}
+.form input.combo-text{
+    margin: 0px;
+    padding: 0 2px;
+}
+.form .spinner-arrow,
+.form .combo-arrow {
+    background-color: #f3f3f3;
+}
+.form .items {
+    margin-bottom: 10px;
+}
+.items label {
+    height: 30px;
+    display: block;
+}
+.items label span {
+    color: #aaa;
+}
+.form input.input-large {
+    width: 300px;
+    padding: 5px 5px;
+}
+.button-large {
+    min-width: 80px;
+    padding:5px 0px;
+    font-size: 14px;
+}
+.button-small {
+    padding:2px 20px;
+    font-size: 14px;
+}
+.input-upper {
+    text-transform: uppercase;
+}
+
+/*表单样式结束*/
+
+/*表格样式*/
+.list-table {
+    border: 0;
+    border-collapse: collapse;
+}
+.list-table th,
+.list-table td {
+    padding: 5px;
+    border: solid #e6e6e6 1px;
+    background: #FFF;
+}
+.list-table th {
+    font-weight: normal;
+    background: #fafbfb;
+}
+.th-right th {
+    text-align: right;
+}
+.th-left th {
+    text-align: left;
+}
+
+span.grid-tips {
+    padding: 4px 10px;
+    color:white;
+    -moz-border-radius: 4px;      /* Gecko browsers */
+    -webkit-border-radius: 4px;   /* Webkit browsers */
+    border-radius:4px;            /* W3C syntax */
+}
+span.locked-no {background: green;}
+span.locked-yes {background: red;}

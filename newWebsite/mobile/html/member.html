@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<title>会员中心</title>
+<link rel="stylesheet" href="../public/css/base.css">
+<link rel="stylesheet" href="../public/css/member.css">
+<script src="../public/js/zepto.min.js"></script>
+<script src="../public/js/member.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="member-top">
+			<div class="portrait"><img src="../public/images/member/portrait.png" alt="" /></div>
+			<div class="portrait-txt"><span>Hi，小妮妮</span><span class="level"><i class="font icon-level"></i><em>Lv 0</em></span></div>
+			<div class="member-exp">
+				<div class="member-exp-bar"><span style="width:50%"></span></div>
+				<p class="exp">exp<span class="fr">12500 / 20000</span></p>
+			</div>
+		</div>
+		<nav class="member-nav">
+			<a class="on" href="javascript:;"><i class="font icon-member-order"></i>我的订单</a><b></b>
+			<a href="javascript:;"><i class="font icon-member-address"></i>地址管理</a><b></b>
+			<a href="javascript:;"><i class="font icon-member-coupon"></i>优惠券</a><b></b>
+			<a href="javascript:;"><i class="font icon-member-message"></i>站内信</a>
+		</nav>
+		<div class="member-container">
+			<!-- 我的订单 -->
+			<div id="vm_Order" class="member-order">
+				<div class="member-order-hd">
+					<a class="on" href="javascript:;">全部</a>
+					<a href="javascript:;">货到付款</a>
+					<a href="javascript:;">在线付款</a>
+					<a href="javascript:;">未付款</a>
+				</div>
+				<ul class="member-order-list">
+					<li class="not-payment">
+						<a href="javascript:;">
+							<div><strong>订单号: 123456789</strong><span class="date">2016.04.21</span></div>
+							<em>未付款</em><i class="font icon-arrow-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div><strong>订单号: 123456789</strong><span class="date">2016.04.21</span></div>
+							<em>货到付款 - 线下订单</em><i class="font icon-arrow-right"></i>
+						</a>
+					</li>
+				</ul>
+				<ul class="member-order-list" style="display:none;">
+					<li>
+						<a href="javascript:;">
+							<div><strong>订单号: 123456789</strong><span class="date">2016.04.21</span></div>
+							<em>货到付款 - 线下订单</em><i class="font icon-arrow-right"></i>
+						</a>
+					</li>
+				</ul>
+				<ul class="member-order-list" style="display:none;">
+					<li>
+						<a href="javascript:;">
+							<div><strong>订单号: 123456789</strong><span class="date">2016.04.21</span></div>
+							<em>在线付款 - 线下订单</em><i class="font icon-arrow-right"></i>
+						</a>
+					</li>
+				</ul>
+				<ul class="member-order-list" style="display:none;">
+					<li class="not-payment">
+						<a href="javascript:;">
+							<div><strong>订单号: 123456789</strong><span class="date">2016.04.21</span></div>
+							<em>未付款</em><i class="font icon-arrow-right"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 地址管理 -->
+			<div class="member-address">
+				address.html
+			</div>
+			
+			<!-- 优惠券 -->
+			<div class="member-coupon">
+				<ul>
+					<li>
+						<div><strong>满199减10元</strong><p>有效期:2016.05.12 ~ 2016.05.29</p></div>
+						<span class="hl">共100张</span>
+					</li>
+					<li>
+						<div><strong>满199减10元</strong><p>有效期:2016.05.12 ~ 2016.05.29</p></div>
+						<span class="hl">共100张</span>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 站内信 -->
+			<div class="member-message">
+				<ul>
+					<li>
+						<i class="font icon-msg-favorable"></i>
+						<div><strong>优惠信息</strong><p>今日优惠大促，补水套装买一送一赠品，免邮....</p></div>
+						<span class="hl">2</span>
+					</li>
+					<li>
+						<i class="font icon-msg-notice"></i>
+						<div><strong>系统公告</strong><p>今日优惠大促，补水套装买一送一赠品，免邮....</p></div>
+					</li>
+					<li>
+						<i class="font icon-msg-logistics"></i>
+						<div><strong>物流通知</strong><p>今日优惠大促，补水套装买一送一赠品，免邮....</p></div>
+						<span class="hl">2</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

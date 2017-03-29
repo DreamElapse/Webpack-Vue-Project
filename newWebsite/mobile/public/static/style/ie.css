@@ -1,0 +1,6 @@
+.tooltip-arrow-outer,
+.tooltip-arrow { display: none;}
+
+.panel-header {
+    filter: none;
+}

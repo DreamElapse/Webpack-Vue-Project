@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		
+		<meta name="author" content="q.chinaskin.cn">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<title>在线订购组件</title>
+		<link href="/public/css/ves.css" rel="stylesheet" />
+		<link href="/public/css/order_test.css" rel="stylesheet"/>
+		<script type="text/javascript" src="/public/js/ves.min.2.0.js" ></script>		
+		<script type="text/javascript" src="/public/js/knockout.min.4.0.js" ></script>						
+		<script src="/public/js/order_test.js"></script>
+	</head>
+	<body>
+		<div data-bind="with:orderCpt" packageview="orderCpt">
+			<div class="order-online" id="orderComponent">
+				<div class="cj-hd">在线订购</div>
+				<div class="order-box">		
+					<!--ko foreach:pro_list-->
+				    <dl class="order-item">		        
+				        <dt><a href="javascript:;"><img data-bind="attr:{src:'/'+goods_thumb}" alt=""></a></dt>
+				        <dd>
+				            <p data-bind="text:goods_name"></p>		            
+				            <strong class="price" id="shop_price" data-bind="text:shop_price"></strong>
+				            <span class="original-price">价格：￥<span data-bind="text:market_price"></span></span>				            
+				            <div class="order-quantity">
+			                    <span class="reduce" data-bind="event:{tap:$parent.reduceShoppingCart}">-</span>
+			                    <input class="" readonly="readonly" name="goods_num" type="text" value="0">
+			                    <span class="add" data-bind="event:{tap:$parent.addShoppingCart}">+</span>
+			                </div>
+				        </dd>
+				    </dl>				    
+				    <!--/ko-->
+				    <div class="distribution detail-box" id="shipping">
+			            <header class="detail-hd">配送信息</header>
+			            <ul>
+			                <li>
+			                    <i class="icon icon-consignee"></i>
+			                    <div>
+			                        <input type="text" placeholder="收货人" name="username" data-bind="event:{blur:checkName}"><b>*</b><span class="error" data-bind="if:nameChecked"></span><span class="ok"  data-bind="if:!nameChecked()"></span>
+			                    </div>
+			                </li>
+			                <li class="phone">
+			                    <i class="icon icon-phone"></i>
+			                    <div>
+			                        <input type="text" placeholder="联系电话" name="mobile">
+			                        <input class="get_btn" id="getc_btn" type="button" value="获取验证码" data-bind="event:{click:getCode},enable:disabled">
+			                    </div>
+			                </li>
+			                <li class="phone_code">
+			                    <i class="icon icon-phonenum"></i>
+			                    <div>
+			                        <input type="text" placeholder="短信验证码" name="telnum" class="code_com"><b>*</b>
+			                    </div>
+			                </li>
+			                <p style="font-size: 1em; padding-left:1em; color: #ea2143;">温馨提示：港澳台的顾客请联系客服下单</p>
+			                <li>
+			                    <i class="icon icon-address"></i>
+			                    <div>
+			                        <div class="slide-address">
+			                        	<select name="province" class="select-province" data-bind="options:provinceList,optionsValue:'index',optionsText:'province',optionsCaption:'请选择省',event: {change:provinceChange}"></select>			                           
+			                                                     
+			                            <select name="city" class="select-city" data-bind="event: {change: cityChange}">
+			                            	<option>请选择市</option>
+			                            </select>
+			                            <select name="district" class="select-district" data-bind="event: {change: districtChange}">
+			                            	<option>请选择区</option>
+			                            </select>			                           
+			                           <select name="town" class="select-town" >
+			                           		<option>请选择街道/镇</option>
+			                           </select>			                          
+			                        </div>
+			                    </div>
+			                </li>
+			                <li>
+			                    <i class="icon icon-address"></i>
+			                    <div>
+			                        <input type="text" placeholder="详细地址" name="address" data-bind="event:{blur:checkAddr}"/><b>*</b><span class="error" data-bind="if:addrChecked"></span><span class="ok" data-bind="if:!addrChecked()"></span>
+			                    </div>
+			                </li>
+			                <li class="address_attr"> 
+		                       <select name="attribute" class="select-attr">
+			                        <option value="1">公司</option>
+			                        <option value="2" selected = "selected">家庭</option>
+			                        <option value="3">代收</option>
+			                        <option value="4">物业</option>
+			                    </select>
+			                </li>
+			                <li>
+			                    <i class="icon icon-coupon"></i>
+			                    <div>
+			                        <input type="text" placeholder="优惠券码" name="bonus_sn" data-bind="event:{blur:calculateTotalAmount}" class="bonus"/><span class="error" data-bind="if:bonusChecked"></span><span class="ok" data-bind="if:!bonusChecked()"></span>
+			                    </div>
+			                </li>
+			            </ul>
+			        </div>	
+			        <div class="order-total" data-bind="foreach:priceList">
+			            <p>选购商品总计  ￥<b id="originalPrice" data-bind="text:originalPrice"></b></p>
+			            <p>优惠  <span>-￥<b id="preferentialPrice" data-bind="text:preferentialPrice"></b></span></p>
+			            <p>运费  ￥<b id="shipping_fee" data-bind="text:shipping_fee"></b></p>
+			            <div>您只需支付 <span class="price" id="need_pay" data-bind="text:need_pay"></span></div>
+			        </div>			        
+			        <div class="payment detail-box">
+			            <header class="detail-hd" style="border-bottom:0;">支付方式</header>          
+			            <div class="pay-mode clf">
+			                <label class="checked"><input class="checkbox" value="4" type="radio" checked="true" name="pay" data-bind="event:{tap:getPayIndex}"/>支付宝支付<span>减10元</span></label>
+			                <label><input class="checkbox" value="7" type="radio" name="pay" data-bind="event:{tap:getPayIndex}"/>财付通支付<span>减10元</span></label>
+			                <label><input class="checkbox" value="8" type="radio" name="pay" data-bind="event:{tap:getPayIndex}"/>网银支付<span>减10元</span></label>
+			                <label><input class="checkbox" value="1" type="radio" name="pay" data-bind="event:{tap:getPayIndex}"/>货到付款</label>
+			            </div>			            
+			            <a class="btn-submit" href="javascript:;" data-bind="event:{tap:checkForm}">确 定 提 交</a>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>

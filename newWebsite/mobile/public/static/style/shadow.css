@@ -1,0 +1,40 @@
+.shadow-mask {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom:0;
+    background: #FFF;
+    opacity: 0.4;
+}
+
+.shadow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #FFF;
+    box-shadow: -5px 0px 5px #999999;
+}
+
+.shadow-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 40px;
+}
+
+.shadow-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    background: #F4F4F4;
+    text-align: left;
+    border-top: 1px solid #dddddd;
+}
+
+.shadow-button .l-btn {
+    margin-left: 5px;
+}

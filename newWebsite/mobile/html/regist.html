@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<title>免费注册</title>
+<link rel="stylesheet" href="../public/css/base.css">
+<link rel="stylesheet" href="../public/css/login.css">
+<script src="../public/js/zepto.min.js"></script>
+<script src="../public/js/login.js"></script>
+</head>
+
+<body>
+	<div class="nav-header">
+		<a href="#"><i class="font icon-arrow-left"></i></a>
+		<h2>免费注册</h2>
+		<a href="#"><em></em></a>
+	</div>
+	<section class="container">
+		<form id="form" action="" method="post">
+			<div class="input-form">
+				<label class="input-item">
+					<i class="font icon-user"></i><input id="username" name="mobile" type="text" placeholder="请输入手机号码" />
+				</label>
+				<label class="input-item">
+					<i class="font icon-password"></i><input name="password" type="text" placeholder="请输入6个字符，数字或字母" />
+				</label>
+				<label class="input-item">
+					<i class="font icon-password"></i><input name="re_password" type="text" placeholder="请确认密码" />
+				</label>
+				<label class="input-item">
+					<i class="font icon-validate-code"></i><input name="code" type="text" placeholder="请输入验证码" /><a id="getSMS" class="btn js-getCode disabled" href="javascript:;">获取验证码</a>
+				</label>
+			</div>
+			<a id="registSubmit" class="btn btn-block" href="javascript:;">确 认 注 册</a>
+		</form>
+	</section>
+</body>
+</html>

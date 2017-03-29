@@ -1,0 +1,42 @@
+/* 皮肤测试 */
+
+.pr{position: relative;min-height:10rem;}
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
+input[type="radio"], .check-box input[type="checkbox"] {visibility: hidden;}
+.sec_q{position: absolute;top:0;left:0;width:100%;height:100%;padding-left:19%;padding-top:10%;color:#272727;min-height: 10rem;}
+.sec_q ul li {padding:0.1rem 0;font-size: 0.85rem;}
+.sec_q ul li h3{font-size: 1rem;font-weight:bold;}
+.sec_q ul li h3 b{display: inline-block;width:0.4rem;height:0.4rem;background: #000;vertical-align: middle;border-radius:1rem;margin-right:0.5rem;}
+.check-box{width: 0.8rem;height: 0.8rem;cursor: pointer;display: inline-block;margin: 0.1rem 0.25rem 0 0;position: relative;/*overflow: hidden;*/box-shadow: 0 0 0.1rem #ccc;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;background: rgb(255, 255, 255);background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);border: 1px solid #31312c;}
+.check-box i{background: url('/public/images/test/check_mark.png') no-repeat center center;position: absolute;left: 0px;bottom: -0.5rem;width: 1.3rem;height: 1.1rem;opacity: 0;-webkit-transition: all 400ms ease-in-out;-moz-transition: all 400ms ease-in-out;-o-transition: all 400ms ease-in-out;transition: all 400ms ease-in-out;-webkit-transform:rotateZ(-180deg);-moz-transform:rotateZ(-180deg);-o-transform:rotateZ(-180deg);transform:rotateZ(-180deg);}
+.checkedBox{-moz-box-shadow: inset 0 0 5px 1px #ccc;-webkit-box-shadow: inset 0 0 5px 1px #ccc;box-shadow: inset 0 0 5px 1px #ccc;}
+.checkedBox i{opacity: 1; bottom: 0;-webkit-transform:rotateZ(0deg);-moz-transform:rotateZ(0deg);-o-transform:rotateZ(0deg);transform:rotateZ(0deg);}
+.radio-btn {width: 1rem;height: 1rem;display: inline-block;float: left;margin: 0.1rem 0.25rem 0 0;cursor: pointer;position: relative;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;border: 1px solid #ccc;box-shadow: 0 0 1px #ccc;background: rgb(255, 255, 255);background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);}
+.checkedRadio {-moz-box-shadow: inset 0 0 5px 1px #ccc;-webkit-box-shadow: inset 0 0 5px 1px #ccc;box-shadow: inset 0 0 5px 1px #ccc;}
+.radio-btn i {border: 1px solid #E1E2E4;width: 0.5rem;height: 0.5rem;position: absolute;left: 50%;top: 50%;margin-top:-0.25rem;margin-left:-0.25rem;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;}
+.checkedRadio i {background-color: #898A8C;}
+span.checked,span.checked{color:#db080e;}
+.per_info{position: absolute;width:100%;height:100%;padding:0 0 0 8%;left:0;top:0;color:#000;font-size: 1rem;}
+.per_info dl{width: 100%;overflow: hidden;padding-bottom:0.5rem;}
+.per_info dl:nth-child(3){padding-bottom:0.5rem;}
+.per_info dl:nth-child(4) dd{width:100%;}
+.per_info dl:nth-child(4) dd p{text-align: center;padding-right:8%;font-size:0.85rem;}
+.per_info dl dt{display: inline-block;float:left;width:25%;text-align: right;}
+.per_info dl dd{display: inline-block;float:left;width:75%;}
+.per_info dl dd span{display: inline-block; width:2.5rem;}
+.per_info dl dd input[type="text"]{display: inline-block;border:1px solid #535353;border-radius: 0.15rem;width:76%;padding-left:0.5rem; height:1.6rem;}
+.per_info .radio-btn{float: none;margin-right:0.6rem;}
+.per_info .checkedRadio i{background: #c22c00;}
+#birth{padding-left:25%;padding-bottom:0.4rem;}
+#birth{border:0;}
+#birth select{margin-right:0.5rem;border-radius: .15rem;}
+#birth .birth-year{width:4rem;height:1.5rem;}
+#birth .birth-month,#birth .birth-day{width:2.5rem;height:1.5rem;}
+.sub_btn{text-align: center;padding:2% 8% 0 0;}
+.sub_btn a{display: inline-block;width:68%;}
+.sub_btn a img{width:100%; max-width:369px;}
+.b_bg{position: fixed;top:0;left:0;bottom:0;right:0;width:100%;background: #000;opacity: 0.7;z-index:9999;display: none;}
+.succ_pic{position: fixed;width:64%;top:25%;left:50%;margin-left:-32%;text-align: center; z-index: 9999;display: none;}
+.succ_pic img{width:100%;max-width: 514px;}
+.close{position: absolute;top:2%;right:3%;width:8%;height:8%;}
+.close img{max-width: 33px;width:100%;}

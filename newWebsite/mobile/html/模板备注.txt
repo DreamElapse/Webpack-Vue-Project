@@ -1,0 +1,16 @@
+
+
+
+
+index.html           首页模板
+address.html         地址管理
+category.html        产品列表
+regist.html          免费注册
+login.html           用户登录
+member.html          会员中心
+shopping_cart.html   购物车
+order.html           订单确认
+password.html        找回密码
+
+payment_notice.html  支付须知
+pay_success.html     支付成功

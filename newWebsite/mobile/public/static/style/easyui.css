@@ -1,0 +1,57 @@
+.toolbar-outer {
+    border: 1px solid #D4D4D4;
+    margin: 2px;
+}
+.toolbar-inner {
+    border: 1px solid #FFFFFF;
+}
+.datagrid-btn-separator {
+    float: none;
+}
+.images-btn {
+    width: 16px;
+    height: 16px;
+    padding-left: 18px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+    background-position: left center;
+    display: inline-block;
+    cursor: pointer;
+}
+.datagrid-row-selected {
+    background: none repeat scroll 0 0 #D9E2EC;
+    color: #000;
+}
+.datagrid-row-over {
+    background: none repeat scroll 0 0 #D9E2EC;
+}
+.tree-node-selected,
+.combobox-item-selected {
+    background: none repeat scroll 0 0 #efefef;
+    color: #000;
+}
+.accordion
+.accordion-header-selected {
+    background: none repeat scroll 0 0 #F3F3F3;
+}
+.panel-header {
+    background: #f9fafc;
+}
+.panel-title {
+    font-weight: normal;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.accordion
+.accordion-header-selected
+.panel-title {
+    color: #575765;
+}
+.panel-body {
+    color:#404040;
+    font-size: 14px;
+}
+.l-btn-text { font-size: 14px;}

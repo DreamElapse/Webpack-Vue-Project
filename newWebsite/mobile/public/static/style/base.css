@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    color:#404040;
+    font-family: "Helvetica Neue", "Hiragino Sans GB", Helvetica, "Microsoft YaHei", "΢���ź�", "����", Arial, sans-serif;
+    font-size: 14px;
+}
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+fieldset {
+    padding:5px;
+    margin: 5px 5px 10px;
+    border:1px dashed #D4D4D4;
+    background: #fafafa;
+    position: relative;
+    /*-moz-border-radius: 5px;      !* Gecko browsers *!*/
+    /*-webkit-border-radius: 5px;   !* Webkit browsers *!*/
+    /*border-radius:5px;            !* W3C syntax *!*/
+}
+legend {
+    margin-left: 20px;
+}
+
+a, a.active {
+    color:#404040;
+}
+.center {
+    text-align: center;
+}
+.blank {
+    height: 10px;
+    overflow: hidden;
+}
+.left { float: left;}
+.right { float: right;}
+.container {
+    padding: 10px;
+}
+.borderTop { border-top: 1px solid #d3d3d3;}
+.fixed {position: fixed; top:0; left: 0; right: 0; bottom: 0;}
+
+.bar {border:1px solid #999999; background:#FFFFFF; height:5px; font-size:2px; width:89%; margin:2px 0 5px 0;padding:1px;overflow: hidden;}
+.bar_1 {border:1px dotted #999999; background:#FFFFFF; height:5px; font-size:2px; width:89%; margin:2px 0 5px 0;padding:1px;overflow: hidden;}
+.barli_red{background:#ff6600; height:5px; margin:0px; padding:0;}
+.barli_blue{background:#0099FF; height:5px; margin:0px; padding:0;}
+.barli_green{background:#36b52a; height:5px; margin:0px; padding:0;}
+.barli_1{background:#999999; height:5px; margin:0px; padding:0;}
+.barli{background:#36b52a; height:5px; margin:0px; padding:0;}

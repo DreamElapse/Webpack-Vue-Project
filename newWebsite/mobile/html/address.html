@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<title>地址管理</title>
+<link rel="stylesheet" href="../public/css/base.css">
+<link rel="stylesheet" href="../public/css/order.css">
+<link rel="stylesheet" href="../public/css/address.css">
+<script src="../public/js/zepto.min.js"></script>
+<script src="../public/js/mobile.select.js"></script>
+<script>
+	$(function(){
+		$('#inputRegion').select({
+			url: '/Region/Lists.json',
+			change: function(obj, region_type, parent_id){
+				$.post('/Region/Lists.json', {
+					region_type: region_type,
+					parent_id: parent_id
+				}, function(res){
+					var list = '';
+					console.log(res.data);
+					$.each(res.data, function() {
+						list += '<li region_id="' + this.region_id + '" region_type="' + this.region_type + '">' + this.region_name + '</li>';
+					});
+					obj.attr('data-len', res.data.length).html(list);
+				});
+			}
+		});
+//		$('#inputRegion').on('focus', function(){
+//			$(this).select();
+//		});
+		
+		$('.order-hd').on('click', function(){
+			$(this).toggleClass('on');
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div class="nav-header">
+		<a href="#"><i class="font icon-arrow-left"></i></a>
+		<h2>地址管理</h2>
+		<a href="#"><em>小妮妮</em></a>
+	</div>
+	<div class="container">
+		<div class="add-address">+ 添加新地址</div>
+		<ul class="address-list">
+			<li>
+				<p>收货人：<span>江夏</span><span class="fr">13212345678</span></p>
+				<p>收货地址：<span>[公司]</span><span>广东省广州市荔湾区荔湾街道1号</span></p>
+				<div class="address-action">
+					<label class="selected"><input class="checkbox" type="checkbox" checked /><em>默认地址</em></label>
+					<div>
+						<a href="#"><i class="font icon-edit"></i><em>编辑</em></a>
+						<a href="#"><i class="font icon-delete"></i><em>删除</em></a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<p>收货人：<span>江夏</span><span class="fr">13212345678</span></p>
+				<p>收货地址：<span>[公司]</span><span>广东省广州市荔湾区荔湾街道1号</span></p>
+				<div class="address-action">
+					<label><input class="checkbox" type="checkbox" /><em>设为默认</em></label>
+					<div>
+						<a href="#"><i class="font icon-edit"></i><em>编辑</em></a>
+						<a href="#"><i class="font icon-delete"></i><em>删除</em></a>
+					</div>
+				</div>
+			</li>
+		</ul>
+		
+		<!-- 未登录状态  填写地址页面 -->
+		<div class="order-list">
+			<label class="order-row input-item"><span>收货人</span><input type="text" /></label>
+			<label class="order-row input-item"><span>联系电话</span><input type="text" /></label>
+			<label class="order-row input-item"><span>所在区域</span><input id="inputRegion" type="text" /></label>
+			<label class="order-row input-item input-textarea"><span>详细地址</span><textarea></textarea></label>
+		</div>
+		<dl class="order-item select-box">
+			<dt class="order-hd">
+				<span>属性</span>
+				<i class="font icon-arrow-bottom"></i>
+			</dt>
+			<dd>
+				<label><span>公司</span><input class="checkbox" type="checkbox" /></label>
+				<label><span>家庭</span><input class="checkbox" type="checkbox" /></label>
+				<label><span>代收</span><input class="checkbox" type="checkbox" /></label>
+				<label><span>物业</span><input class="checkbox" type="checkbox" /></label>
+			</dd>
+		</dl>
+		
+		<div id="selectBox" class="select-box">
+			<div class="select-hd">
+				<a class="btnClose" href="javascript:;">取消</a>
+				<a class="btnOK" href="javascript:;">完成</a>
+			</div>
+			<div class="select-bd">
+				<div class="select-area"></div>
+				<div class="select-cont">
+					<div class="select-item">
+						<ul>
+						</ul>
+					</div>
+					<div class="select-item">
+						<ul>
+						</ul>
+					</div>
+					<div class="select-item">
+						<ul>
+						</ul>
+					</div>
+					<div class="select-item">
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

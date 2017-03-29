@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor图片对话框</title>
+    <script type="text/javascript" src="../internal.js"></script>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="../../third-party/jquery-1.10.2.min.js"></script>
+
+    <!-- webuploader -->
+    <script src="../../third-party/webuploader/webuploader.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../third-party/webuploader/webuploader.css">
+
+    <!-- image dialog -->
+    <link rel="stylesheet" href="image.css" type="text/css" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="tabhead" class="tabhead">
+            <span class="tab" data-content-id="remote"><var id="lang_tab_remote"></var></span>
+            <span class="tab focus" data-content-id="upload"><var id="lang_tab_upload"></var></span>
+            <span class="tab" data-content-id="online"><var id="lang_tab_online"></var></span>
+            <span class="tab" data-content-id="search" style="display:none;"><var id="lang_tab_search"></var></span>
+        </div>
+        <div class="alignBar" style="display:none;">
+            <label class="algnLabel"><var id="lang_input_align"></var></label>
+                    <span id="alignIcon">
+                        <span id="noneAlign" class="none-align focus" data-align="none"></span>
+                        <span id="leftAlign" class="left-align" data-align="left"></span>
+                        <span id="rightAlign" class="right-align" data-align="right"></span>
+                        <span id="centerAlign" class="center-align" data-align="center"></span>
+                    </span>
+            <input id="align" name="align" type="hidden" value="none"/>
+        </div>
+        <div class="alignBar" id="waterMarkBar">
+        	<input id="watermark" name="watermark" type="hidden" value="1" />
+        	<input id="watermark_file" name="watermark_file" type="hidden" value="ciji.png" />
+            <div id="watermark_watermark_bt" class="button">
+               <span id="watermark_watermark_title">瓷肌水印</span>
+               <div id="watermark_watermark" class="select">
+               		<div value="none" style="color:red;">不加水印</div>
+                    <div value="ciji.png" class="selected">瓷肌水印</div>
+                    <div value="baifuni.png">白芙泥水印</div>
+               </div>
+            </div>
+            
+            <div id="watermark_position_bt" class="button">
+               <span>水印位置<em id="watermark_position_count">(1)</em></span>
+               <div id="watermark_position" class="select">
+               		<div class="watermark_position_line">
+                    	<div value="1" title="左上角">1</div>
+                        <div value="2" title="上居中">2</div>
+                        <div value="3" title="右上角">3</div>
+                    </div>
+                    <div class="watermark_position_line">
+                    	<div value="4" title="左居中">3</div>
+                        <div value="5" title="居中">4</div>
+                        <div value="6" title="右居中">5</div>
+                    </div>
+                    <div class="watermark_position_line">
+                    	<div value="7" class="selected" title="左下角">7</div>
+                        <div value="8" title="下居中">8</div>
+                        <div value="9" title="右下角">9</div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <style>
+		.button{ position:relative;}
+		#watermark_watermark_bt{ padding:0px 7px; display:inline-block; margin-right:10px; cursor:pointer;}
+		#watermark_watermark_bt span{  text-indent:10px; display:inline-block; margin-right:10px;}
+		#watermark_watermark{ position:absolute; top:20px; left:0px; z-index:9999999; display:none; height:65px; width:100%;}
+		#watermark_watermark div{ width:100%; text-indent:10px; margin:2px 0px; cursor:pointer;}
+		#watermark_watermark div:hover{ background-color:#CCC;}
+		#watermark_watermark .selected{ background-color:#09F; color:#FFF;}
+		
+		#watermark_position_bt{ padding:0px 7px; display:inline-block; margin-right:10px; cursor:pointer;}
+		#watermark_position div div{ width:20px; height:20px; text-align:center; color:#FFF; background-color:#CCC; margin:2px; float:left;}
+		#watermark_position{ position:absolute; top:20px; left:0px; z-index:9999999; display:none; width:100%;}
+		.watermark_position_line{ float:none; clear:both; padding:1px; padding-left:3px;}
+		#watermark_position div.watermark_position_line div:hover{ background-color:#AAA;}
+		#watermark_position .watermark_position_line .selected{ background-color:#09F; color:#FFF;}
+		#watermark_position .watermark_position_line .selected:hover{background-color:#09F;}
+		
+        .select,.button{
+			display:inline-block;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+			color: #555;
+			font-size: 12px;
+			transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+		}
+        </style>
+        <script>
+		$('.tab').click(function(){
+			if($(this).attr('data-content-id') != 'upload'){
+				$('#waterMarkBar').hide();
+			}else{
+				$('#waterMarkBar').show();
+			}
+		});
+		$('#watermark_position_bt').click(function(){
+			$('#watermark_position').toggle();
+		});
+		$('#watermark_position_bt #watermark_position div').click(function(event){
+			event.stopPropagation();
+			if($(this).hasClass("selected")){
+				$(this).removeClass('selected');
+			}else{
+				$(this).addClass('selected');
+			}
+			$('#watermark_position_count').html('('+$('#watermark_position_bt #watermark_position .selected').length+')');
+		});
+		$('#watermark_position_bt #watermark_position').click(function(event){
+			event.stopPropagation();
+		});
+		
+		
+		//选择水印文件名称
+		$('#watermark_watermark_bt').click(function(){
+			$('#watermark_watermark').toggle();
+		});
+		$('#watermark_watermark_bt #watermark_watermark div').click(function(event){
+			event.stopPropagation();
+			
+			watermark_watermark_selected(this);
+		});
+		$('#watermark_watermark_bt #watermark_watermark').click(function(event){
+			event.stopPropagation();
+		});
+		function watermark_watermark_selected(obj){
+			$('#watermark_watermark_bt #watermark_watermark div').removeClass('selected');
+			$(obj).addClass('selected');
+			$('#watermark_watermark_title').html($('#watermark_watermark_bt #watermark_watermark .selected').html());
+			
+			var enable = $('#watermark_watermark_bt #watermark_watermark .selected').attr('value');
+			$('#watermark_file').val(enable);
+			$('#watermark').val((enable == 'none' ? '0' : '1'));
+			
+			$('#watermark_watermark').toggle();
+		}
+		if(typeof parent.ueditor_watermark_watermark_default != 'undefined' && parent.ueditor_watermark_watermark_default == 0){
+			$('#watermark_watermark div[value="none"]').each(function(){
+				$('#watermark_watermark').show();
+				watermark_watermark_selected(this);  //设置了默认不开启水印
+			});
+		}
+		</script>
+        <div id="tabbody" class="tabbody">
+
+            <!-- 远程图片 -->
+            <div id="remote" class="panel">
+                <div class="top">
+                    <div class="row">
+                        <label for="url"><var id="lang_input_url"></var></label>
+                        <span><input class="text" id="url" type="text"/></span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="row">
+                        <label><var id="lang_input_size"></var></label>
+                        <span><var id="lang_input_width">&nbsp;&nbsp;</var><input class="text" type="text" id="width"/>px </span>
+                        <span><var id="lang_input_height">&nbsp;&nbsp;</var><input class="text" type="text" id="height"/>px </span>
+                        <span><input id="lock" type="checkbox" disabled="disabled"><span id="lockicon"></span></span>
+                    </div>
+                    <div class="row">
+                        <label><var id="lang_input_border"></var></label>
+                        <span><input class="text" type="text" id="border"/>px </span>
+                    </div>
+                    <div class="row">
+                        <label><var id="lang_input_vhspace"></var></label>
+                        <span><input class="text" type="text" id="vhSpace"/>px </span>
+                    </div>
+                    <div class="row">
+                        <label><var id="lang_input_title"></var></label>
+                        <span><input class="text" type="text" id="title"/></span>
+                    </div>
+                </div>
+                <div class="right"><div id="preview"></div></div>
+            </div>
+
+            <!-- 上传图片 -->
+            <div id="upload" class="panel focus">
+                <div id="queueList" class="queueList">
+                    <div class="statusBar element-invisible">
+                        <div class="progress">
+                            <span class="text">0%</span>
+                            <span class="percentage"></span>
+                        </div><div class="info"></div>
+                        <div class="btns">
+                            <div id="filePickerBtn"></div>
+                            <div class="uploadBtn"><var id="lang_start_upload"></var></div>
+                        </div>
+                    </div>
+                    <div id="dndArea" class="placeholder">
+                        <div class="filePickerContainer">
+                            <div id="filePickerReady"></div>
+                        </div>
+                    </div>
+                    <ul class="filelist element-invisible">
+                        <li id="filePickerBlock" class="filePickerBlock"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 在线图片 -->
+            <div id="online" class="panel">
+                <div id="imageList"><var id="lang_imgLoading"></var></div>
+            </div>
+
+            <!-- 搜索图片 -->
+            <div id="search" class="panel">
+                <div class="searchBar">
+                    <input id="searchTxt" class="searchTxt text" type="text" />
+                    <select id="searchType" class="searchType">
+                        <option value="&s=4&z=0"></option>
+                        <option value="&s=1&z=19"></option>
+                        <option value="&s=2&z=0"></option>
+                        <option value="&s=3&z=0"></option>
+                    </select>
+                    <input id="searchReset" type="button"  />
+                    <input id="searchBtn" type="button"  />
+                </div>
+                <div id="searchList" class="searchList"><ul id="searchListUl"></ul></div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="image.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.container{background: #efefef;}
+.recommend-box{background: #fff; margin-bottom: 0.6rem;}
+
+.article{padding: 0.8rem; margin-bottom: 0.6rem; background: #fff;}
+.article-hd{border-bottom: 1px solid #d1d1d1; text-align: center;}
+.article-hd h3{font-size: 1.3rem;}
+.article-hd p{padding: 0.4rem 0 0.6rem; font-size: 0.8rem; color: #a6a6a6;}
+
+.hd{padding: 0.8rem; border-bottom: 1px solid #e1e1e1;
+	display: -webkit-box; display: -moz-box; display: -ms-flexbox;
+	display: -webkit-flex; display: flex;
+}
+.hd b{width: 2rem; padding: 0.2rem 0 0; margin-right: 0.4rem; border-radius: 0 0 4px 4px; background: #da3737; font-weight: normal; font-size: 0.6rem; color: #fff; text-align: center; display: inline-block;}
+.hd b:after{content: ""; border: 1rem solid transparent; border-top-width: 0.3rem; border-bottom: 0.3rem solid #fff; display: block;}
+.hd h3{
+	-moz-box-flex: 1; -webkit-box-flex: 1;
+	-webkit-flex: 1; flex: 1;
+}
+.hd strong{line-height: 1; margin-bottom: 0.2rem; font-size: 1.1rem; display: block;}
+.hd p{font-size: 0.8rem; color: #afafaf;}
+
+/* 粉丝推荐 */
+.goods-img{height: 12rem;
+	display: -webkit-box; display: -moz-box; display: -ms-flexbox;
+	display: -webkit-flex; display: flex;
+	-moz-box-align: center; -webkit-box-align: center;
+	-webkit-align-items: center; align-items: center;
+	-moz-box-pack: center; -webkit-box-pack: center;
+	-webkit-justify-content: center; justify-content: center;
+}
+.goods-img img{max-height: 10rem;}
+.goods-info{padding: 0.6rem 0.8rem; border-top: 1px solid #e1e1e1;}
+.goods-name{padding-bottom: 0.2rem; color: #313131;
+	display: -webkit-box; display: -moz-box; display: -ms-flexbox;
+	display: -webkit-flex; display: flex;
+	-moz-box-align: center; -webkit-box-align: center;
+	-webkit-align-items: center; align-items: center;
+}
+.goods-name strong{font-size: 1rem;
+	-moz-box-flex: 1; -webkit-box-flex: 1;
+	-webkit-flex: 1; flex: 1;
+}
+.goods-name span{font-size: 0.85rem;}
+.goods-name .hl{color: #da3737;}
+.goods-price i{font-size: 0.8rem;}
+.goods-price strong{font-size: 1.2rem; color: #da3737; margin-right: 0.8rem;}
+.goods-price del{font-size: 0.9rem; color: #adadad;}
+
+.goods-effect{border: 0.4rem solid #efefef; border-width: 0.4rem 0; font-size: 0.9rem;}
+.goods-effect dt{line-height: 2.4rem; padding: 0 0.8rem; border-bottom: 1px solid #e1e1e1; color: #b2b2b2;}
+.goods-effect dd{padding: 0.4rem 0.8rem 0.8rem; color: #eb4a4c;}
+
+.buy-qty{padding: 0.8rem;
+	display: -webkit-box; display: -moz-box; display: -ms-flexbox;
+	display: -webkit-flex; display: flex;
+	-moz-box-align: center; -webkit-box-align: center;
+	-webkit-align-items: center; align-items: center;
+}
+.buy-qty > span{font-size: 0.9rem; color: #b2b2b2;
+	-moz-box-flex: 1; -webkit-box-flex: 1;
+	-webkit-flex: 1; flex: 1;
+}
+
+.qty-ctrl{line-height: 2rem; border: 1px solid #e1e1e1; text-align: center;
+	display: -webkit-inline-box; display: -moz-inline-box; display: -ms-inline-flexbox;
+	display: -webkit-inline-flex; display: inline-flex;
+}
+.qty-ctrl span{width: 2rem; font-size: 1.2rem; color: #c3c3c3;}
+.qty-ctrl input{width: 3rem; border: 1px solid #e1e1e1; border-width: 0 1px; font-size: 1rem; text-align: center;}
+
+.buy-action{width: 100%; height: 3rem; background: #ff7474; text-align: center; display: table;}
+.buy-action > a{display: table-cell; vertical-align: middle;}
+.buy-action .font{width: 35%; font-size: 2rem; color: #fff;}
+.buy-action .btn{background: #da3737;}
+
+.share-list{font-size: 0.9rem; color: #a0a0a0;}
+.share-list li{height: 2.6rem; padding: 0 0.8rem; border-bottom: 1px dashed #e1e1e1;
+	display: -webkit-box; display: -moz-box; display: -ms-flexbox;
+	display: -webkit-flex; display: flex;
+	-moz-box-align: center; -webkit-box-align: center;
+	-webkit-align-items: center; align-items: center;
+}
+.share-list li i{margin-left: 0.2rem; border: 1px solid #da3737; border-radius: 4px; font-size: 0.6rem; color: #da3737;}

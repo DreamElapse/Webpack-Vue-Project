@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		
+		<meta name="author" content="q.chinaskin.cn">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<title>在线订购组件</title>
+		<link href="/public/css/ves.css" rel="stylesheet" />
+		<link href="/public/css/q_order_cpt.css" rel="stylesheet"/>
+		<script type="text/javascript" src="/public/js/ves.min.2.0.js" ></script>		
+		<script type="text/javascript" src="/public/js/knockout.min.4.0.js" ></script>						
+		<script src="/public/js/order_test.js"></script>
+	</head>
+	<body>  
+		<div data-bind="with:orderCpt" packageview="orderCpt"></div>
+		<div class="order-box" id="orderComponent">
+			<div class="cj-hd">在线订购，包邮到你家</div>
+			<!--ko foreach:pro_list-->
+			<dl class="order-item"> <dt><a href="javascript::"><img data-bind="attr:{src:'/'+goods_thumb}" alt=""></a></dt>
+				<dd>
+					<p data-bind="text:goods_name"></p> <strong class="price" id="shop_price" data-bind="text:shop_price"></strong><b class="favorable">手机专享价</b> <del class="org-price">价格：¥<span data-bind="text:market_price"></span></del>
+					<div class="order-qty"> <span class="reduce" data-bind="event:{tap:$parent.reduceShoppingCart}">-</span>
+						<div><input type="text" name="goods_num" value="0"></div> <span class="add" data-bind="event:{tap:$parent.addShoppingCart}">+</span> </div>
+				</dd>
+			</dl>
+			<!--/ko-->
+			<!--ko foreach:priceList-->
+			<div class="order-total">合计：￥<b data-bind="text:originalPrice"></b></div>
+			<!--/ko-->
+			<div class="detail-box">
+				<div class="detail-hd">配送信息</div>
+				<ul class="order-info">
+					<li> <i class="icon icon-consignee"></i>
+						<div> <input type="text" name="username" placeholder="收货人" data-bind="event:{blur:checkName}"><b>*</b><span class="error" data-bind="if:nameChecked"></span><span class="ok" data-bind="if:!nameChecked()"></span> </div>
+					</li>
+					<li class="phone"> <i class="icon icon-phone1"></i>
+						<div> <input type="text" name="mobile" placeholder="联系电话"> <input class="get_btn" id="getc_btn" type="button" value="获取验证码" data-bind="event:{click:getCode},enable:disabled"> </div>
+					</li>
+					<li class="phone_code"> <i class="icon icon-phonenum"></i>
+						<div> <input type="text" placeholder="短信验证码" name="telnum" class="code_com"><b>*</b> </div>
+					</li>
+					<li> <i class="icon icon-address"></i>
+						<div class="slide-address"> <select class="select-province" name="province" data-bind="options:provinceList,optionsValue:'index',optionsText:'province',optionsCaption:'请选择省',event: {change:provinceChange}"></select> <select class="select-city" name="city" data-bind="event: {change: cityChange}">	                            <option value="0">请选择市</option>	                        </select>									<select class="select-district" name="district" data-bind="event: {change: districtChange}">	                            <option value="0">请选择区</option>	                        </select> <select class="select-street" name="street">	                            <option value="0">请选择街道/镇</option>	                        </select>									</div> <b style="vertical-align: middle;">*</b> </li>
+					<li> <i class="icon icon-address"></i>
+						<div> <input type="text" name="address" placeholder="详细地址" data-bind="event:{blur:checkAddr}"> <b>*</b><span class="error" data-bind="if:addrChecked"></span><span class="ok" data-bind="if:!addrChecked()"></span> </div>
+					</li>
+					<li class="address_attr"> <select name="attribute" class="select-attr">	                        <option value="1">公司</option>	                        <option value="2" selected="selected">家庭</option>	                        <option value="3">代收</option>	                        <option value="4">物业</option>	                    </select>								</li>
+					<li> <i class="icon icon-coupon"></i>
+						<div> <input class="bonus" type="text" placeholder="优惠券码" name="bonus_sn" data-bind="event:{blur:calculateTotalAmount}"><span class="error" data-bind="if:bonusChecked"></span><span class="ok" data-bind="if:!bonusChecked()"></span> </div>
+					</li>
+				</ul>
+				<div class="pay-mode payment">
+					<p>支付方式</p>
+					<div class="pay_chic"> 
+						<label class="checked"><input class="checkbox" type="radio" checked="true" value="4" name="pay" data-bind="event:{tap:getPayIndex}">支付宝支付<span>减10元</span></label> 
+						<label><input class="checkbox" type="radio" value="7" name="pay" data-bind="event:{tap:getPayIndex}">财付通支付<span>减10元</span></label>								
+						<label><input class="checkbox" type="radio" value="8" name="pay" data-bind="event:{tap:getPayIndex}">网银支付<span>减10元</span></label> 						<label><input class="checkbox" type="radio" value="1" name="pay" data-bind="event:{tap:getPayIndex}">货到付款</label>								
+					</div>
+				</div>
+			</div>
+			<div class="pay-submit" data-bind="foreach:priceList">
+				<p>总计 ￥<b class="total_price" id="originalPrice" data-bind="text:originalPrice"></b> / 优惠<span class="hl">-￥<b id="preferentialPrice" data-bind="text:preferentialPrice"></b></span> / 运费￥<b id="shipping_fee" data-bind="text:shipping_fee"></b></p>
+				<strong class="need_pay">实付：￥<b id=" price " data-bind="text:need_pay"></b></strong> <a class="btn" href="javascript:void(0);" data-bind="event:{tap:$parent.checkForm}">确 定 提 交</a> </div>
+		</div>
+
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<title>订单</title>
+<link rel="stylesheet" href="../public/css/base.css">
+<link rel="stylesheet" href="../public/css/order.css">
+<script src="../public/js/zepto.min.js"></script>
+<script src="../public/js/knockout.min.js"></script>
+<script src="../public/js/order.js"></script>
+</head>
+
+<body>
+	<div class="nav-header">
+		<a href="#"><i class="font icon-arrow-left"></i></a>
+		<h2>订单确认</h2>
+		<a href="#"><em>登录</em></a>
+	</div>
+	<div class="container">
+		<dl class="order-item" style="margin-top:0;">
+			<dt class="order-hd">
+				<span>填写地址</span>
+				<i class="font icon-arrow-bottom"></i>
+			</dt>
+			<dd>
+				<a class="address address-none" href="javascript:;">
+					<label><i class="font icon-address">22</i></label>
+					<div>+ 添加地址</div>
+				</a>
+				<div class="address">
+					<label class="hl"><i class="font icon-address">22</i>默认</label>
+					<div>
+						<p>收货人：<span>江夏</span><span class="fr">13212345678</span></p>
+						<p>收货地址：<span>[公司]</span><span>广东省广州市荔湾区荔湾街道1号</span></p>
+						<div class="action"><a href="#">修改</a><a href="#">管理地址</a></div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+		<dl class="order-item">
+			<dt class="order-hd">
+				<span>查看商品详情</span>
+				<i class="font icon-arrow-bottom"></i>
+			</dt>
+			<dd>
+				<ul class="goods-list">
+					<li>
+						<a class="goods-img" href="#"><img src="../public/images/goods.jpg" alt="" /></a>
+						<div class="goods-detail">
+							<p><span class="fl">净白祛斑重度套装</span><span>￥999</span></p>
+							<p><del>￥999</del></p>
+							<p>x1</p>
+						</div>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src="../public/images/goods.jpg" alt="" /></a>
+						<div class="goods-detail">
+							<p><span class="fl">净白祛斑重度套装</span><span>￥999</span></p>
+							<p><del>￥999</del></p>
+							<p>x1</p>
+						</div>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+		<div class="order-list">
+			<div>订单号<span>123456789</span></div>
+			<div>下单日期<span>2016-03-03</span></div>
+		</div>
+		<dl class="order-item">
+			<dt class="order-hd">
+				<span>优惠券</span><em>共999张可用</em>
+				<i class="font icon-arrow-bottom"></i>
+			</dt>
+			<dd>
+				<div class="order-list">
+					<div><label><input class="checkbox" type="checkbox" /><em>满199减10元</em></label><span>共100张</span></div>
+					<div><label><input class="checkbox" type="checkbox" /><em>无门槛10元</em></label><span>共100张</span></div>
+				</div>
+				<div class="input-coupon">
+					<div><label><em>输入优惠券编码</em><input type="text" placeholder="输入优惠券编码" /></label></div>
+					<a class="btn" href="javascript:;">确认</a>
+				</div>
+			</dd>
+		</dl>
+		<div class="order-list">
+			<div>商品总计<span>￥99</span></div>
+			<div>运费<span>￥10</span></div>
+			<div>备注<span>请周一至周五送货，我周末休息！</span></div>
+			<div>总计<span class="hl"><strong>￥109</strong>(获得109积分)</span></div>
+		</div>
+		<dl class="order-item">
+			<dt class="order-hd">
+				<span>选择支付方式</span>
+				<i class="font icon-arrow-bottom"></i>
+			</dt>
+			<dd>
+				<dl class="order-item select-box">
+					<dt class="order-hd">
+						<span>平台支付</span>
+						<i class="font icon-arrow-bottom"></i>
+					</dt>
+					<dd>
+						<label>
+							<img src="../public/images/payment/pay_zfb.png" alt="" />
+							<span>支付宝支付</span><input class="checkbox" type="checkbox" />
+						</label>
+						<label>
+							<img src="../public/images/payment/pay_wx.png" alt="" />
+							<span>微信支付</span><input class="checkbox" type="checkbox" />
+						</label>
+						<label>
+							<img src="../public/images/payment/pay_kq.png" alt="" />
+							<span>快钱支付</span><input class="checkbox" type="checkbox" />
+						</label>
+						<label>
+							<img src="../public/images/payment/pay_cft.png" alt="" />
+							<span>财付通支付</span><input class="checkbox" type="checkbox" />
+						</label>
+					</dd>
+				</dl>
+				<dl class="order-item select-box">
+					<dt class="order-hd">
+						<span>网银支付</span>
+						<i class="font icon-arrow-bottom"></i>
+					</dt>
+					<dd>
+						<label>
+							<img src="../public/images/payment/bank_js.png" alt="" />
+							<span>建设银行</span><input class="checkbox" type="checkbox" />
+						</label>
+						<label>
+							<img src="../public/images/payment/bank_gs.png" alt="" />
+							<span>工商银行</span><input class="checkbox" type="checkbox" />
+						</label>
+						<label>
+							<img src="../public/images/payment/bank_zg.png" alt="" />
+							<span>中国银行</span><input class="checkbox" type="checkbox" />
+						</label>
+						<label>
+							<img src="../public/images/payment/bank_zx.png" alt="" />
+							<span>中信银行</span><input class="checkbox" type="checkbox" />
+						</label>
+					</dd>
+				</dl>
+				<label class="order-row"><span>货到付款</span><input class="checkbox" type="checkbox" /></label>
+				<div class="order-row"><span>支付须知</span><i class="font icon-arrow-bottom"></i></div>
+			</dd>
+		</dl>
+		<div class="order-total">
+			<div>合计：<strong class="hl">￥999</strong></div>
+			<a class="btn" href="javascript:;">结算</a>
+		</div>
+	</div>
+</body>
+</html>
