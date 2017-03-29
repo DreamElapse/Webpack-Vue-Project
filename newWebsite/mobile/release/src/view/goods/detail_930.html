@@ -1,0 +1,259 @@
+<link rel="stylesheet" href="/public/css/detail.css">
+<style scoped>
+    .detail_box{padding: .5em 0;background: #fff;}
+	.detail_box div{clear:both;}
+    .detail_box h3{line-height: 1.3em;font-size: 1.1em;color:#ea2143;;padding-bottom: .5em;border-bottom: 1px dashed #e1e1e1;}
+    .detail_box h3 b{border-left: .5em solid #ea2143;;display: inline-block;height: 1.2em;line-height: 1.2em;padding-left: .3em;font-weight:normal;}
+    .detail_box span{color: #a48100;}
+	.detail_box div+p{color:#ED556B;padding-top:0.9em;font-weight:bold;padding-left:6em;}
+	.w100{background: #fff;}
+	.w603{padding-bottom:1em;}
+	.w603 img{width:95%;max-width: 603px;}
+	.w570,.w566{width: 90%!important; max-width: 570px;display:block;margin:0 auto;padding: 0.8em 0;}
+	.w580{width: 95%!important; max-width: 580px;display:block;margin:0.5em auto;}
+	.w589{width: 95%!important; max-width: 589px;display:block;margin:0 auto;}
+	.w602{max-width: 602px;width:100%;}
+	.w514{width: 88%!important;max-width: 514px;margin:.5em auto;display:block;}
+	.w425{width: 88%!important;max-width: 425px;margin:.5em 0;}
+	.cj-hd{background:#6EA611;}
+	.flr{overflow: hidden;}
+	.flr>div{float: left;}
+	.pa_tb{padding: 1em 0.5em;}
+	.cjjd_one,.cjjd_two,.cjjd_three,.pa_tb{color:#747474;}
+	.cjjd_one{overflow: hidden;margin-top: 0.3em;}
+	.cjjd_one .one_hd{width:68%;background: #6EA611;color:#FEFDFF;text-align: center;font-size: 1.2em;padding: 0.1em 0;}
+	.cjjd_one ul{padding: 1em; overflow: hidden;box-sizing: border-box;}
+	.cjjd_one ul li{float: left;}
+	.cjjd_one .first_li{width: 65%;}
+	.cjjd_one .first_li h3{font-size: 1.2em; color: #74A02F;font-weight: normal; margin-bottom: 0.3em;}
+	.cjjd_one .first_li p{font-size: 0.85em;line-height: 1.3em;}
+	.cjjd_one .first_li p span{color: #74A02F;}
+	.cjjd_one .sec_li{width: 35%; text-align: center;}
+	.cjjd_one li img{max-width: 199px;width: 90%;}
+	.cjjd_two{padding: 0.3em 0.5em;}
+	.pa_tb .img_wrap{width: 50%;max-width: 300px;}
+	.pa_tb .content_wrap{width:40%; margin:0 4%;}
+	.pa_tb .content_wrap span{display: block;width: 100%;}
+	.pa_tb .content_wrap span img{width: 100%;max-width: 175px;}
+	.pa_tb .content_wrap .prt_name{font-size: 0.85em;margin: 0.3em 0;}
+	.pa_tb .content_wrap .prt_intro{font-size: 1em;color:#74A02F;font-weight: bold;}
+	.cjjd_two>p{font-size: 1em;}
+	.cjjd_two>p span{background: #74A02F;font-size: 1.2em;color: #fff;padding: 0 0.5em;margin-right: 0.3em;border-radius: 0.2em;}
+	.two_content{text-align: center;}
+	.two_content .up-p{color:#74A02F;font-size: 1em;}
+	.two_content .up-p span{font-size: 1.2em;font-weight: bold;}
+	.two_content .down-p{color:#626262;font-size: 0.85em;}
+	.two_content .down-p span{font-size: 1em;font-weight: bold;}
+	.cjjd_three{padding: 1em;}
+	.cjjd_four ul{padding: 1em 0.5em;overflow: hidden;}
+	.cjjd_four ul li{float: left;width: 48%;color: #616161;}
+	.cjjd_four ul li:nth-child(odd){margin-right: 4%;}
+	.cjjd_four .content_wrap h3{background:#828282;width: 85%;margin: .2em auto;text-align: center;color: #FBFBFB;font-weight: normal;}
+	.cjjd_four .w280{max-width: 280px;}
+	.cjjd_five{overflow: hidden;}
+	.cjjd_five>p{font-size: 0.85em;float:left;margin-top: 0.3em;margin-left:2.5%;width: 22%;color: #8E8E8E; box-sizing: border-box;}
+	.cjjd_tip{font-size: 0.8em;color: #74A02F;text-align: center;padding: 0.2em 1em 1em;}
+	.case_detail{padding: 0.4em 0 0.4em 0.4em; margin-bottom: 0.4em; font-size: 0.85em;color: #A5A5A5;border-bottom: 1px dashed #E8E8E8;}
+	.case_detail b{font-size: 1.2em;color: #5F5F5F; display: block;}
+	.case_detail i{display: inline-block;width: 0.4em;height: 0.4em;border-radius: 50%;background:#A5A5A5;margin-right: 0.5em;}
+	.cjjd_sev{padding: 0 1em 1em;}
+	.cjjd_sev li:first-child{border-bottom: 1px solid #E8E8E8;margin-bottom: 0.5em;}
+</style>
+
+<img src="/public/images/goods_res/930/img_01.jpg" alt="" />
+<img src="/public/images/goods_res/930/img_02.jpg" alt="" />
+<img src="/public/images/goods_res/930/img_03.jpg" alt="" />
+<div class="cjjd_one w100">
+	<div class="one_hd">韩国瓷肌皮肤研发团队告诉你：</div>
+	<ul>
+		<li class="first_li">
+			<h3>毛孔不干净，营养不吸收</h3>
+			<p>我们脸上有<span>300,000个毛孔</span>，</p>
+			<p>每天经受<span>化妆品、PM2.5环境等污染侵袭</span>，</p>
+			<p>彻底清除深藏毛孔的污垢，</p>
+			<p>肌肤才能更好吸收营养。</p>
+		</li>
+		<li class="sec_li"><img src="/public/images/goods_res/930/img_04.jpg" alt="" /></li>
+	</ul>
+</div>
+<img src="/public/images/goods_res/930/img_05.jpg" alt="" />
+<img src="/public/images/goods_res/930/img_06.jpg" alt="" />
+<div class="detail-box">
+    <div class="detail_box">
+    	<h3><b>只需1分钟  毛孔0污垢</b></h3>
+    </div>    
+</div>
+<div class="flr pa_tb w100">
+	<div class="img_wrap">
+		<img src="/public/images/goods_res/930/img_16.jpg" alt="" />
+	</div>    	
+	<div class="content_wrap">
+		<span><img src="/public/images/goods_res/930/img_17.jpg" alt="" /></span>
+		<p class="prt_name">洗清本源卸妆洗颜乳</p>
+		<p class="prt_intro">
+			卸妆清洁一步到位，<br />洗一次就干净
+		</p>	
+	</div>		
+</div>
+<div class="cjjd_two w100 pa_b">
+	<p><span>① 微泡型</span>清洁同时锁水保湿，洗完不紧绷</p>
+	<img class="w580" src="/public/images/goods_res/930/img_18.jpg" alt="" />
+</div>
+<div class="cjjd_two w100">
+	<p><span>② 二合一</span>温和清洁肌肤，轻松卸除淡妆</p>
+	<img class="w580" src="/public/images/goods_res/930/img_19.jpg" alt="" />
+</div>
+<!--<div class="flr pa_tb w100">		   	
+	<div class="content_wrap">
+		<span><img src="/public/images/goods_res/930/img_20.jpg" alt="" /></span>
+		<p class="prt_name">刷纤柔电动洁面刷</p>
+		<p class="prt_intro">
+			你以为手洗足够干净，<br />其实“机洗”更干净
+		</p>	
+	</div>	
+	<div class="img_wrap">
+		<img src="/public/images/goods_res/930/img_21.jpg" alt="" />
+	</div> 
+</div>-->
+<!--<div class="two_content w100 pa-bd">
+	<p class="up-p"><span>超声波</span>每分钟一万次微振动</p>
+	<img class="lazy w589" data-src="/public/images/goods_res/930/line.jpg" alt=""  />
+	<p class="down-p"><span>无死角</span> 深层清洁，抚平细纹，微剥角质</p>
+	
+</div>-->
+<!--<div class="w100">
+	<img class="lazy w570" data-src="/public/images/goods_res/930/img_22.jpg" alt="" />
+</div>
+<div class="two_content w100 pa-bd">
+	<p class="up-p">150,000根<span>抗菌纤维刷毛</span></p>
+	<img class="lazy w589" data-src="/public/images/goods_res/930/line.jpg" alt=""  />
+	<p class="down-p"><span>超柔软</span> 比毛孔更细，温和深入毛孔深处</p>		
+</div>
+<div class="w100">
+	<img class="lazy w570" data-src="/public/images/goods_res/930/img_07.jpg" alt="" />
+</div>	
+<div class="two_content w100 pa-bd">
+	<p class="up-p"><span>防水</span>设计，<span>替换式</span>刷头</p>
+	<img class="lazy w589" data-src="/public/images/goods_res/930/line.jpg" alt=""  />
+	<p class="down-p"><span>全家用</span> 方便更换、清洁，建议每3-4月更换一次</p>		
+</div>
+<div class="w100">
+	<img class="lazy w570" data-src="/public/images/goods_res/930/img_08.jpg" alt="" />
+</div>-->		
+<div class="flr pa_tb w100">
+	<div class="img_wrap">
+		<img src="/public/images/goods_res/930/img_23.jpg" alt="" />
+	</div>    	
+	<div class="content_wrap">
+		<span><img src="/public/images/goods_res/930/img_24.jpg" alt="" /></span>
+		<p class="prt_name">护瓷娃娃润颜防护喷雾</p>
+		<p class="prt_intro">
+			防护工作做得好，<br />你的脸才没有白洗
+		</p>	
+	</div>		
+</div>
+<div class="w100">
+	<img class="w566" src="/public/images/goods_res/930/img_09.jpg" alt="" />
+</div>	
+<div class="detail-box"><div class="cj-hd">洗出素颜好肌肤  挑战5CM近距离</div></div>
+<div class="cjjd_three w100">
+	<p>深层洁净皮肤毛孔垃圾，就像大扫除一样扫出毛孔内的污垢，让饱满的营养和水分盈润毛孔。</p>		
+</div>		
+<img src="/public/images/goods_res/930/img_10.jpg" alt="" />
+<img src="/public/images/goods_res/930/img_11.jpg" alt="" />
+<img src="/public/images/goods_res/930/img_12.jpg" alt="" />
+<img src="/public/images/goods_res/930/img_13.jpg" alt="" />
+<ntell></ntell>
+<div class="detail-box">
+    <div class="detail_box">
+        <h3><b>花香萃取 净养合一</b></h3>
+    </div>   
+</div>
+<div class="w100 cjjd_four">
+	<ul>
+		<li>
+			<div class="w280"><img src="/public/images/goods_res/930/img_25.jpg" alt="" /></div>
+			<div class="content_wrap" style="margin-bottom: 1em;">
+				<h3>透明质酸钠</h3>
+				<p>高效锁水保湿，提高肌肤含水量，长效保持水分。</p>
+			</div>
+		</li>
+		<li>
+			<div class=" w280"><img src="/public/images/goods_res/930/img_26.jpg" alt="" /></div>
+			<div class="content_wrap" style="margin-bottom: 1em;">
+				<h3>北美金缕梅提取</h3>
+				<p>收敛抗炎、舒缓红肿、瘙痒及脱皮现象，保湿抗氧化。</p>
+			</div>
+		</li>
+		<li>
+			<div class=" w280"><img src="/public/images/goods_res/930/img_27.jpg" alt="" /></div>
+			<div class="content_wrap">
+				<h3>梅花提取</h3>
+				<p>抑制络氨酸酶活性，干扰黑色素形成，改善明亮肤色。</p>
+			</div>
+		</li>
+		<li>
+			<div class=" w280"><img src="/public/images/goods_res/930/img_28.jpg" alt="" /></div>
+			<div class="content_wrap">
+				<h3>莲花提取</h3>
+				<p>肌肤增弹，抵挡电磁波伤害，抗自由基、抗氧化！</p>
+			</div>
+		</li>
+	</ul>
+</div>	
+<div class="detail-box">
+    <div class="detail_box">
+        <h3><b>早起做3步，皮肤白又嫩</b></h3>
+    </div>    
+</div>
+<div class="w100 cjjd_five pa_tb">
+	<img  class="w602" src="/public/images/goods_res/930/img_14.jpg" alt=""/>
+	<p style="margin-left:15.5%;">沾湿面部，取适量清本源卸妆乳打出丰富细腻泡沫</p>
+	<p>把泡沫放在脸上打圈按摩1分钟，用清水洗净</p>
+	<p>喷上瓷娃娃润颜防护喷雾，拍打按摩吸收</p>
+</div>
+<!--<div class="cjjd_tip w100">（洁面刷使用周期是以皮肤的特性为依据，建议每周使用2-3次为佳）</div>-->
+<div class="detail-box">
+    <div class="detail_box">
+        <h3><b>4大场合使用，护肤效果加倍</b></h3>
+    </div>    
+</div>
+<div class="cjjd_six pa_tb w100">
+	<img  class="w514" src="/public/images/goods_res/930/img_15.jpg" alt=""/>
+	<p>“洗一洗，喷一喷，皮肤底子好了，素颜化妆一样好看。”</p>
+	<img  class="w514" src="/public/images/goods_res/930/img_29.jpg" alt=""/>
+	<p>“每一个毛孔都在畅快呼吸，肌肤毫无负担感，睡个美容觉。”</p>
+	<img  class="w514" src="/public/images/goods_res/930/img_30.jpg" alt=""/>
+	<p>“只需1分钟，毛孔污垢， 油脂去光光，润颜补水，忙碌的工作日走起！”</p>
+	<img  class="w514" src="/public/images/goods_res/930/img_31.jpg" alt=""/>
+	<p>“油污、妆渍洗干净，摘下面具、一尘不染的感觉真棒！”</p>
+</div>
+<ntell></ntell>
+<div class="detail-box">
+    <div class="detail_box">
+        <h3><b>她们的鸡蛋肌就是洗出来的</b></h3>
+    </div>    
+</div>
+<div class="w100 cjjd_sev">
+	<ul style="padding-top:0.8em;">
+		<li>
+			<div class="case_detail"><b>洗干净脸，省掉去黑头去角质</b><i></i>其其  22岁 </div>
+			<span><img class="w425" src="/public/images/goods_res/930/img_32.jpg"></span>
+			<div>
+				<p style="color:#666;padding: 0.4em 0 1em; font-size:.9em;">
+				现在环境、空气一天比一天差，脸上总是满脸尘土满脸油，脸色暗暗的，感觉怎么洗也洗不干净。还好姐姐送了我韩国瓷肌的洗颜喷雾套。洁面乳清香温和，泡沫很绵密细腻，洗完后超清爽。黑头、粗糙、暗沉通通洗干净，再喷上防护喷雾，皮肤穿上“金钟罩”无敌了！
+				</p>
+			</div>
+		</li>
+		
+		<li>
+			<div class="case_detail"><b>洁面卸妆二合一，敏感肌放心用</b><i></i>Lucky  25岁</div>
+			<span><img class="w425"src="/public/images/goods_res/930/img_33.jpg"></span>
+			<div>					
+				<p style="color:#666;padding-top:0.4em; font-size:.9em;">
+				皮肤问题不断让我伤透脑筋，有一次听皮肤科医生说“洗干净脸99%的肌肤问题都会消失”，我才知道清洁的重要，马上拔草了韩国瓷肌洗颜喷雾套。套装的洗面奶用来卸妆超级干净的，而且很温、清爽。还有可爱的瓷娃娃喷雾，随身带着喷，吸睛又美颜！
+				</p>
+			</div>
+		</li>			
+	</ul>
+</div>

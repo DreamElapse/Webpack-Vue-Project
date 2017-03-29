@@ -1,0 +1,349 @@
+<style scoped>	
+/*头部导航样式*/
+.container{background: #fff;}
+.focus img{width: 100%;}
+.h1em{padding-top: 1em;}
+.fnav{width:100%; position:fixed; z-index:998;}
+.fnav_con{width:100%; margin:0px auto; min-width:320px; max-width:640px; height:46px; line-height:46px; vertical-align: middle;
+	display: block; position: relative; z-index:999;}
+.f_top_nav{top:0px;}
+.f_top_nav .fnav_t{top:0px; background: none repeat scroll 0% 0% rgba(219, 7, 67, 1); text-align:center; color:#fff;}
+.f_top_nav .fnav_t p{line-height:46px;}
+.f_top_nav .fnav_t span{font-size:20px; vertical-align:top; display:inline-block; height:46px; line-height:46px;}
+.f_top_nav .fnav_t p img{height:44px; vertical-align:top; margin-top:1px;}
+.f_top_nav .fnav_t p.fl{padding-left:10px; width:25%; height:46px; line-height:46px; text-align:left;}
+.f_top_nav .fnav_t p.fl a{display:block; height:46px; line-height:46px;}
+.f_top_nav .fnav_t p.fl img{/*max-width:30px; width:20%;*/ height:44px; vertical-align:top;}
+.f_top_nav .fnav_t p.fr{padding-right:10px; width:25%; text-align:right;}
+.f_top_nav .fnav_t p.fr a{display:block; height:46px; line-height:46px;}
+.f_top_nav .fnav_t p.fr img{/*max-width:44px; width:45%;*/ height:44px; vertical-align:top;}
+/*底部导航样式*/
+.f_bot_nav{bottom:0px;}
+.f_bot_nav .fnav_b{top:0px; background: none repeat scroll 0% 0% rgba(51, 51, 51, 1); height:60px;}
+.menulist ul{ text-align:center;}
+.menulist ul li{width:24%; display:inline-block; text-align:center; line-height:60px;}
+.menulist ul li img{width:50px; vertical-align:top; margin-top:5px;}
+/*头部导航样式*/
+.main .hidden{display: none;}
+.w100 img{width: 100%;}
+.w80{width:80%; margin:0 auto;}
+.w85{width:85%; margin:0 auto;}
+.w95{width:95%; margin:0 auto;}
+.ar{background:#f5f5f5; padding: 1em 0;}
+.aro{ padding: 1em 0;}
+.pt1{padding-top: .2em;}
+.aro p{line-height: 1.2em;}
+.aro p:first-child{text-align: center; font-size: 1.3em;}
+.aro p:last-child{text-align: center;color:#ee4460;font-size:1.4em; font-weight: bold;}
+.cs_tit{background: #353535 none repeat scroll 0 0; clear: both; color: #fff; line-height: 2.4em; text-align: center; font-size: 1.2em;}
+.cs_redtit{background: #ee4460 none repeat scroll 0 0; clear: both; color: #fff; height: 2.8em; line-height: 3.5em;position: relative; text-align: left;padding-left: 1em; font-size: 1.1em;}
+.mar_b .w80{padding-top: .4em;}
+.t_name{ color:#6d6d6d; font-size:.9em; line-height:1.7em; text-align: center;}
+.t_na{ color:#7f7f7f; font-size:.9em; line-height:1.7em; text-align: center;}
+.tna_center{ text-align: center;color:#ee4460;font-size:1.1em; font-weight: bold;}
+.redback{width: 90%; margin:0 auto; background: #f13756; border-radius: .5em;padding:.6em .1em; font-size: 1em;text-align: center;}
+.fz1{font-size: .9em;color: #fff; line-height: 1.5em;padding: .2em 0;}
+.fz2{font-size: 1em; color: #fff; line-height: 1.3em; }
+.fz3{font-size: 1.3em; color: #fff; font-weight: bold; line-height: 1.3em;}
+.mb2em{background:#f5f5f5; height: 2em;}
+.red{color: #e86671;}
+.redbold{color: #e86671; font-size: 1.1em; font-weight: bold;}
+.cs_bt{border-bottom: 1px #a3a3a3 dashed; padding: .4em 0;}
+.w80 ul li.bt_li{width: 45%;text-align: left;}
+.w80 ul li:first-child{padding-right: 1em;}
+.clear{ clear: both;}
+.fs2{font-size: 1.2em; }
+.fs1{font-size: .9em; }
+.tac{text-align: center;}
+.mar_b{padding-bottom: 1em;}
+.phone a{ width:45%; margin:.5em 2.5%; line-height:2em; text-align:center; background:#fabf33; display:inline-block; color:#db0743; }
+.sh_ul {width:100%;}
+.sh_ul li {list-style:outside none none;margin-top:0.5em;overflow: hidden;padding: 0 1em 0.4em 0.7em; color:#555555;}
+.wn_cf {float: left;margin-right: 2%;width: 30%;}
+.wn_cf3 {float: left;margin-right: 2%;width: 25.5%;}
+.wn_cf2 {float: left;margin-right: 2%;width: 20%;}
+.wn_cf img,.wn_cf2 img,.wn_cf3 img {width:100%;}
+.wn_ms {float:right;width: 65%;}
+.wn_ms div:first-child{padding-bottom: .4em;}
+.wn_ms2 {float:left;width: 78%;}
+.wn_ms3 {float:left;width: 72%;}
+.wn_ms h3,.wn_ms2 h3,.wn_ms3 h3 {color:#e86671;font-size:1em;line-height:1.5em;}
+.wn_ms p,.wn_ms3 p {font-size:0.8em;color: #838383; line-height:1.3em;}
+.wn_ms p.p2 {font-size:0.8em;line-height:1.4em;letter-spacing: .04em;}
+.wn_ms p span{ color:#e86671;}
+.txunder{ }
+.sh_ug{background: #f3f3f3; width: 100%; padding: 1em 0;}
+.sh_ug .ug_tit{width: 62%; margin: 0 auto 1em auto; padding: .5em 1em; background: #ee4460; color: #fff; font-size: 1em; font-weight: bold;border-radius: .4em;text-align: center;}
+.sh_ug .uginfo{text-align: center;margin: 0 auto; color: #545353;}
+.prot{width: 100%; margin: 0 auto; padding: 1em 0;}
+.prot .prot_L{width: 43%;float: left; max-width: 9.3em; text-align: center; padding-left: .5em;}
+.prot .prot_L img{width: 87%;}
+.prot .prot_R{width: 54%;float: right; padding-top: .5em;}
+.prot .prot_R .redline{border-bottom: 1px #ee4460 solid; width: 85%; margin-bottom: 1em; margin-top: .2em;}
+.prot .prot_R p:first-child{font-size: 1.2em; color:#ee4460; font-weight: bold;}
+.prr_t{color: #4b4b4b; font-size: 1em;}
+.prr_i{ font-size: .8em;line-height: 1.5em; color: #808080;}
+.cs_redtit .tit_dg{position: absolute; right: 1.5em; top: .5em; background: #fff;  text-align: center; padding: .5em .9em; font-size: 1em; 
+	border-radius: .6em;display: block; border: none;color:#ee4460;line-height: .9em;}
+.font_price{font-size: 2em; line-height: 1em; font-weight: bold;}
+.bord_b{border-bottom: 1px #b4b4b4 solid; padding-bottom: 1.5em;}
+.bord_L,.bord_R{width: 47%; float: left; padding-left: .5em;}
+.redbor{font-size: 1.0em; color:#ee4460; font-weight: bold;}
+.dbord{width: 100%; padding-bottom: 2em;}
+.nav a{display:inline-block; float:left; width:50%; background:#555555; text-align:center; line-height:2.5em; color:#fff; font-weight:bold;}
+.nav a.on{ background:#f5f5f5; color:#555555;}
+.w90{ width: 94%; margin: 0 auto;}
+/*评论代码样式*/
+.u_pj{border-bottom:solid 1px #d9d9d9;}
+.u_pj dt{padding-top:.5em; padding-left:1em; line-height:2.2em; color:#db0743; font-size:1.2em;}
+.u_pj dt{padding-top:.5em; padding-left:1em; line-height:2.2em; color:#b8b8b8; font-size:1.2em;font-family: Microsoft YaHei;}
+.u_pj dd{padding:.5em 1em; line-height:1.3em; font-size:.9em;color:#343434;}
+.u_pj dd img{line-height:1.3em; vertical-align:middle; max-width:34px; width:7%;}
+.more_co{padding:0 1em;text-align: center;}
+.more_co a{display: inline-block;width:100%;height:2em;line-height:2em;background: #b2b2b2;text-decoration: underline;margin-top:1em;border-radius:0.1em;}
+.u_pj dt .stars li{display: inline-block;width:1em;height:1em;background: url(/templates/common/images/star01.png) no-repeat 0 0;background-size: 0.8em 0.8em;}
+.u_pj dt .stars li.on{background: url(/templates/common/images/star.png) no-repeat 0 0;background-size: 0.8em 0.8em;}
+.u_pj dt li img{ width:90%;max-width:25px;padding-right:0;vertical-align:middle;}
+.u_pj dt .stars{float: right; padding-right:1em; }
+.dates{text-align: right;color:#8d8d8d;font-size: 0.85em;}
+/*二级页面、三级产品页面公用在线下单样式*/
+.zx_order{background:#db0743; height:2.5em; line-height:2.5em; color:#fff; text-align:center; margin-top:.5em;}
+.order_con{padding:.5em;}
+.order_con .step {padding-left:.5em;}
+.order_con .step p{line-height:1.5em; color:#d91414;}
+.order_con .imgs{max-width:276px; width:50%; margin:0px auto; padding-top:1em;}
+.order_con .imgs img{max-width:276px; width:100%; border:solid 1px #d6d6d6;}
+.order_con .p_tit{font-size:1em; color:#646464; line-height:2em; text-align:center; font-weight:normal;}
+.pr_info{padding:.5em;}
+.or_form{color:#515151;}
+.or_form p{padding:5px 0em; line-height:1.5em;}
+.or_form p span.sel_n{border:solid 1px #d1d1d1; vertical-align:middle; display:inline-block; line-height:25px; height:27px; width:28px; text-align:center; cursor:pointer;}
+.or_form p span.num_txt{padding-left:.5em; display:inline-block;}
+.or_form p span.num_txt i{font-style:normal; color:#d91414;}
+.or_form p span.num_txt em{font-style:normal; color:#d91414;}
+.or_form lable{width:3em; display:inline-block; font-size:1em; line-height:1.7em; height:1.7em; vertical-align:middle;}
+.or_form lable.wi{width:5.3em;}
+.or_form input{width:80%; display:inline-block; border:solid 1px #d1d1d1; line-height:1em; height:1.7em; text-indent:.5em; vertical-align:middle;}
+.or_form input.kcon{width:70%;}
+.or_form input.in_num{width:2.4em; text-align:center; text-indent:0em; margin:0em .2em;}
+.or_form textarea{display:inline-block; border:solid 1px #d1d1d1; width:70%; line-height:1.2em; height:4em; text-indent:.5em; font-family:'Microsoft YaHei';}
+.or_form input.sub{width:90%; margin:0em auto; background:#1dbe56; height:2em; line-height:2em; text-align:center; color:#fff; font-size:1.2em; font-family:'Microsoft YaHei'; border-radius:.2em; margin-bottom:1em;-webkit-appearance:none}
+.zx_order{margin-top:0;}
+.new_page img{width:100%;}
+/*二级页用户评价*/
+.sh_tit{background:#db0743; text-align:center; line-height:2.4em; color:#fff; clear:both;}
+.more_co{padding:0 1em;text-align: center;}
+.more_co a{display: inline-block;width:100%;height:2em;line-height:2em;background: #b2b2b2;text-decoration: underline;margin-top:1em;border-radius:0.1em;}
+</style>
+<div class="new-ct main" id="lazy_img">
+	<!--困扰-->
+	<div class="cs_tit">是什么让肌肤黯然失色？</div>
+	<div class="w100"><img src="/public/images/q_goods/462a/img_01.jpg" alt="" /></div>
+	<div class="ar">
+		<p class="t_name">不可避免受到污染和氧化的侵害  </p>
+		<p class="tna_center">年龄增长，肌色越深，水分越少</p>
+	</div>
+	<div class="w100"><img src="/public/images/q_goods/462a/img_02.jpg" alt="" /></div>
+	<div class="ar">
+		<p class="t_na">肌肤出现种种问题，干纹、缺水、暗沉、黄气、斑点、粗糙……</p>
+		<div class="redback">
+			<p class="fz1">你是觉得自己真的老了？压力大？缺乏营养？</p>
+			<p class="fz2">其实真正的问题，是肌肤缺乏</p>
+			<p class="fz3">"活着的物质"—酵素</p>
+		</div>
+	</div>
+	<div class="cs_tit">风靡日本の酵素活力美白魔法</div>
+	<div class="w100"><img src="/public/images/q_goods/462a/img_03.jpg" alt="" /></div>
+	<div class="w95">
+		<span class="red">酵素(Enzyme)即是"酶"</span>，被称为<span class="red">"活着的物质"，是一种具有高效催化活性的蛋白质。</span>生物体内绝对不可缺少酵素，它们支配着生物的新陈代谢、营养和能量转换等许多催化过程，肌肤酵素越多，越完整，就越健康。肌肤如果失去活性酵素，皮肤将会死气沉沉。因为酵素的不可缺少和神奇功效，酵素已经成为时下日本流行的美白美容方式。
+	</div>
+	<div class="w100"><img src="/public/images/q_goods/462a/img_04.jpg" alt="" /></div>
+	
+	<!-- {include file="library/t_chat01.lbi"} -->
+	<div class="cs_tit">酵素美白 显著效果</div>
+	<div class="w85 h1em">
+		瓷肌光感肌密套装融萃纳豆、啤酒酵母、黑酵母及出芽短梗霉4种发酵滤液成分，有效：
+	</div>
+	<div class="w100"><img src="/public/images/q_goods/462a/img_05.jpg" alt="" /></div>
+	<div class="w100"><img src="/public/images/q_goods/462a/img_06.jpg" alt="" /></div>
+	
+	<div class="cs_tit">酵素美白锻造6维美肌</div>
+	<div class="w100">
+		<img src="/public/images/q_goods/462a/pic_01.jpg" alt="" />
+	</div>
+	<div class="w100">
+		<div class="cs_bt">
+			<div class="w80">
+				<ul>
+					<li class="bt_li fl">
+						<p class="red fs2">嫩白细致</p>
+						<p class="fs1">有效刺激真皮层黑色素体溶解、加速弹力蛋白再生、净斑润白。</p>
+					</li>
+					<li class="bt_li fr">
+						<p class="red fs2">柔软角质</p>
+						<p class="fs1">酵素修护因子，辅助分解肌表老废角质，改善肌表浅性皱纹、细纹。</p>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="cs_bt">
+			<div class="w80">
+				<ul>
+					<li class="bt_li fl">
+						<p class="red fs2">紧致抚纹</p>
+						<p class="fs1">多酵活源修护因子协同肌肤弹力蛋白、胶原蛋白作用，抚平细纹、紧致肌肤。</p>
+					</li>
+					<li class="bt_li fr">
+						<p class="red fs2">补水保湿</p>
+						<p class="fs1">超分子PGA源源不断供应水分，瞬时解决肌肤干燥问题，坚固肌表防护屏障。</p>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="w100 mar_b">
+		<div class="w80">
+			<ul>
+				<li class="bt_li fl">
+					<p class="red fs2">润泽抗老</p>
+					<p class="fs1">降低过氧化脂类生成，源头减缓肌肤松弛与皱纹滋生，活化细胞、调整纹理。</p>
+				</li>
+				<li class="bt_li fr">
+					<p class="red fs2">提亮肤色</p>
+					<p class="fs1">酵素成分促进老化细胞代谢，酵母多肽促进再生角质蛋白，还原莹白弹润。</p>
+				</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="cs_tit">4大成分 出众天然润泽力</div>
+	<ul style="margin:1em 0;" class="sh_ul">
+		<li>
+			<div class="wn_cf"><img src="/public/images/q_goods/462a/pic_02.jpg"></div>
+			<div class="wn_ms">
+				<div>桃花蕾提取物•<span class="red">给你亮晶晶</span></div>
+				<p >水蜜桃花蕾萃取极效养白润泽，阻断黑色素沉积，褪黑润白、焕亮气色，在暗黄气生成以前，达到亮白防守。</p>
+			</div>
+		</li>
+		<li>
+			<div class="wn_cf"><img alt="" <img src="/public/images/q_goods/462a/pic_03.jpg"></div>
+			<div class="wn_ms">
+				<div>日本黄连根•<span class="red">给你水当当</span></div>
+				<p>保湿功效，蕴含高单位维他命E，天然抗老防衰圣品，帮助舒缓岁月痕迹，再造美肌能量。</p>
+			</div>
+		</li>
+		<li>
+			<div class="wn_cf"><img alt="" <img src="/public/images/q_goods/462a/pic_04.jpg"></div>
+			<div class="wn_ms">
+				<div>膜荚黄芪•<span class="red">给你滑溜溜</span></div>
+				<p>快速活化细胞、调理紊乱纹理，内外养护、脫疮生肌，长效锁水预防干燥，抵抗老化袭击，回复亮采盎然光感细腻。</p>
+			</div>
+		</li>
+		<li>
+			<div class="wn_cf"><img alt="" <img src="/public/images/q_goods/462a/pic_05.jpg"></div>
+			<div class="wn_ms">
+				<div>光果甘草•<span class="red">给你白嫩嫩</span></div>
+				<p>镇静养白菁萃，瞬间修护受损、修复肌肤屏障功能，增进黑色素溶解酶活性，辅助美白、褪黑亮采。</p>
+			</div>
+		</li>				
+	</ul>
+	
+	<div class="cs_tit">水 活 盈 白 透 看得见</div>
+	<div class="w100">
+		<img src="/public/images/q_goods/462a/pic_06.jpg" alt="" />
+	</div>
+	<div class="sh_ug">
+		<div class="ug_tit">持续使用酵素光感肌密套装：</div>
+		<div class="uginfo">不干、不油，肌肤<span class="redbold">光感水润</span></div>
+		<div class="uginfo">不皱、无纹，肌肤<span class="redbold">上扬紧致</span></div>
+		<div class="uginfo">不黑、无斑，肌肤<span class="redbold">白净透亮</span></div>
+		<div class="uginfo">不粗糙、无毛孔，肌肤<span class="redbold">无龄细滑</span></div>
+	</div>
+	
+	<div class="cs_tit">光感水润 一套齐集</div>
+	<div class="prot">
+		<div class="prot_L"><img src="/public/images/q_goods/462a/pro_01.jpg" alt="" /></div>
+		<div class="prot_R">
+			<p class="">一天只补一次水<br>绽现水漾美肌</p>
+			<p class="redline"></p>
+			<p class="prr_t">酵素光感肌密系列</p>
+			<p class="prr_i">酵素光感肌密洁面乳(80g)<br>酵素光感肌密润养水(90ml)<br>酵素光感肌密精华液(30ml)<br>酵素光感肌密精华霜(50g)</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="cs_redtit">
+		市场价￥ <span class="font_price">328</span> 元
+		
+		<a class="tit_dg on_ord" href="#orderpr">立即订购</a>
+	</div>
+	<div class="w100">
+		<img src="/public/images/q_goods/462a/pro_02.jpg" alt="" />
+	</div>
+	<div class="bord_b">
+		<div class="w95">
+			<div class="bord_L">
+				<p class="redbor">肌肤爱干净•补水更锁水</p>
+				<p class="prr_t">酵素光感肌密洁面乳</p>
+				<p class="prr_i">规格：80g/支</p>
+				<p class="prr_i">核心功效：蕴含丰富的发酵物及橄榄油成分，减低肌肤刺激同时深彻清洁肌肤，洁后清爽柔软不紧绷。</p>
+			</div>
+			<div class="bord_R">
+				<p class="redbor">层层滋养•莹润清透</p>
+				<p class="prr_t">酵素光感肌密精华液</p>
+				<p class="prr_i">规格：30ml/支</p>
+				<p class="prr_i">核心功效：丰富的发酵物及大量蛋白质分解后的氨基酸，令水分层层渗透，肌肤倍感充盈，晶莹透亮。</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="w100">
+		<img src="/public/images/q_goods/462a/pro_03.jpg" alt="" />
+	</div>
+	<div class="dbord">
+		<div class="w95">
+			<div class="bord_L">
+				<p class="redbor">多酵修护•焕发剔透光感</p>
+				<p class="prr_t">酵素光感肌密精华霜</p>
+				<p class="prr_i">规格：50g/支</p>
+				<p class="prr_i">核心功效：源自大自然力量的发酵成分协同β-葡聚糖，提高肌肤弹力，预防肌肤衰老，一扫暗沉，散发轻盈透亮年轻光彩。</p>
+			</div>
+			<div class="bord_R">
+				<p class="redbor">层层滋养•莹润清透</p>
+				<p class="prr_t">酵素光感肌密润养水</p>
+				<p class="prr_i">规格：90ml/支</p>
+				<p class="prr_i">核心功效：富含强大水分结合能力的营养保湿海洋发酵成分，能够牢牢抓住水分，改善气色，提亮肤色。</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<!-- {include file="library/t_chat04.lbi"} -->
+	<!--案例-->
+	<div class="cs_tit">澎湃"酵"主亲证时刻"水"力全开</div>
+	<div class="w100">
+		<div class="cs_bt">
+			<img src="/public/images/q_goods/462a/pro_04.jpg" alt="" />
+			<p class="redbor tac">有"活力"的焕颜神器，效果不能更赞！</p>
+			<p class="w85 pt1">冲着"酵素"来的，果然没让我失望！多达4种活性酵素而无化学添加，擦在脸上吸收超快，感觉每个细胞都满能量"复活"一样！暗沉气色一扫光立马亮采红润，效果不能更赞！</p>
+		</div>
+		<div class="cs_bt">
+			<img src="/public/images/q_goods/462a/pro_05.jpg" alt="" />
+			<p class="redbor tac">挖到皮肤光感"机密"，找回Q弹婴儿肌</p>
+			<p class="w85 pt1">真的很好用，使用的瞬间皮肤很清爽，超舒适。精华按摩吸收后肤感就像麻糬丸子一样Q弹滑嫩！肌肤的透明感也让我很惊讶，感觉自己真的挖到皮肤光感"机密"！超赞！</p>
+		</div>
+		<div class="cs_bt">
+			<img src="/public/images/q_goods/462a/pro_06.jpg" alt="" />
+			<p class="redbor tac">清爽滋润"秒吸收"，触感滑溜到不行</p>
+			<p class="w85 pt1">超爱这套！除了焕亮脸色，干燥、起皮、紧绷也能轻松搞定，肤感立时水嘭嘭！因为酵素的超高活性，精华滴在手上完全"秒吸收"！触感像丝绸一样滑溜，还有微微光泽感！</p>
+		</div>
+		<div class="mar_b">
+			<img src="/public/images/q_goods/462a/pro_07.jpg" alt="" />
+			<p class="redbor tac">肤质明显变细致，就像一直在给皮肤做SPA</p>
+			<p class="w85 pt1">对精华超快吸收又全无油腻感超好奇，看了成分才知晓是浓缩了多重酵素的原因，两滴精华就可以源源不断滋养肌肤一整天，就像一直在给皮肤做SPA，不变嫩变弹都难哦~</p>
+		</div>
+	</div>
+
+</div>

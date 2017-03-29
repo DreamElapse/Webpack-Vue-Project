@@ -1,0 +1,95 @@
+    <script>
+		$(function(){
+		    for(var i = 0; i < $("#banner ul").children().length; i++){
+		        if(i == 0){
+		            $("#banner ol").append('<li class="cur"></li>');
+		        }else{
+		            $("#banner ol").append('<li></li>');
+		        }
+		    }
+		    new Swipe(document.getElementById("banner"), {
+		        speed: 400,
+		        auto: 3000,
+		        disableScroll: false,
+		        callback: function(index, elem) {
+		            $("#banner ol li").removeClass("cur").eq(index).addClass("cur");
+		        }
+		    });
+		});
+    </script>
+ <link rel="stylesheet" href="/public/css/topic.css">
+<style scoped>
+    .set-box dt strong {color:#147DE6}
+    .set-box dt strong:before {background:#147DE6;}
+    .set-box dd img {width: 33%;}
+    .set-box dl {margin-bottom: 0;padding: 0.5em 1em;}
+    .footer-links li {width: 33.3%;border-right: 1px solid #bcbcbc;}    
+    .main_pro{ position: relative;}
+	.detail-main{ padding: 0.5em 1em;}
+	.detail-main01{ padding-left: 1em;}
+	.detail-main01 ul{ display: inline-block;width: 48%; margin-top: 0.5em;}
+	.detail-main01 img{ width: 50%; margin-top: 3em;}
+	.detail-main01 ul li{width: 100%; margin-bottom: 0.5em; overflow: hidden;}
+	.detail-main01 p{ display: inline-block;  float: left; width: 70%;}
+	.detail-main01 b{ color: #ea2146;}
+	.detail-main01 span{float: left; width: 1.8em; height: 1.8em; background: #ea2146; color: #fff; border-radius: 2em; text-align: center; line-height: 1.8em; font-size: 1.5em; margin-right: 0.3em;}
+	#RaD{display: none;}
+	.cj-hd{background:#0B184F!important;}
+	.detail-case{padding: 0;background: url(/public/images/topic/bushui3/bg.jpg) repeat-y;}
+	.detail-case li{margin-bottom: 0.5rem;background:#fff;padding-bottom:1.5rem;}
+	.detail-case li div { padding: 0.4em 1em 0.2rem;font-size: 1.2em;color: #132153;    text-align: left;background: none; }
+	.detail-case li div strong{color: #243131;margin-bottom:0.2rem;}
+	.detail-case li span {font-size: 0.85em;display: block;color: #677777;}
+	.detail-case li p{margin: 0 1.2em;color: #677777;font-size: 0.9em;padding-top: 0.2em;}
+	.new_tel{background: #f2f2f2;}
+	.by_bt{position:relative;}
+	.on_zx{display:block;}
+</style>
+<div class="main_pro">
+	<img src="/public/images/topic/bushui3/img_01.jpg" alt="">
+	<img src="/public/images/topic/bushui3/img_02.jpg" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_03.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_04.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_05.jpg'" alt="">	
+	<img v-lazy="'/public/images/topic/bushui3/img_06.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_07.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_08.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_09.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_10.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_11.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_12.jpg'" alt=""/>
+	<img v-lazy="'/public/images/topic/bushui3/img_13.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_14.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_15.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_16.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_17.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_18.jpg'" alt="">
+	<a class="on_zx" href="javascript:;" @click="buy(goodsList[0])"><img v-lazy="'/public/images/topic/bushui3/img_19.jpg'" alt=""></a>
+	<img v-lazy="'/public/images/topic/bushui3/img_20.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_21.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_22.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_23.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_24.jpg'" alt="">
+	<img v-lazy="'/public/images/topic/bushui3/img_25.jpg'" alt="">
+</div>
+<div class="main_pro">
+    <ul class="detail-case">
+        <li>
+          	<img v-lazy="'/public/images/topic/bushui3/img_26.jpg'" alt="">
+            <div><strong>有了这一套，肌肤水嫩一触即发</strong><span>罗婷：19岁 肤质：沙漠肌</span></div>
+            <p>我是沙漠肌，整天敷面膜皮肤还是很干涩，太难忍。后来看到美肤达人推荐水韵清新水光肌套装，抱着试试的态度入了一套，洁面乳非常温和，洗完脸后脸蛋滑滑润润，是精华液里面有很多爆水珠珠，透明质地，擦上脸上马上被吸收，皮肤瞬间变软了，现在持续用了2个月，脸上不化妆，也有水光肌的透亮！</p>
+        </li>
+        <li>
+            <img v-lazy="'/public/images/topic/bushui3/img_27.jpg'" alt="">
+            <div><strong>肌肤喝饱水，秒变18岁嫩妹纸</strong><span>小薇 ：24岁 干性肤质</span></div>
+            <p>用过N种牌子的补水产品，还是没有改善我干巴巴的皮肤，而且脸上细纹也越来越多，看起来显老像大妈。还好闺蜜推荐我用水韵清新水光肌套装，用完洗面奶后摸到脸上滑滑嫩嫩的，乳霜涂抹后带有小水珠，惊喜！第二天起床发现皮肤还是滋润细滑的，一点都不粘油！三个月过去，皮肤水灵灵，闺蜜都夸我是18岁嫩妹。</p>
+        </li>
+    </ul>
+</div>
+<img v-lazy="'/public/images/topic/bushui3/img_28.jpg'" alt="">
+<img v-lazy="'/public/images/topic/danban/img_44.jpg'"/>
+<img v-lazy="'/public/images/topic/danban/img_45.jpg'"/>
+<img v-lazy="'/public/images/topic/danban/img_46.jpg'"/>
+<img v-lazy="'/public/images/topic/danban/img_47.jpg'"/>
+<img v-lazy="'/public/images/topic/danban/img_48.jpg'"/>
+<img v-lazy="'/public/images/topic/danban/img_49.jpg'"/>

@@ -1,0 +1,216 @@
+<style scoped>
+.topic-7 div img{width: 60%; float: left; margin-right: 1em;}
+.topic-7 li{width: 20%; padding: 0.8em 1px; text-align: center; float: left;}
+.topic-7 > p:last-child{padding: 0.4em; background: #ebebeb;}
+
+.prod-about{background: #fff;}
+.prod-about p{padding: 0.5em 1em 1em; color: #5a5a5a;}
+.prod-img header{border: 0;}
+.prod-img img{margin: 1em 0;}
+.prod-efficacy li{border-bottom: 1px dashed #e1e1e1;}
+.prod-efficacy li span{width: 2em; border-right: 1px dashed #e1e1e1; font-weight: bold; font-size: 2.4em; color: #b9b9b9; text-align: center; display: table-cell; vertical-align: middle;}
+.prod-efficacy li div{padding: 0.4em 0.8em; display: table-cell;}
+.prod-efficacy li strong{font-size: 1.2em; color: #ea2143;}
+.prod-efficacy li p{color: #5c5c5c;}
+.prod-efficacy li:last-child{border-bottom: 0;}
+.prod-ingredient header{border: 0;}
+.prod-ingredient li{width: 50%; float: left;}
+.prod-ingredient li img{max-width: 80%; display: block; margin: 0 auto;}
+.prod-ingredient li div{padding: 1em 0 0.5em;}
+.prod-ingredient li b{width: 1.4em; height: 1.4em; line-height: 1.4em; background: #5d5d5d; font-weight: normal; text-align: center; color: #fff; float: left;}
+.prod-ingredient li strong{font-weight: normal; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block; margin-left: 1.8em;}
+.prod-ingredient li p{color: #5c5c5c;}
+.prod-ingredient-ft{padding: 0.5em 0 1em; margin-top: 1em; border-top: 1px dashed #e1e1e1; color: #5a5a5a;}
+.prod-step-bd{padding: 0.8em 0;}
+.prod-step img{width: 85%; margin-bottom: 0.8em;}
+.prod-step li{color: #a0a0a0; margin-bottom: 0.5em;}
+.prod-step li span{padding: 0 0.2em; background: #5d5d5d; color: #fff; float: left; margin-right: 1em;}
+.prod-step li p{padding-left: 4.5em;}
+.prod-case p:first-child{padding: 0.4em 0 0.8em; color: #000;}
+.prod-case li{padding: 0.4em 0; border-bottom: 1px solid #e1e1e1;}
+.prod-case li:last-child{border: 0;}
+.prod-case li h3{font-size: 1.2em;}
+.prod-case li span{color: #a0a0a0; display: inline-block;}
+.prod-case li span:first-of-type{width: 11em;}
+.prod-case li span:first-of-type:before{content: ""; width: 0.4em; height: 0.4em; border-radius: 0.4em; background: #a0a0a0; display: inline-block; vertical-align: middle; margin-right: 0.4em;}
+.prod-case li span:nth-of-type(2){width: 5em;}
+.prod-case li div{padding-bottom: 0.4em; border-bottom: 1px dashed #e1e1e1;}
+.prod-case li img{width: 35%; margin: 0.4em 0.4em 0.4em 0;}
+.prod-case li p{padding: 0.4em 0;}
+.prod-safety-img{padding-top: 1em; text-align: center;}
+.prod-safety-img img{width: 45%;}
+.prod-safety dl{padding-bottom: 1em; border-bottom: 1px dashed #e1e1e1;}
+.prod-safety dl:last-child{border-bottom: 0;}
+.prod-safety dt strong{padding: 0.4em 0; font-weight: normal; display: block;}
+.prod-safety dt b{padding: 0 0.4em; line-height: 1.5em; background: #5d5d5d; font-weight: normal; color: #fff; display: inline-block; margin-bottom: 0.4em;}
+.prod-safety dd p{text-indent: 1em; color: #a0a0a0;}
+
+.detail-box{padding: 0 1em; background: #fff; border-top: 1px solid #e8e8e8;}
+.detail-hd{padding: 0.5em 0; border-bottom: 1px dashed #e1e1e1; font-size: 1rem; color: #ea2143;}
+.detail-hd:before{content: ""; width: 0.4em; height: 1em; background: #ea2143; margin-right: 0.4em; float: left; margin-top: 0.2em;}
+.detail_box{padding: .5em 1em;background: #fff;}
+.detail_box div{clear:both;}
+.detail_box h3{line-height: 1.3em;font-size: 1.1em;color:#E92243;padding-bottom: .5em;border-bottom: 1px dashed #e1e1e1;}
+.detail_box h3 b{border-left: .5em solid #E92243;display: inline-block;height: 1.2em;line-height: 1.2em;padding-left: .3em;font-weight:normal;}
+.detail_box span{color: #a48100;}
+.detail_box div+p{color:#ED556B;padding-top:0.9em;font-weight:bold;padding-left:6em;}
+.box{padding-bottom:1.5em;}
+.img_box{background: #fff;}
+.img_box,.img_box img{width: 100%;padding-left:0.5em;padding-right:2em;}
+.ksms li{padding-bottom: 1em;margin-bottom: 1em;font-size: 1em;}
+.ksms li h3{color: #5a5a5a;font-weight: normal;border-bottom: none;}
+.ksms li h4{margin: .5em 0;font-weight: normal;}
+.ksms li h4 span{color: #fff;background: #5d5d5d;padding: 0 .5em;}
+.ksms li p{color: #a0a0a0;line-height: 1.5em;}
+.d1{float:left;font-size:4.3em;color:#B2B2B2;border-right:1px dashed;padding:0 0.2em;}
+.div1{border-top:1px dashed;}
+.p2{font-size:0.9em;padding-left:6.7em;}
+.p3{text-align:left;font-size:0.8em;padding:0.2em 0.4em;}
+.p4{color:#EB2E4E;border-bottom:1px dashed;padding:0 0 0.4em 0;font-size:1.2em;}
+.p4+p{padding-top:0.2em;}
+.topic-bd {padding: 0.8em;background:#fff;}
+.topic-7 div img{width: 35%;height: auto;float: left;margin-right: 1em;}
+.topic-7 li{width: 25%;}
+.text8{color: #EB2748;padding-bottom: 0.2em;}
+.topic-7 strong{font-size: 1.2em; color: #000;}
+.prod-case li span:first-of-type{width: 11em;}
+
+</style>
+
+<div class="detail_box">
+    <h3><b>蛇毒面膜，给肌肤极致奢宠</b></h3>
+</div>
+<div class="img_box"><img src="/public/images/goods_res/261/img_01.jpg" alt=""></div>
+<div class="detail_box">
+    <p class="p4">凝粹高机能活肤素SYN-AKE</p>
+    <p>生物技术模拟蛇毒液入侵人体肌肤，促进美肤精华渗透至肌底， 有助淡化黑色素及暗哑死皮，令肌肤焕白盈亮。</p>
+</div>
+<div class="detail_box">
+    <p class="p4">天然密闭导流技术</p>
+    <p>天蚕丝膜体，紧密贴合肌肤沟纹，纯天然密闭导流精华输 送系统，吸收营养更充分！</p>
+</div>
+<ntell></ntell>
+<div class="prod-efficacy detail-box">
+    <header class="detail-hd">直击6大肌肤问题，“蛇毒”活肤焕颜</header>
+    <ol>
+        <li>
+            <span>1</span>
+            <div>
+                <strong>极致补水</strong>
+                <p>为肌肤源源补充水分，同步修复肌肤锁水保湿屏障，帮助锁住水分。</p>
+            </div>
+        </li>
+        <li>
+            <span>2</span>
+            <div>
+                <strong>美白亮肤</strong>
+                <p>有效抑制黑色素形成及沉淀、淡化色斑，令肌肤纯净细腻，透白无瑕。</p>
+            </div>
+        </li>
+        <li>
+            <span>3</span>
+            <div>
+                <strong>紧致轮廓</strong>
+                <p>防止面部肌肤出现松弛现象，使用后轮廓紧致度显著提升。</p>
+            </div>
+        </li>
+        <li>
+            <span>4</span>
+            <div>
+                <strong>增强弹性</strong>
+                <p>促进肌肤胶原蛋白生成，增强细胞组织弹性，令肌肤弹润嫩滑。</p>
+            </div>
+        </li>
+        <li>
+            <span>5</span>
+            <div>
+                <strong>平复细纹</strong>
+                <p>4%类蛇毒素，帮助迅速抚平皱纹、干纹，呈现平滑娇嫩完美肤质。</p>
+            </div>
+        </li>
+        <li>
+            <span>6</span>
+            <div>
+                <strong>深层修复</strong>
+                <p>提升肌肤抵抗力，帮助修复新陈代谢、令肌肤更光滑、净透，重焕白净光彩。</p>
+            </div>
+        </li>
+    </ol>
+</div>
+	
+<ntell></ntell>
+
+<div class="detail_box">
+    <h3><b>天然精华成分 &nbsp;&nbsp;让您肌肤健康美白</b></h3>
+</div>
+<div class="topic-bd topic-7" id="topic-7">
+	<div class="clearfix">
+		<img src="/public/images/goods_res/261/AE.jpg" alt="">
+		<strong>4%类蛇毒素SKY-AKI</strong>
+		<p>SKY-AKI是一种三胜肽成分，一种与蛇毒血清蛋白分子相似的化学结构。具有良好的润肤紧致功效。</p>
+	</div>
+	<ul class="clearfix">
+		<li>
+			<img src="/public/images/goods_res/261/compositon_01.jpg" alt="">
+			<p class="text8">提亮肤色 </p><p >烟酰胺</p><p class="p3">即维生素B3，修复受损的角质层脂质屏障，改善暗黄肤色。</p>
+		</li>
+		<li>
+			<img src="/public/images/goods_res/261/compositon_02.jpg" alt="">
+			<p class="text8">美白去黄</p><p>马齿苋</p><p class="p3">含丰富的维生素C、维生素E，有显著的美白及抗氧化功效。</p>
+		</li>
+		<li>
+			<img src="/public/images/goods_res/261/compositon_03.jpg" alt="">
+			<p class="text8">极润补水</p><p > 白茅</p><p class="p3">富含矿物质钾，瞬间提升肌肤含水量，锁水更深更持久。</p>
+		</li>
+		<li>
+			<img src="/public/images/goods_res/261/compositon_04.jpg" alt="">
+            <p class="text8">提高抵御力</p><p > 丝氨酸</p><p class="p3">可促进脂肪和脂肪酸的新陈代谢，提升肌肤自我抵抗能力。</p>
+		</li>
+	</ul>
+</div>
+<ntell></ntell>
+<div class="prod-step detail-box">
+    <header class="detail-hd">正确使用 效果加倍</header>
+    <div class="prod-step-bd">
+        <div><img src="/public/images/goods_res/261/img_02.jpg" alt=""></div>
+        <ol>
+            <li>
+                <span>STEP 1</span>
+                <p>彻底清洁脸部后，将面膜完整覆盖到脸部，并最大程度抚平，用手指轻压排出面膜与皮肤间的空气。</p>
+            </li>
+            <li>
+                <span>STEP 2</span>
+                <p>15-20分钟后，将面膜取下，无需再次洗脸，用手按摩至完全吸收即可。</p>
+            </li>
+        </ol>
+    </div>
+</div>
+<ntell></ntell>
+<div class="prod-case detail-box">
+    <header class="detail-hd">一起成为美丽的瓷肌公主</header>
+    <ul>
+        <li>
+            <div>
+                <h3>“小黄人” 变 “白雪公主” 效果太赞了</h3>
+                <span>美容达人:ANNYLEE</span>
+                <span>24岁</span>
+                <span>肤质：干性肌肤 </span>
+            </div>
+          <img src="/public/images/goods_res/261/img_03.jpg" alt="">
+            <img src="/public/images/goods_res/261/img_04.jpg" alt="">
+            <p>我从小皮肤就不好，又黄又干那种，“神偷奶爸” 流行的那段时间朋友们都叫我“小黄人”！他们肯定想不到传说中的“小黄人”也有变身“白雪公主”的一天，再也不用厚厚粉底来遮掩。多亏用了蛇毒面膜，补水效果杠杠的，美白效果超赞~不愧为传说中的蛇蝎美人变身利器！</p>
+        </li>
+        <li>
+            <div>
+                <h3>超好用，修复美白效果杠杠的！</h3>
+                <span>摄影达人：Shally</span>
+                <span>24岁</span>
+                <span>肤质：干性肌肤</span>
+            </div>
+            <img src="/public/images/goods_res/261/img_05.jpg" alt="">
+            <img src="/public/images/goods_res/261/img_06.jpg" alt="">
+            <p>作为一个地道的摄影迷，出外采风晒后修复一定要做好，圈里好友都在用蛇毒面膜，晒后修复很不错，真的不愧是天蚕丝质地，轻薄柔软，敷在脸上非常服帖，补水保湿不说还能镇静肌肤，一点都不刺激，细腻滋润，还能美白哦~推荐给JMS！</p>
+        </li>
+    </ul>
+</div>
+<ntell></ntell>

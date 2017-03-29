@@ -1,0 +1,60 @@
+<style scoped>
+    .pr{position:relative;}
+    .pr a{position: absolute;display: block; width:30%; height:75%; cursor: pointer;}
+    .pr a.buy_btn1{width:45%; bottom:5%; left:3%;}
+    .pr a.buy_btn2{width:45%; bottom:5%; left:53%;}
+    .pr a.buy_btn3{top:22%; right:7.5%; width:35%;}
+    .pr a.buy_btn4{bottom:32%;}
+    .top_click{position:relative;}
+    .top_click a{position:absolute; bottom:4%; left:24%; width:12%; height:14%;cursor: pointer;}
+    .top_click a:nth-of-type(2){left:57%;}
+    .top_click a:nth-of-type(3){left:88%;}
+</style>
+
+<img src="/public/images/act/20170323/img_01.jpg" />
+<img src="/public/images/act/20170323/img_02.jpg" />
+<div class="topbuy">
+    <img src="/public/images/act/20170323/img_03.jpg" />
+</div>
+<img src="/public/images/act/20170323/img_04.jpg" /> 
+<img src="/public/images/act/20170323/img_05.jpg" /> 
+<div class="pr">
+    <img src="/public/images/act/20170323/img_06.jpg" /> 
+    <a class="buynow buy_btn1" @click="tel()"></a>
+    <a class="buynow buy_btn2" @click="tel()"></a>
+</div>
+<img src="/public/images/act/20170323/img_07.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20170323/img_08.jpg" />
+    <a class="buynow buy_btn3" @click="buy(giftList[1][0],1)"></a>
+</div>
+<div class="pr">
+    <img src="/public/images/act/20170323/img_09.jpg" />
+    <a class="buynow buy_btn3" @click="buy(giftList[1][1],1)"></a>
+</div>
+<div class="pr">
+    <img src="/public/images/act/20170323/img_10.jpg" />
+    <a class="buynow buy_btn3" @click="buy(giftList[2][1],1)"></a>
+</div>
+<div class="pr">
+    <img src="/public/images/act/20170323/img_11.jpg" />
+    <a class="buynow buy_btn1" @click="buy(giftList[2][3],1)"></a>
+    <a class="buynow buy_btn2" @click="buy(giftList[2][0],1)"></a>
+</div>
+<div class="pr">
+    <img src="/public/images/act/20170323/img_12.jpg" />
+    <a class="buynow buy_btn1" @click="buy(giftList[2][5],1)"></a>
+    <a class="buynow buy_btn2" @click="buy(giftList[2][6],1)"></a>
+</div>
+<img src="/public/images/act/20170323/img_13.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20170323/img_14.jpg" />
+    <a class="buynow buy_btn1" @click="buy(giftList[3][1])"></a>
+    <a class="buynow buy_btn2" @click="buy(giftList[3][2])"></a>
+</div> 
+<img src="/public/images/act/20170323/img_15.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20170323/img_16.jpg" />
+    <a class="buynow buy_btn1" @click="buy(giftList[3][0])"></a>
+    <a class="buynow buy_btn2" @click="buy(giftList[3][3])"></a>
+</div> 

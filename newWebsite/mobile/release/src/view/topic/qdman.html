@@ -1,0 +1,83 @@
+    <script>
+        $(function(){
+            for(var i = 0; i < $("#banner ul").children().length; i++){
+                if(i == 0){
+                    $("#banner ol").append('<li class="cur"></li>');
+                }else{
+                    $("#banner ol").append('<li></li>');
+                }
+            }
+            new Swipe(document.getElementById("banner"), {
+                speed: 400,
+                auto: 3000,
+                disableScroll: false,
+                callback: function(index, elem) {
+                    $("#banner ol li").removeClass("cur").eq(index).addClass("cur");
+                }
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="/public/css/topic.css">
+    <style scoped>
+    	i{font-style: normal;}
+    	.arti{background:#e7f4fc; padding:0 0.7em;}
+    	.arti .arti_min{background: #fff; padding:0.8em 0.8em; padding-bottom: 1.2em;}
+    	.arti h4{border-bottom:1px solid #000; padding:0.4em; font-size: 1.2em;}
+    	.arti i{background: #3272a9; color:#fff; border-radius: 0.2em; padding: 0.1em 0.2em; margin-right: 0.4em;}
+    	.arti p{padding: 0.5em 0; border-bottom: 2px solid #000;}
+    	.arti span{color:#999; font-size:0.85em ;padding-top: 1em; display: inline-block; line-height: 1.7em; text-indent:2em;}
+    	.by_bt{position:relative;}
+        .by_bt .on_zx{ width:27%; height:2.3em; position:absolute; right:8%; bottom:12%;}
+        .by_bt .on_zx2{right:6%}
+    </style>
+
+    <section>
+        <img src="/public/images/topic/qudou/201607/img_01.jpg"/>
+        <img src="/public/images/topic/qudou/201607/img_02.jpg"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_03.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_04.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_05.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_06.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_07.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_08.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_09.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_10.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_11.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_12.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_13.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_14.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_15.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_16.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_17.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_18.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_19.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_20.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_21.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_22.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_23.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_24.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_25.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_26.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_27.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_28.jpg'"/>
+        <a class="on_zx" href="javascript:;" @click="buy(goodsList[1])"><img v-lazy="'/public/images/topic/qudou/201607/img_29.jpg'"/></a>
+        <a class="on_zx" href="javascript:;" @click="buy(goodsList[0])"><img v-lazy="'/public/images/topic/qudou/201607/img_30.jpg'"/></a>
+        <a class="on_zx on_zx2" href="javascript:;" @click="buy(goodsList[2])"><img v-lazy="'/public/images/topic/qudou/201607/img_31.jpg'"/></a>
+        <a class="on_zx on_zx2" href="javascript:;"  @click="buy(goodsList[3])"><img v-lazy="'/public/images/topic/qudou/201607/img_32.jpg'"/></a>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_33.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_34.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_35.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_36.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_37.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_38.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_39.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_40.jpg'"/>
+        <img v-lazy="'/public/images/topic/qudou/201607/img_41.jpg'"/>
+		<img v-lazy="'/public/images/topic/bushui3/img_28.jpg'" alt="">
+        <img v-lazy="'/public/images/topic/danban/img_44.jpg'"/>
+        <img v-lazy="'/public/images/topic/danban/img_45.jpg'"/>
+        <img v-lazy="'/public/images/topic/danban/img_46.jpg'"/>
+        <img v-lazy="'/public/images/topic/danban/img_47.jpg'"/>
+        <img v-lazy="'/public/images/topic/danban/img_48.jpg'"/>
+        <img v-lazy="'/public/images/topic/danban/img_49.jpg'"/>
+    </section>

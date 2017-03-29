@@ -1,0 +1,318 @@
+<style scoped>
+/*.container{background: #fff;}
+.te_s{background: #f4f4f4;}*/
+.sh_tit_cha{ background:#fff; border-bottom:1px dashed #dc1d6b; color:#db0743;}
+.pro_des{ padding:1em 0.5em;}
+.pro_des div:nth-child(1){ float:left; width:42%; font-size:0.9em; line-height:1.3em;}
+.pro_des div:nth-child(1) img{ padding-bottom:10px; width:90%; padding-left:10%;}
+.pro_des div:nth-child(2){ float:right; width:58%; padding-top:56px; text-align:center;}
+.pro_des img{ width:90%;}
+.suit_des{ padding:0; border:1px solid #d9d9d9;}
+.suit_des h3{ font-weight:normal; color:#5e5e5e; background:#eeeeee; padding:0.2em;}
+.suit_des p{padding:0.2em;}
+.main .hidden{display: none;}
+.w100{background: #fff;}
+.w100 img{width:100%;}
+.w85 img{width:85%;max-width: 490px;}
+.w603{padding-bottom:1em;}
+.w603 img{width:95%;max-width: 603px;}
+.w85 span{text-align: center;display: block;}
+.w85 h2{font-size: 1.0em;color:#000;}
+.w85 p.deta{color:#000; font-size:.9em; display: inline-block;width:80%;background: #f5f5f5; font-weight:normal;}
+.pr{position: relative;}
+.o_order{position: absolute;top: 14%;left: 4%;width: 43%;height: 45%;}
+.on_chat{position: absolute;top:14%;right:4%;width:43%;height:45%;}
+.zlb ul li.ht p{color:#585858;font-size: 0.9em;padding:0 0.8em; }
+.zlb ul li.ht img{width:100%;}
+.js_01 .swinfo .buybut{border:1px solid #bf0238;border-radius: 0.2em;box-shadow: 0 0.1em 0.1em #ccc;}
+.js_02{margin:0; font-size:.8em;}
+.js_02 h3{padding:0.2em 0.8em;}
+.js_02 p{padding:0.4em 0.8em; font-size:1em;}
+.suit_des{border:0;}
+.why_c dl{padding:0 0.8em;}
+.why_c dl dt{border-bottom: 1px solid #ccc;text-align: center;padding:0.4em 0 0.8em;}
+.why_c dl dt img{width:100%;max-width: 220px;}
+.why_c dl.w322 dt{padding-bottom: 0;}
+.why_c dl.w322 dt img{width:100%;max-width: 322px;}
+.why_c dl.w322 dt span{display: inline-block;text-align: center;width:54%;}
+.why_c dl dt span{display: inline-block;text-align: center;width:37%;}
+.why_c dl dd h2{color:#000;font-size: 1em;padding:0.5em 0;}
+.b_adv{padding-top:0.6em;}
+.b_tit{background: #ccc;padding:0.4em 0 0.4em 0.6em;color:#000;}
+.b_tit span{display: inline-block;width:6%;}
+.b_tit span img{width:95%;max-width: 40px;}
+.b_adv ul li span{padding:0.6em 0;display: block;}
+.b_adv ul li{text-align: center;}
+.w100 ul li.w_li{ margin:.5em auto; line-height:2em; font-size:0.9em; color:#555555; background:#f5f5f5;}
+.w100 ul li .wli_tit{ background:#ed3454;padding:0 0.6em; margin-right: 0.5em; color:#fff;display: inline-block;}
+.w100 ul li .wli_aft{ font-weight:bold;}
+.w100 .dk_L{ width:34.5%; padding:0.5em 0;}
+.w100 .dk_R{ text-align:left; width:62%; font-size:0.8em;padding-top: 1.5em;}
+.red{ color:#db0743;}
+.rm_01{ padding:1em; color:#000;background: #fff;}
+.w_in{ color:#555555; font-size:.9em;}
+/*	.w100 .wb_L{ width:36%;}
+.w100 .wb_R{ text-align:left; width:62%; font-size:0.9em;padding-top: 0em;}
+.w100 .wb_R .wb_li{ margin:.5em auto; line-height:2em; font-size:1.2em; color:#555555; background:#f5f5f5; display:block;}
+.w100 .wb_R .wb_li .wli_tit{ background:#ed3454; width:1em; padding:0.3em 0.6em; margin-right: .5em; color:#fff;}*/
+/*.w100 .wb_R .wb_li .redwb{color:#db0742; font-size:1.4em; line-height: 1.2em;}*/
+/*jzy-20150810优化*/
+.x_Pk{padding:0.8em 1em 0 1em;font-size: 1em;}
+.x_Pk ul{display: table;} 
+.x_Pk ul li{display: table-cell;width:35%;text-align: center;font-size: 0.9em;}
+.x_Pk ul li i{color:#838383;font-size: 0.9em;line-height:2em;font-style: normal;} 
+.x_Pk ul li.sec{width:20%;vertical-align: middle; }
+.x_Pk ul li.sec span{background:#db0742;color:#fff;display: inline-block; width:3.4em;height:3.4em;line-height:1em;border-radius: 4em;vertical-align: middle; } 
+.x_Pk ul li.sec span b{display: block;font-size: 1.5em;height:1.2em;line-height:1.5em;font-weight: normal;}
+
+.kj dt.w_li{ display: table; font-size:0.9em; color:#555555; background:#f5f5f5;width:100%;padding:0.2em 0 0.2em 0.2em;}
+.kj dt .wli_tit{/* background:#ed3454;  padding:0em 0.6em;*/display: table-cell; margin-right: 0.5em;margin-left:0.5em; color:#555;}
+.kj dt .wli_tit b{border:0.1em solid #555;display:inline-block;font-size: 0.9em;width:1.5em;height:1.5em;line-height:1.3em;margin:0.2em 0.2em 0.2em 0;vertical-align: middle;text-align:center;font-weight: bold;border-radius: 1em;}
+.kj dt .wli_aft{ font-weight:bold;display: table-cell;vertical-align: middle;}
+.kj{padding:0.8em 1em 0 1em;font-size: 1em;}
+.kj dl dd p{font-size: 0.8em;padding:0em 0 1em;}
+.kj ul{display: table;} 
+.kj ul li{display: table-cell;width:28%;text-align: center;font-size: 0.9em;}
+.kj ul li i{color:#838383;font-size: 0.9em;line-height:2em;font-style: normal;} 
+.kj ul li.sec{width:22%;vertical-align: middle; text-align: left;padding-left:0.5em;}
+.kj ul li.sec span{background:#db0742;color:#fff;padding-left:0.2em; display: inline-block;/* width:4.2em;*/height:2em;line-height:2em;border-radius: 0;vertical-align: middle; position: relative;z-index: 99;}
+.kj ul li.sec span:after{content:""; position: absolute;right:-30%;top:-26%;/*width:1em;height:2em;*//*background:#db0742;*/ border-top:1.5em solid transparent;border-bottom: 1.5em solid transparent;border-left: 1.8em solid #db0742;z-index: -1;} 
+.kj ul li.sec span b{display: block;font-size: 1.5em;height:1.2em;line-height:1.5em;font-weight: normal;}
+i.reds{color:#e35f79;font-style:normal;}
+.whit{text-align: center;color:#000;font-size: 2.2em;font-weight: bold;background: #fff;}
+.whit b{color:#ed3454;}
+.whit em{font-style: italic;font-size: 1.5em;}
+.cp{padding:1em;background: #fff;}
+.cp dl{display: table;}
+.cp dl dt{display: table-cell;width:60%;}
+.cp dl dd{padding-left:0.2em;font-size: 0.95em;}
+.cp dl dt img{width:95%;max-width: 330px;}
+.cp p{background:#f5f5f5;margin:0.4em 0; }
+.cp p .wli_tit{ background:#ed3454; width:1em; padding:0em 0.4em; margin-right: .5em; color:#fff;}
+.steps{display: table;padding-bottom:1em;}
+.steps .wb_L{ width:36%;display: table-cell;vertical-align: middle;text-align: center;}
+.steps .wb_L img{width:86%;max-width: 198px;}
+.steps .wb_R{ text-align:left; width:62%;display: table-cell;vertical-align: middle; font-size:0.9em;padding-top: 0em;}
+.steps .wb_R .wb_li{ margin:.5em auto;height:2em; line-height:2em; font-size:1.2em; overflow: hidden; color:#555555; background:#f5f5f5; display:block;}
+.steps .wb_R .wb_li .wli_tit{ background:#ed3454; width:4em;display: inline-block; text-align: center;  float:left; /*padding:0 0.4em;margin-right: .3em;*/ color:#fff;}
+.steps .wb_R .wb_li .redwb{color:#db0742; font-size:1.6em; /*line-height: 1.2em;*/}
+
+.clear{ clear:both;}
+.imgsn lable{width:3em; display:inline-block; font-size:1em; line-height:1.7em; height:1.7em; vertical-align:middle; color:#515151;}
+.infor_t p { color: #515151;}
+.or_form input {border: 1px solid #d1d1d1;display: inline-block;height: 2.5em;line-height: 2em;text-indent: 0.5em;vertical-align: middle;width: 80%;}
+.or_form input.sub{width:90%; margin:0em auto; background:#1dbe56; height:2em; line-height:2em; text-align:center; color:#fff; font-size:1.2em; font-family:'Microsoft YaHei'; border-radius:.2em; margin-bottom:1em;}
+/*20151211修改*/
+.y_b{background: #fcff00;color:#d1052a;margin:0 1em 0em 1em;padding:0.2em;text-align: justify;text-indent: 2em;}
+.pa_l{background: #fff;padding-bottom:1em;}
+.adv_img{padding-bottom:1em;}
+</style>
+
+	<!--推荐-->
+	<div class="detail-box"><div class="cj-hd">测1测 • 你是哪种类型暗沉肌？</div></div>
+	<div class="w100"><img src="/public/images/q_goods/459/img_01.jpg" alt="" /></div>
+	<div class="w100"><img src="/public/images/q_goods/459/img_02.jpg" alt="" /></div>
+    <div class="w100">
+    	<ul style="padding:0.2em 0.8em 0.6em;color:#000;background:#fff;">
+        	<li class="w_li"><span class="wli_tit">1</span>大油田"，有痘痘、粉刺伴随  —  <span class="wli_aft">油浊黑</span></li>
+            <li class="w_li"><span class="wli_tit">2</span>超越30岁，细纹、干纹陆续浮现  —  <span class="wli_aft">熟龄黑</span></li>
+            <li class="w_li"><span class="wli_tit">3</span>家族遗传，天生皮肤黑色素偏多  —  <span class="wli_aft">遗传黑</span></li>
+            <li class="w_li"><span class="wli_tit">4</span>日晒、辐射导致的色素沉着  —  <span class="wli_aft">色素黑</span></li>
+            <li class="w_li"><span class="wli_tit">5</span>色斑、过敏、污染等化学物损伤  —  <span class="wli_aft">受损黑</span></li>
+            <li class="w_li"><span class="wli_tit">6</span>气血不足，代谢缓慢，病理性的暗沉  —  <span class="wli_aft">病理黑</span></li>
+        </ul>
+    </div>
+
+	<div class="detail-box"><div class="cj-hd">颜值界大咖 李治廷为韩国瓷肌代言</div></div>
+	<div class="w100" style="overflow:hidden;">
+    	<p class="dk_L fl"><img src="/public/images/q_goods/459/img_03.jpg" alt="" /></p>
+        <p class="dk_R fl">
+        	作为艺人，熬夜是常有的事，面对镜头，必须保持皮肤的白暂、干净、柔嫩。要出色地胜任工作，就必须把皮肤健康问题放在首位。韩国瓷肌抑黑焕白套装，安全温和、持久有效，改善“暗黄肌”效果显著。
+        </p>
+    </div>
+	<!--功效-->
+	<div class="detail-box"><div class="cj-hd">PK • 超越传统美白产品功效！</div></div>
+
+	<div class="w100"><img src="/public/images/q_goods/459/img_07.jpg" alt="" /></div>
+	<div class="w100"><img src="/public/images/q_goods/459/img_08.jpg" alt="" /></div>
+	
+	<div class="detail-box"><div class="cj-hd">科技 • 真正让肌肤层层白！</div></div>
+	<div class="w100 kj" style="padding:0.8em 0.5em 0 0.5em">
+		<dl>
+			<dt class="w_li" style="text-align:left;"><span class="wli_tit" style="margin-right:0.5em;"><b>1</b></span><span class="wli_aft">Symwhite肌底净透科技，从肌底赶走暗黄</span></dt>
+			<dd><p>抑制黑色素的效果，是曲酸的210倍，熊果苷的32倍。能有效改善肤色不均，降低紫外线照射肌肤引起的皮肤着色，让肌肤嫩白透亮。</p></dd>
+		</dl>
+		<ul>
+			<li class="fir"><img src="/public/images/q_goods/459/kj01_01.jpg"><br/></li>
+			<li class="sec"><span>改善暗沉</span></li>
+			<li class="thr"><img src="/public/images/q_goods/459/kj01_02.jpg"><br/></li>
+		</ul>
+	</div>
+	<div class="w100 kj"style="padding:0.8em 0.5em 0 0.5em" >
+		<dl>
+			<dt class="w_li" style="text-align:left;"><span class="wli_tit" style="margin-right:0.5em;"><b>2</b></span><span class="wli_aft">提升美白度、透亮度、弹滑度：肌底净透科技</span></dt>
+			<dd><p>美白因子遍布表皮、肌理、肌底、有效瓦解色素，赶走肌肤暗黄，令肌肤润白透亮。</p></dd>
+		</dl>
+		<ul>
+			<li class="fir"><img src="/public/images/q_goods/459/kj02_01.jpg"><br/></li>
+			<li class="sec"><span>改善色素</span></li>
+			<li class="thr"><img src="/public/images/q_goods/459/kj02_02.jpg"><br/></li>
+		</ul>
+	</div>
+	<div class="w100 kj" style="padding:0.8em 0.5em 1em 0.5em">
+		<dl>
+			<dt class="w_li" style="text-align:left;"><span class="wli_tit" style="margin-right:0.5em;"><b>3</b></span><span class="wli_aft">隔绝黑色素形成源头，持久白皙：H2H超渗透术</span></dt>
+			<dd><p>核心成分微囊深入渗透层层肌肤结构中，稳定起效。持续美白，长效抑黑，可与"美白针"媲美。</p></dd>
+		</dl>
+		<ul>
+			<li class="fir"><img src="/public/images/q_goods/459/kj03_01.jpg"><br/></li>
+			<li class="sec"><span>改善粗糙</span></li>
+			<li class="thr"><img src="/public/images/q_goods/459/kj03_02.jpg"><br/></li>
+		</ul>
+	</div>
+	<div class="detail-box"><div class="cj-hd">热卖 • 抑黑焕白套装销量领航！</div></div>
+	<div class="rm_01">
+    	<ul>
+        	<li>•  用户信任，<span style="color:red">韩国瓷肌销量第一</span>产品</li>
+        	<li>•  <span style="color:red">热销847,346套</span>，用户好评保障</li>
+        	<li>•  中华保险<span style="color:red">品质承保</span>，安全、安心</li>
+        	<li>•  馨肤白美白成分，安全<span style="color:red">高效口碑赞</span></li>
+        </ul>
+    </div>
+	<!-- 电话样式 -->
+	<!-- <div style="padding:0.8em 0; background:#fafafa; text-align:center; clear:both;">
+		<p style="padding-bottom: 0.4em; color:#000;font-size:1.2em;">美容老师1对1教你解决肌肤问题</p>
+		<a href="tel:{$tel}" onclick="PIWI_SUBMIT.Call_Mid()">
+			<img style="width:42%; margin:0 0.4em;" src="/templates/common/images/common/consult_tel.png" alt="">
+		</a>
+		{if $domain_host neq 'q.chinaskin.cn' || $channel neq ''}
+		<a id="t_chatQQ05" href="javascript:;" onclick="PIWI_SUBMIT.QQ_Mid()">
+			<img style="width:42%; margin:0 0.4em;" src="/templates/common/images/common/consult_QQ.png" alt="">
+		</a>
+		{else}
+		<a href="#orderfrm" class="on_ord" onclick="PIWI_SUBMIT.Orderwx_Mid()" >
+			<img style="width:42%; margin:0 0.4em;" src="/templates/common/images/common/on_zx.png" alt="">
+		</a>
+		{/if}
+	</div> -->
+	<!-- 电话样式 -->
+    <div class="detail-box"><div class="cj-hd">体验 • 从未感受过的美白感觉</div></div>
+    <div class="w100"><img src="/public/images/q_goods/459/ty_01.jpg" alt="" /></div>
+	<div class="w100"><img src="/public/images/q_goods/459/ty_02.jpg" alt="" /></div>
+	<div class="w100"><img src="/public/images/q_goods/459/ty_03.jpg" alt="" /></div>
+     
+    <div class="detail-box"><div class="cj-hd">惊喜 • 这是值得等待的4个过程</div></div>
+    <div class="w100"><img src="/public/images/q_goods/459/qj_01.jpg" alt="" /></div>
+    <div class="w100">
+    	<ul style="padding:0.2em 0.8em 0.6em;color:#000;">
+        	<li class="w_li"><span class="wli_tit"><b>阶段一</b></span>让你的肌肤喝饱水</li>
+            <li class="w_in">缺水粗糙首先被解决，你会感到自己的皮肤水润起来，触感柔嫩，气色红润。</li>
+            <li class="w_li"><span class="wli_tit"><b>阶段二</b></span>肌底开始净白全脸</li>
+            <li class="w_in">黄气、暗沉等色素沉淀逐渐澄净，真正由内而外晶莹剔透，饱满肌细胞，淡化色斑。</li>
+            <li class="w_li"><span class="wli_tit"><b>阶段三</b></span>肌理去黄深度水润</li>
+            <li class="w_in">肌肤水嫩嫩，美白渗透肌底，让肌肤逐步如白瓷般细致，焕发出年轻肌肤的光泽。</li>
+            <li class="w_li"><span class="wli_tit"><b>阶段四</b></span>表皮焕亮收紧毛孔</li>
+            <li class="w_in">暗黄遁形，黑色素难以再度形成，整体气色明显改善，肌肤宛若新生。</li>
+        </ul>
+    </div>
+    <div class="detail-box"><div class="cj-hd">天然 • 植物成分安全美白</div></div>
+    <div class="w100"><img src="/public/images/q_goods/459/tr_01.jpg" alt="" /></div>
+    <div class="detail-box"><div class="cj-hd">5步 • 修护去黄，持久美白</div></div>
+    <div class="w100 steps" style="padding-top:1em;">
+    	<p class="wb_L"><img src="/public/images/q_goods/459/wubu_01.jpg" alt="" /></p>
+        <p class="wb_R">
+        	<em class="wb_li"><span class="wli_tit">STEP 1</span><span class="redwb">&nbsp;清&nbsp;</span>卸妆洗颜乳</em>
+            <em>彻底卸妆+深入清洁同步进行，彩妆污垢都洗净，毛孔自由呼吸，真透爽~</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100 steps">
+    	<p class="wb_L"><img src="/public/images/q_goods/459/wubu_02.jpg" alt="" /></p>
+        <p class="wb_R">
+        	<em class="wb_li"><span class="wli_tit">STEP 2</span><span class="redwb">&nbsp;透&nbsp;</span>角质调整膜</em>
+            <em>透明的啫喱搓搓搓，脸上的废旧角质就被搓掉了。看得到的效果，搓完皮肤嫩嫩的！</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100 steps">
+    	<p class="wb_L"><img src="/public/images/q_goods/459/wubu_03.jpg" alt="" /></p>
+        <p class="wb_R">
+        	<em class="wb_li"><span class="wli_tit">STEP 3</span><span class="redwb">&nbsp;水&nbsp;</span>亮白肌底液</em>
+            <em>一触碰到皮肤，肌底液就像被毛孔"拉"进去一样，一下就被吸光光，不黏，快从肌底白润起来吧~</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100 steps">
+    	<p class="wb_L"><img src="/public/images/q_goods/459/wubu_05.jpg" alt="" /></p>
+        <p class="wb_R ">
+        	<em class="wb_li"><span class="wli_tit">STEP 4</span><span class="redwb">&nbsp;白&nbsp;</span>五谷焕彩膜</em>
+            <em>每周使用2-3次，面膜质感像雪糕那样稠密，锁住水感透白，不让美白白费功夫。</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100 steps">
+    	<p class="wb_L"><img src="/public/images/q_goods/459/wubu_04.jpg" alt="" /></p>
+        <p class="wb_R">
+        	<em class="wb_li"><span class="wli_tit">STEP 5</span><span class="redwb">&nbsp;亮&nbsp;</span>焕彩精华霜</em>
+            <em>只是"白"肯定不够！还要水感，通透，白里透红。精华霜都可以帮到你哦，淡淡的香味，饱含五谷精华呢！</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    
+    <!-- 电话样式 -->
+	<!-- <div style="padding:0.8em 0; background:#fafafa; text-align:center; clear:both;">
+		<p style="padding-bottom: 0.4em; color:#000;font-size:1.2em;">美容老师1对1教你解决肌肤问题</p>
+		<a href="tel:{$tel}" onclick="PIWI_SUBMIT.Call_Mid()">
+			<img style="width:42%; margin:0 0.4em;" src="/templates/common/images/common/consult_tel.png" alt="">
+		</a>
+		{if $domain_host neq 'q.chinaskin.cn' || $channel neq ''}
+		<a id="t_chatQQ04" href="javascript:;" onclick="PIWI_SUBMIT.QQ_Mid()">
+			<img style="width:42%; margin:0 0.4em;" src="/templates/common/images/common/consult_QQ.png" alt="">
+		</a>
+		{else}
+		<a href="#orderfrm" class="on_ord" onclick="PIWI_SUBMIT.Orderwx_Mid()" >
+			<img style="width:42%; margin:0 0.4em;" src="/templates/common/images/common/on_zx.png" alt="">
+		</a>
+		{/if}
+	</div> -->
+	<!-- 电话样式 -->
+	
+	<!--案例-->
+	<div class="detail-box"><div class="cj-hd">1套 • 她们都变白啦！</div></div>
+	<div class="w100 w85 w603">
+		<ul style="padding-top:0.8em;">
+			<li>
+				<span><img src="/public/images/q_goods/269/case_01.jpg"></span>
+				<div style="padding:0 0.8em 0.5em;">
+				<h2 style="height:2em;line-height:2em;font-weight: normal;color:#db0742;font-size:1.5em;">天生黑皮肤，真的能白！</h2>
+				<p class="deta">
+				BOBO&nbsp;&nbsp;&nbsp;23岁&nbsp;&nbsp;&nbsp;遗传暗沉，毫无光泽
+				</p>
+				<p style="color:#666;padding-top:0.4em; font-size:.9em;">
+				毕业工作两年了，每天面对着电脑，而且还经常性加班。皮肤真的经不住折腾，变得又干有暗沉，一下子像老了好几岁。朋友介绍用了韩国瓷肌的产品，坚持用了一套，效果非常明显，我又是青春无敌小美女了！
+				</p>
+				</div>
+			</li>
+			<li>
+				<span><img src="/public/images/q_goods/269/case_02.jpg"></span>
+				<div style="padding:0 0.8em 0.5em;">
+				<h2 style="height:2em;line-height:2em;font-weight: normal;color:#db0742;font-size:1.5em;">整个脸都均匀亮白，效果真心赞~</h2>
+				<p class="deta">雅燃&nbsp;&nbsp;&nbsp;27岁&nbsp;&nbsp;&nbsp;皮肤很干、黑黄黯哑</p>
+				<p style="color:#666;padding-top:0.4em; font-size:.9em;">
+				经常带妆、熬夜，慢慢脸上某些循环不好的部位有些微色沉。听姐推荐的一款韩国瓷肌美白去黄套装，迫不及待就试用了。还记得第一次用完之后，好像给面部补充足了营养，感觉皮肤又滑又嫩，补足了水分，一点不紧绷不油腻。现在肤色也均匀亮白，自拍都像打了光，嘻嘻~
+				</p>
+				</div>
+			</li>
+			<li>
+				<span><img src="/public/images/q_goods/269/case_03.jpg"></span>
+				<div style="padding:0 0.8em 0.5em;">
+				<h2 style="height:2em;line-height:2em;font-weight: normal;color:#db0742;font-size:1.5em;">效果很实在，全家用起来</h2>
+				<p class="deta">二月雪&nbsp;&nbsp;&nbsp;32岁&nbsp;&nbsp;&nbsp;肤色泛黄，晦暗粗糙</p>
+				<p style="color:#666;padding-top:0.4em; font-size:.9em;">
+				现在每周使用两次面膜，搭配着套装使用，肌肤比之前红润了！其实18岁后，护肤真的越早越好。我用的是韩国瓷肌抑黑焕白套装，洁面乳、肌底液、调整膜、面膜、精华霜，搭配很合理，一套就搞定了！效果也实在，才用几天皮肤就亮泽通透不少，之后黄气便逐渐淡去，现在全家都在用啦。
+				</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--案例-->

@@ -1,0 +1,229 @@
+<link rel="stylesheet" href="/public/css/detail.css">
+<style scoped>
+.detail-hd{color:#EA2143;}
+.prod-parm h2,.qd p:first-of-type,.hd,.highlight{color:#05a3e0;}
+.detail-hd:before {background: #EA2143;}
+.hd:before {background: #05a3e0;}
+.detail-bd{padding-bottom: 0.8em; background: #fff;}
+.pa_b{padding-top: 1em;}
+.cor_red{font-style: normal;color:#db0742; }
+.troubs{text-align: center;padding:1em 0;line-height: 1.5em;font-size: 1.2em;}
+.troubs01{padding:0em 0 1em 1em;}
+.troubs02{text-align: left;padding:0 1em;}
+.troubs03{padding:1em;line-height: 1.5em;font-size: 1.2em;}
+.over_main{ overflow: hidden;padding: 0.5em 0 0.3em 1em;}
+.lefe_img{ float: left; width: 35%;}
+.lefe_img img{max-width: 199px; width: 100%;}
+.lefe_text{padding-top: 0.2em; padding-left: 0.5em;}
+.lefe_text p{display: inline-block;color:#a0a0a0;}
+.lefe_text p.col{ color: #000;display: inline-block; color: #000; text-align: center;font-weight: bold;}
+.main_wh{ width: 62%; font-size: 0.8em;}
+.main_wh span{ font-size: 1em;}
+.si_text{ font-size: 0.8em;}
+.de-3 {padding: 1em 0;}
+.de-3 li{padding: 0 1em; font-size: 1.2em; margin-bottom: 0.8em;}
+.de-3 li img{width: 30%; margin-right: 0.8em;}
+.de-3 li p{display: inline-block;}
+.de-3 li span{color: #d51838;}
+.de-4{padding-bottom: 1em;}
+.de-4 li{width: 100%; padding: 0.8em 0.8em 0; display: table;}
+.de-4 li img{display: table-cell; max-width: 188px;}
+.de-4 li .s_steps{width: 70%; padding-left: 0.8em; display: table-cell; vertical-align: middle;}
+.c_step{overflow: hidden;display: table;margin-bottom:0.5em;}
+.de-4 li em{font-size: 1.2em; color: #fff;background: #ea2143;display: table-cell;vertical-align: middle;padding:0 0.5em;}
+.de-4 li span{padding: 0 0.4em; margin-left: 0.4em; color: #ea2143;display: table-cell;}
+.de-5{padding: 0.8em;}
+.de-5 li{padding: 0.6em 0.8em 0; font-size: 1.2em;}
+.de-5 li span{padding: 0 0.4em; margin-right: 0.4em; background: #fe1c42; color: #fff;}
+.pad_u{ padding: 0.5em 1.2em 0;}
+.prod-info dt{padding: 0.2em 0.8em; background: #f2f2f2; font-size: 1.2em;}
+.four_w{padding:0 1em 1em;overflow: hidden;}
+.f_w{width:22%;float:left;margin-right:3%;}
+.f_w dt{text-align: center;}
+.f_w dt img{width:100%;max-width:130px;}
+.f_w dd b{color:#db0742; display: block;text-align: center;margin-top:0.5em;}
+.f_w dd p{padding-top:0.5em;}
+.f_w.l_np{margin-right:0;}
+.thre_w{padding:0 1em 1em;overflow: hidden;    background: #fff;}
+.t_w{width:48%;float:left;padding-top:1em;}
+.t_w.mar4{margin-right:4%;}
+.t_w dt{text-align: center;}
+.t_w dt img{width:100%;max-width:138px;}
+.t_w dd b{color:#db0742; border-top:1px solid #db0742;border-bottom:1px solid #db0742; display: block;text-align: center;margin-top:0.5em;padding:0.2em 0;}
+.t_w dd p{padding-top:0.5em;}
+.t_w.l_np{margin-right:0;}
+.dt_cf{padding:1em;}
+.dt_cf p{line-height: 1.5em;}
+.f_pow{display: table;overflow: hidden;width:100%;padding:1em;}
+.f_pow dt{display: table-cell;width:40%;text-align: center;}
+.f_pow dt img{max-width: 180px;width:85%;}
+.f_pow dd{vertical-align: middle;display: table-cell;padding-right:8%;}
+.f_pow dd.rig{padding-left:8%;padding-right:0;}
+.f_pow dd h2{border-bottom:1px solid #ea2143;color:#ea2143;padding:0.2em 0;}
+.f_pow dd h2 i{font-size: 1.2em;}
+.f_pow dd p{padding-top:0.2em;}
+.six_mix{display: table;width:100%;}
+.six_mix dt{display: table-cell;width:50%;}
+.six_mix dd{display: table-cell;padding:1em 0.5em 1em 0;vertical-align: middle;}
+.six_mix dt.lays img{max-width: 308px;}
+.six_mix dd ol li{color:#545454;line-height: 1.5em;padding-bottom:0.5em;}
+.six_mix dd ol li b{background: #ea2143;color:#fff;display: inline-block;padding:0 0.2em;margin-right:0.5em;}
+.six_mix dd ol li p{color:#848383;}
+.new_tel{padding-top:0.8em;}
+.new_tel p{font-size:1em; font-weight:bold;}
+.new_tel p img{width:42%;}
+.detail-case li div{padding: 0.4em 0; margin-bottom: 0.4em; background: #f2f2f2; text-align: center; font-size: 1em;}
+.detail-case li b{font-size: 1.1rem; color: #fe1c42; display: block;}
+.detail-case li{padding-bottom: 0.8em;}
+</style>
+
+<div class="detail-box">
+    <img src="/public/images/goods_res/723/img_01.jpg" alt="">
+    <img src="/public/images/goods_res/723/img_02.jpg" alt="">
+</div>
+<div class="detail-box">
+    <div class="cj-hd">只需3步，战痘平印</div>
+    <ul class="de-4">
+        <li>
+            <img src="/public/images/goods_res/723/step_01.jpg" alt="">
+            <div class="s_steps" >
+                <div class="c_step"><em>1.洁肤抑油</em></div>
+                <p>对反复长痘和痘坑，双效而治，深层去油、抑制痘痘生长。</p>
+            </div>
+        </li>
+         <li>
+            <img src="/public/images/goods_res/723/step_02.jpg" alt="">
+            <div class="s_steps" >
+                <div class="c_step"><em>2.调节焕新</em></div>
+                <p>平衡舒缓，调节肌肤PH值，改善痘痘肌油腻现象。</p>
+            </div>
+        </li>
+         <li>
+            <img src="/public/images/goods_res/723/step_03.jpg" alt="">
+            <div class="s_steps" >
+                <div class="c_step"><em> 3.修复焕新</em></div>
+                <p>改善痘痘愈合后留下的痘印、痘疤，营养肌肤，修复损伤。</p>
+            </div>
+        </li>
+        <li>
+            <img src="/public/images/goods_res/723/step_04.jpg" alt="">
+            <div class="s_steps" >
+                <div class="c_step"><em> 4.细致毛孔</em></div>
+                <p>紧致毛孔，细滑肌肤，预防黑头粉刺再生。</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="detail-box">
+    <div class="cj-hd">4大植物战“痘”力</div>
+     <dl class="f_pow">
+        <dt><img src="/public/images/goods_res/723/cf_01.jpg" alt=""></dt>
+        <dd class="rig">
+            <h2><i>1.</i>茶树油</h2>
+            <p>快速渗透毛囊消除炎症，有效舒缓、改善以及修复红肿，均衡水油。</p>
+        </dd>
+     </dl>
+     <dl class="f_pow">
+        <dd>
+            <h2><i>2.</i>地榆提取</h2>
+            <p>解热镇痛，加速消除痘痘炎症、调节油脂分泌，恢复肌肤清爽状态。</p>
+        </dd>
+        <dt><img src="/public/images/goods_res/723/cf_02.jpg" alt=""></dt>
+     </dl>
+     <dl class="f_pow">
+        <dt><img src="/public/images/goods_res/723/cf_03.jpg" alt=""></dt>
+        <dd class="rig">
+            <h2><i>3.</i>肉桂提取</h2>
+            <p>加速代谢清除痘毒，增强细胞活跃度，促进痘肌破损愈合。</p>
+        </dd>
+     </dl>
+     <dl class="f_pow">
+        <dd>
+            <h2><i>4.</i>芦荟精华</h2>
+            <p>有效舒缓肌肤不适，抑制细菌生长，消炎镇静，加速痘肌愈合减少痘印。</p>
+        </dd>
+        <dt><img src="/public/images/goods_res/723/cf_04.jpg" alt=""></dt>
+     </dl> 
+</div>
+<ntell></ntell>
+<div class="detail-box">
+    <div class="cj-hd">拔痘除根  全面呵护</div>    
+</div>
+<div class="thre_w">
+    <dl class="t_w mar4">
+        <dt><img v-lazy="'/public/images/goods_res/723/prot_01.jpg'"></dt>
+        <dd>                     
+            <b>清颜祛痘洁面乳</b>
+            <p>有效控油洁肤，深度清除死皮角质，珍贵植物精华健康控油，帮助肌肤恢复健康状态。</p>
+        </dd>
+    </dl><dl class="t_w">
+        <dt><img v-lazy="'/public/images/goods_res/723/prot_02.jpg'"></dt>
+        <dd>
+            <b>清颜祛痘调理水</b>
+            <p>调理肌肤油脂平衡，改善因痘痘引起的毛孔粗大、黑头、粉刺等肌肤问题，令肌肤清爽细腻。</p>
+        </dd>
+    </dl>
+    <dl class="t_w mar4">
+        <dt><img v-lazy="'/public/images/goods_res/723/prot_04.jpg'"></dt>
+        <dd>
+            <b>深层净化面膜</b>
+            <p>深层净化肌底污垢，注入补水因子，有效收细毛孔，打造光洁柔嫩肤质。</p>
+        </dd>
+    </dl>
+    <dl class="t_w">
+        <dt><img v-lazy="'/public/images/goods_res/723/prot_03.jpg'"></dt>
+        <dd>
+            <b>清肌净颜毛孔收细精华液</b>
+            <p>深入修复肌底细胞，增加肌肤弹性，紧致毛囊，打造光洁细腻肤质。</p>
+        </dd>
+    </dl>
+</div> 
+<div class="detail-box">
+   <div class="cj-hd">6合1  全效拔根除痘</div>
+   <div class="six_mix">
+        <dl>
+            <dt class="lays"><img src="/public/images/goods_res/723/six_pic.jpg"></dt>
+            <dd>
+                <ol>
+                    <li> 
+                        <b>01</b>杀菌消炎<br/>
+                        <p>彻底清除毒素，加速脓包消解。</p>
+                    </li><li> 
+                        <b>02</b>排毒净肤<br/>
+                        <p>抑制色素沉淀，排出肌底毒素。</p>
+                    </li><li> 
+                        <b>03</b>抑痘防痘<br/>
+                        <p>深入痘痘根部，由内而外抑制复发。</p>
+                    </li><li> 
+                        <b>04</b>细致毛孔<br/>
+                        <p>调理水油平衡，收敛毛孔，修复受损肌肤。</p>
+                    </li><li> 
+                        <b>05</b>深层清洁<br/>
+                        <p>清除表层污垢，疏通毛孔深处，防止毛孔堵塞。</p>
+                    </li><li> 
+                        <b>06</b>清爽控油<br/>
+                        <p>分解多余油脂，令肌肤健康清爽。</p>
+                    </li>
+                </ol>
+            </dd>
+        </dl>
+   </div>
+</div>
+<ntell></ntell>
+<div class="detail-box ">
+    <div class="cj-hd">会员真实心声~~赞不停！！</div>
+    <ul class="detail-case pad_u">
+        <li>
+            <img src="/public/images/goods_res/723/img_03.jpg" alt="">
+            <div>Jaxker  27岁 | <em>油性囊肿性痘痘</em><b>上火痘痘，一次给你KO掉</b></div>
+            <p>我是上火引起的痘痘，每次都是5、6颗地来，此起彼伏！试过好多方法都没用，本来就敏感的皮肤被刺激的更严重,还好买了韩国瓷肌新推出的男士全效套装，果然，试用之后痘痘真的“全消”，每次痘痘爆发前夕就抹上，第二天痘痘就被干掉了！一抹一个准，而且还不刺激皮肤！
+            </p>
+        </li>
+        <li>
+            <img src="/public/images/goods_res/723/img_04.jpg" alt="">
+            <div>阿航  21岁 | <em>混合性肤质</em><b>拔除痘根不反弹，真的说到做到</b></div>
+            <p>马上就要毕业准备找工作，我一脸痘痘，可不想这样去面试呀！在网上经常看到韩国瓷肌的广告，于是跟着宿舍的哥们买了一套，说是为男士痘痘专门设计的。坚持使用完一套效果确实很好，当时我看到效果那么迅速，会不会反复呢？现在两个多月都过去了，痘痘没有再反弹，不得不赞一个！真的是说到做到！</p>
+        </li>
+    </ul>
+</div>

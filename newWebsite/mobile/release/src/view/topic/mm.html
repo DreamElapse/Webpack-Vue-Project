@@ -1,0 +1,255 @@
+<link rel="stylesheet" href="/public/css/topic.css">
+<style scoped>
+	.cj-hd{background:#EA2143;font-weight:bold;}
+	.topic-box {padding-bottom: 0; background: #fff;}
+	.txt_cen{text-align: center}
+	img.w83{width: 83%;margin: 1em auto;}
+	img.w96{width: 96%;margin-bottom: 0.6em;}
+	.w96{ width: 96%;margin:1em auto;}
+	.w98{width: 98%;margin:0.5em auto;}
+	.w42{width: 30%;border: 0.3em solid #fff;border-radius: 4px;box-shadow: 0 0 10px #ECECEC;}
+	.w60{width: 60%;}
+	.w22{width: 30%;}
+	.w25{width: 35%;}
+	.w62{width: 62%; margin:0.5em 0;}
+	.w55{width: 55%;}
+	.w50{width: 50%;}
+	.w40{width: 40%;}
+	.mar5{margin:0 5%;}
+	.paddingl_7{padding-left: 7%;}
+	.paddingl_10{padding-left: 10%;}
+	.paddingL_3{padding-left: 3%;}
+	.paddingR_3{padding-right: 3%;}
+	hr{border:1px dashed #D0D0D0;}
+	del{color:#A0A0A0;}
+	.new_tel{background: #FFFFFF;border-top:1px solid #F1F1F1;border-bottom:1px solid #F1F1F1; }
+	.new_tel a {width: 44.5%;max-width: 287px; margin: 0 2%;color: #fff;font-weight: bold;text-align: center;display: inline-block;border-radius: 0.5em;padding: 0.2em 0; font-size: 0.85em;}
+	.new_tel .tel_btn{background:#435F87;}
+	.new_tel .ord_btn{background:#FF9B0D;}
+	.new_tel .tel_btn:before{content: '电话咨询';display: inline-block;width: 100%;background: url(/public/images/topic/mianmo2/tel_ico.png) no-repeat 2em 0.2em; background-size: 1.3em;text-indent: 1.5em; }
+	.new_tel .ord_btn:before{content: '在线订购';display: inline-block;width: 100%;background:url(/public/images/topic/mianmo2/order_ico.png) no-repeat 2em 0.2em; background-size: 1.3em;text-indent: 1.5em;}
+	.case_box{padding-top: 1em;}
+	.case_box ul{padding:1em 0;}
+	.case_box .list,.pro_box .list{overflow: hidden;display: table;}
+	.case_box .pro_list_desc{border-bottom: 1px dashed #BBCCE3;padding:1.5em 1em;}
+	.case_box .pro_list_desc.no_border{border:0;}
+	.pro_list_desc>div,.pro_box .list>div{display: table-cell;vertical-align: middle;}
+	.pro_list_desc .list_p1{color:#fff;font-size: 0.85em;margin: 1em 0; }
+	.pro_list_desc .list_p1 span{display: inline-block;padding: 0.2em 1em 0.2em 0.5em; background: #7EA2D4;}	
+	.pro_list_desc .list_p2{color:#151515;font-size: 1.2em;font-weight: bold;margin-bottom: 0.5em;}
+	.pro_list_desc .list_p2 span{border-bottom:1px solid #151515;  }
+	.pro_list_desc .list_p3{color:#5E5E5E;font-size: 0.85em;line-height: 1.6em;}
+	.pro_step{padding: 1em;}
+	.pro_step .list{overflow: hidden;margin: 1em 0.5em 2em;}
+	.pro_step .step_p1{font-weight: bold;}
+	.pro_step .step_p2{color:#535152;font-size: 0.8em;text-align: justify; margin-top: 0.5em;}
+	.pro_box .list{border-bottom: 1px solid #2F2F2F;padding: 1em 1.5em; width: 100%;}
+	.pro_box .list.no_border{border:0;}
+	.pro_box .list_p1{color:#696969;font-size: 0.85em;margin-bottom: 0.5em; }
+	.pro_box .list_p1 span{color:#718EB6;font-weight: bold;}
+	.pro_box .list_p2{color:#718EB6;font-size: 1.5em;}
+	.pro_box .list_p3{color:#375C99;font-size: 1.5em;font-weight: bold;}
+	.pro_box .list_p4{color:#2E2E2E;font-size: 0.8em;padding-left:1.5em;background: url(/public/images/topic/mianmo2/size_ico.png) no-repeat 0 4px;background-size: 1em;margin:0.5em 0;}
+	.pro_box .pro_price{color:#375C99;font-weight: bold;font-family: fantasy,arial,sans-serif;}
+	.pro_box .pro_price .Ptag1{font-size:1.8em;}
+	.pro_box .pro_price .Ptag2{color:#728EB6; display: inline-block;margin-left: 0.3em;}
+	.pro_box .pro_price .Ptag2 .tag1{font-size: 0.7em;font-weight: normal;display: block;}
+	.pro_box .pro_price .Ptag2 .tag2{font-size: 1em;display: block;position: relative;}
+	.pro_box .pro_price .Ptag2 .tag2:after{content: '';position: absolute;top:0;left:0;width: 2em;border-top: 1px solid #728EB6;transform:rotate(30deg);-webkit-transform:rotate(30deg);transform-origin: 0 0; -webkit-transform-origin: 0 0;}
+	.pro_box .pro_ord_btn{display: inline-block;width: 55%;text-align: center;padding: 0.5em 0;background:#050505;color:#fff;margin:1em 0;font-size: 0.8em;}
+</style>
+
+
+		<section>
+			<div>
+				<img src="/public/images/topic/mianmo2/img_01.jpg" alt=""/>
+			</div>
+			<div class="topic-box txt_cen">
+				<img class="w83" src="/public/images/topic/mianmo2/img_03.jpg" alt=""/>				
+				<img class="w96" src="/public/images/topic/mianmo2/img_04.jpg" alt=""/>
+				<img class="w96" v-lazy="'/public/images/topic/mianmo2/img_05.jpg'" alt=""/>
+				<img class="w96" v-lazy="'/public/images/topic/mianmo2/img_02.jpg'" alt=""/>
+			</div>
+			<div class="topic-box">
+				<img v-lazy="'/public/images/topic/mianmo2/img_06.jpg'" alt=""/>				
+				<img v-lazy="'/public/images/topic/mianmo2/img_07.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_08.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_09.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_10.jpg'" alt=""/>
+			</div>
+			<div class="topic-box">
+				<img v-lazy="'/public/images/topic/mianmo2/img_11.jpg'" alt=""/>				
+				<img v-lazy="'/public/images/topic/mianmo2/img_12.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_13.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_14.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_15.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_16.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_17.jpg'" alt=""/>
+				<img v-lazy="'/public/images/topic/mianmo2/img_18.jpg'" alt=""/>		
+			</div>
+			
+			<div class="pro_step">
+				<p class="w96"><img v-lazy="'/public/images/topic/mianmo2/img_25.jpg'" alt=""/></p>
+				<p class="w98"><img v-lazy="'/public/images/topic/mianmo2/img_26.jpg'" alt=""/></p>
+				<ul class="list">
+					<li class="w22 fl">
+						<p class="step_p1 txt_cen">敷前清洁肌肤</p>
+						<p class="step_p2">简单洁面以外，还要卸除妆容、清除油脂黑头和老化角质才称得上全面清洁。</p>
+					</li>
+					<li class="w22 fl mar5">
+						<p class="step_p1 txt_cen">洗澡后敷面膜</p>
+						<p class="step_p2">洗澡时水蒸气能充分舒张毛孔，洗澡后敷面膜能更好吸收面膜中的营养成分。</p>
+					</li>
+					<li class="w22 fl">
+						<p class="step_p1 txt_cen">敷面膜前涂精华</p>
+						<p class="step_p2">敷脸前涂一层精华，使皮肤与面膜间形成真空状态，加速保养品吸收。</p>
+					</li>
+				</ul>
+				<p class="w98"><img v-lazy="'/public/images/topic/mianmo2/img_27.jpg'" alt=""/></p>
+				<ul class="list">
+					<li class="w22 fl">
+						<p class="step_p1 txt_cen">面膜半干时撕下</p>
+						<p class="step_p2">一般敷面膜约15~20分钟，时间太长反而会带走脸上的水份。</p>
+					</li>
+					<li class="w22 fl mar5">
+						<p class="step_p1 txt_cen">盖上毛巾加热</p>
+						<p class="step_p2">敷上面膜后盖上干毛巾，增加密闭性增强吸收效果。</p>
+					</li>
+					<li class="w22 fl">
+						<p class="step_p1 txt_cen">清除面膜后按摩</p>
+						<p class="step_p2">轻按摩脸部，按摩3到5分钟帮助多余精华吸收，功效翻倍。</p>
+					</li>
+				</ul>
+				<p class="w62"><img v-lazy="'/public/images/topic/mianmo2/img_28.jpg'" alt=""/></p>
+				<ul class="list">
+					<li class="w22 fl">
+						<p class="step_p1 txt_cen">涂上乳液锁水</p>
+						<p class="step_p2">敷完面膜后涂上乳液，作为保护膜锁住水分和营养成分。</p>
+					</li>
+					<li class="w25 fl mar5">
+						<p class="step_p1 txt_cen">敷脸后精华别浪费</p>
+						<p class="step_p2">敷完的面膜多余的精华液，还可以涂抹在脖子、手臂、大腿部位。</p>
+					</li>					
+				</ul>
+			</div>
+			<div class="pro_box">
+				<p><img v-lazy="'/public/images/topic/mianmo2/img_29.jpg'" alt=""/></p>
+				<p><img v-lazy="'/public/images/topic/mianmo2/img_30.jpg'" alt=""/></p>
+				<div class="list">
+					<div class="w55">
+						<p class="list_p1"><span>+</span>亮颜去角质泥面膜</p>
+						<p class="list_p2">约会必备</p>
+						<p class="list_p3">顷刻闪耀钻石光彩</p>
+						<p class="list_p4">规格&nbsp;&nbsp;|&nbsp;&nbsp;30g / 瓶</p>
+						<p class="pro_price">
+						RMB<span class="Ptag1">258</span><span class="Ptag2"><em class="tag1">价格</em><em class="tag2">440</em></span></p>
+						<a class="pro_ord_btn" href="javascript:;" @click="buy(goodsList[0])">立即购买 →</a>
+					</div>
+					<div class="w40"><img v-lazy="'/public/images/topic/mianmo2/img_31.jpg'" alt=""/></div>
+				</div>
+				<div class="list">
+					<div class="w40"><img v-lazy="'/public/images/topic/mianmo2/img_32.jpg'" alt=""/></div>
+					<div class="w55 paddingl_7">
+						<p class="list_p1"><span>+</span>净白无瑕五谷焕彩面膜</p>
+						<p class="list_p2">高能提亮肤色</p>
+						<p class="list_p3">层层焕白更新</p>
+						<p class="list_p4">规格&nbsp;&nbsp;|&nbsp;&nbsp;200g / 瓶</p>
+						<p class="pro_price">
+						RMB<span class="Ptag1">203</span><span class="Ptag2"><em class="tag1">价格</em><em class="tag2">208</em></span></p>
+						<a class="pro_ord_btn" href="javascript:;" @click="buy(goodsList[1])">立即购买 →</a>
+					</div>					
+				</div>
+				<div class="list">
+					<div class="w50">
+						<p class="list_p1"><span>+</span>韩国瓷肌蛇毒精华面膜</p>
+						<p class="list_p2">1滴凝聚</p>
+						<p class="list_p3">10万蛇毒精华</p>
+						<p class="list_p4">规格&nbsp;&nbsp;|&nbsp;&nbsp;26gx6片 / 盒</p>
+						<p class="pro_price">
+						RMB<span class="Ptag1">253</span><span class="Ptag2"><em class="tag1">价格</em><em class="tag2">258</em></span></p>
+						<a class="pro_ord_btn" href="javascript:;" @click="buy(goodsList[2])">立即购买 →</a>
+					</div>
+					<div class="w50"><img v-lazy="'/public/images/topic/mianmo2/img_33.jpg'" alt=""/></div>
+				</div>
+				<div class="list">
+					<div class="w40"><img v-lazy="'/public/images/topic/mianmo2/img_34.jpg'" alt=""/></div>
+					<div class="w55 paddingl_10">
+						<p class="list_p1"><span>+</span>韩国瓷肌红参水凝胶面膜</p>
+						<p class="list_p2">凝萃天然</p>
+						<p class="list_p3">野生红参精华</p>
+						<p class="list_p4">规格&nbsp;&nbsp;|&nbsp;&nbsp;30g*6片 / 盒</p>
+						<p class="pro_price">
+						RMB<span class="Ptag1">180</span><span class="Ptag2"><em class="tag1">价格</em><em class="tag2">185</em></span></p>
+						<a class="pro_ord_btn" href="javascript:;" @click="buy(goodsList[3])">立即购买 →</a>
+					</div>					
+				</div>
+				<div class="list no_border">
+					<div class="w55">
+						<p class="list_p1"><span>+</span>黑钻光感精华试管面膜</p>
+						<p class="list_p2">试管封存</p>
+						<p class="list_p3">珍稀黑钻精华</p>
+						<p class="list_p4">规格&nbsp;&nbsp;|&nbsp;&nbsp;26gx6片 / 盒</p>
+						<p class="pro_price">
+						RMB<span class="Ptag1">180</span><span class="Ptag2"><em class="tag1">价格</em><em class="tag2">185</em></span></p>
+						<a class="pro_ord_btn" href="javascript:;" @click="buy(goodsList[4])">立即购买 →</a>
+					</div>
+					<div class="w40"><img v-lazy="'/public/images/topic/mianmo2/img_35.jpg'" alt=""/></div>
+				</div>
+			</div>
+			<div class="case_box">
+				<img v-lazy="'/public/images/topic/mianmo2/img_19.jpg'" alt=""/>
+				<ul>
+					<li class="pro_list_desc list">
+						<div class="w42"><img v-lazy="'/public/images/topic/mianmo2/img_20.jpg'" alt=""/></div>
+						<div class="w60 paddingL_3">
+							<p class="list_p1"><span>ID:小慈</span></p>
+							<p class="list_p2"><span>好肌肤，全靠蛇毒好功“敷”</span></p>
+							<p class="list_p3">敷完蛇毒面膜，毛孔收起来不见啦~痘痘退红肿憋下去啦~细纹抚平啦~肌肤滑溜溜啦~人见人爱啦啦啦~</p>
+						</div>
+					</li>
+					<li class="pro_list_desc list">						
+						<div class="w60 paddingR_3">
+							<p class="list_p1"><span>ID:久久</span></p>
+							<p class="list_p2"><span>坚持用，怎么都不会黑</span></p>
+							<p class="list_p3">五谷稻米精华给肌肤注入水分和美白营养，坚持用，毛孔小十倍，肤色亮十倍！怎么也晒不黑，真的可以！</p>
+						</div>
+						<div class="w42"><img v-lazy="'/public/images/topic/mianmo2/img_21.jpg'" alt=""/></div>
+					</li>
+					<li class="pro_list_desc list">
+						<div class="w42"><img v-lazy="'/public/images/topic/mianmo2/img_22.jpg'" alt=""/></div>
+						<div class="w60 paddingL_3">
+							<p class="list_p1"><span>ID:Cici</span></p>
+							<p class="list_p2"><span>蕾丝面膜，配得上女神的美</span></p>
+							<p class="list_p3">补水、平肤、抗氧化，女神必备！凝胶材质锁住精华，优雅如蕾丝面纱，每次敷都忍不住自拍，太美啦！</p>
+						</div>
+					</li>
+					<li class="pro_list_desc list">						
+						<div class="w60 paddingR_3">
+							<p class="list_p1"><span>ID:小苹果</span></p>
+							<p class="list_p2"><span>让你脸蛋自带苹果光!</span></p>
+							<p class="list_p3">温和不刺激，黑头、粉刺、暗沉，15分钟一洗而光！每次上镜总是比同伴亮2个色度，她们可恨我啦~</p>
+						</div>
+						<div class="w42"><img v-lazy="'/public/images/topic/mianmo2/img_23.jpg'" alt=""/></div>
+					</li>
+					<li class="pro_list_desc list no_border">
+						<div class="w42"><img v-lazy="'/public/images/topic/mianmo2/img_24.jpg'" alt=""/></div>
+						<div class="w60 paddingL_3">
+							<p class="list_p1"><span>ID:Tina</span></p>
+							<p class="list_p2"><span>黑钻敷脸，珍贵不贵!</span></p>
+							<p class="list_p3">钻石级的精华液，多得一次用不完，用试管封好可以分开几次用。用了2次肤色大大提亮了，不化妆也感觉肤质好好！</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<img v-lazy="'/public/images/detail/RaD_01.jpg'" alt="" />
+			<div class="topic-box">
+				 <div class="RaD">
+		            <img v-lazy="'/public/images/detail/RaD_02.jpg'" alt="" />
+		            <img v-lazy="'/public/images/detail/RaD_03.jpg'" alt="" />
+		            <img v-lazy="'/public/images/detail/RaD_04.jpg'" alt="" />
+		            <img v-lazy="'/public/images/detail/RaD_05.jpg'" alt="" />
+		            <img v-lazy="'/public/images/detail/RaD_06.jpg'" alt="" />
+		            <img v-lazy="'/public/images/detail/RaD_07.jpg'" alt="" />
+        		</div>           
+			</div>
+		</section>

@@ -1,0 +1,482 @@
+<style>
+.pr{position:relative;}
+.pr a{position: absolute;display: block; width:50%; height:100%; top:0; }
+.pr a.buy_btn1,.pr a.buy_btn3,.pr a.buy_btn5{left:0;}
+.pr a.buy_btn2,.pr a.buy_btn4,.pr a.buy_btn6{left:50%;}
+/*在线下单*/
+.zx_order{background:#db0743; height:2.5em; line-height:2.5em; color:#fff; text-align:center;}
+.order_con{padding:.5em 0.2em;}
+.order_con .step {padding-left:.5em;}
+.order_con .step p{line-height:1.5em; color:#d91414;}
+.order_con .imgs{max-width:276px; width:50%; margin:0px auto; padding-top:1em;}
+.order_con .imgs img{max-width:276px; width:100%; border:solid 1px #d6d6d6;}
+.order_con .p_tit{font-size:1em; color:#646464; line-height:2em; text-align:center; font-weight:normal;}
+.pr_info{padding:.5em;}
+.or_form{color:#515151;}
+.or_form table,.or_form td,.or_form tr{border:1px solid #000;}
+.or_form p{padding:5px 0em; line-height:1.5em;}
+.or_form p span.sel_n{border:solid 1px #d1d1d1; vertical-align:middle; display:inline-block; line-height:25px; height:27px; width:28px; text-align:center; cursor:pointer;}
+.or_form p span.num_txt{padding-left:.5em; display:inline-block;}
+.or_form p span.num_txt i{font-style:normal; color:#d91414;}
+.or_form p span.num_txt em{font-style:normal; color:#d91414;}
+.or_form lable{width:4em; display:inline-block; font-size:1em; line-height:1.7em; height:1.7em; vertical-align:middle;}
+.or_form lable.wi{width:5.3em;}
+.or_form input{width:80%; display:inline-block; border:solid 1px #d1d1d1; line-height:1em; height:1.7em; text-indent:.5em; vertical-align:middle;}
+.or_form input.kcon{width:70%;}
+.or_form input.in_num{width:2.4em; text-align:center; text-indent:0em; margin:0em .2em;}
+.or_form textarea{display:inline-block; border:solid 1px #d1d1d1; width:70%; line-height:1.2em; height:4em; text-indent:.5em; font-family:'Microsoft YaHei';}
+.or_form input.sub{width:90%; margin:0em auto; background:#1dbe56; height:2em; line-height:2em; text-align:center; color:#fff; font-size:1.2em; font-family:'Microsoft YaHei'; border-radius:.2em; margin-bottom:1em;}
+
+#gift_tab tr td:last-child{width: 20%;}
+.silde-addr{display:inline-block;width:80%;overflow:hidden;line-height: 1em;height: 1.7em;vertical-align: middle;float:left;}
+.silde-addr select{display: inline-block;width: 25%;float: left;line-height: 1em;height: 1.7em;border: 0;border-left: 1px solid #ccc;outline:none;}
+.silde-addr select:nth-child(1){border-left:0;}
+/* 支付方式选择 */
+.payment{background: #fff; border-top: 0; padding-top: 0.4em; padding-bottom: 0.8em;}
+.payment ul{padding-bottom: 0.8em;}
+.payment li{width: 25%; padding-top: 0.5em; text-align: center; float: left;}
+.payment li .icon{width: 3.5em; height: 3.5em; background-image: url(/public/images/detail/payment.png); background-size: 17em;}
+.icon-alipay{background-position: -4.2em 0;}
+.icon-tenpay{background-position: -8.4em 0;}
+.icon-unionpay{background-position: -12.8em 0;}
+.payment li p{padding-top: 0.2em; height: 3.5em; display: block;}
+.payment li span{color: #ea2143; white-space: nowrap;}
+.payment .btn-submit{width: 90%; line-height: 1.8em; background: #ea2143; border-radius: 5px; text-align: center; font-size: 1.8em; color: #fff; display: block; margin: 0 auto;}
+</style>
+
+		    <img src="/public/images/act/20160822/img_01.jpg" />
+	    	<img src="/public/images/act/20160822/img_02.jpg" />
+			<img src="/public/images/act/20160822/img_03.jpg" />
+            <img src="/public/images/act/20160822/img_04.jpg" />
+            <img src="/public/images/act/20160822/img_05.jpg" />
+            <img src="/public/images/act/20160822/img_06.jpg" />
+            <div class="pr">
+                <img src="/public/images/act/20160822/img_07.jpg" />
+                <a href="#orderpr" class="buy_btn1 buynow goodsBuy" data="num1"></a>
+                <a href="#orderpr" class="buy_btn2 buynow goodsBuy" data="num2"></a>
+            </div>
+            <img src="/public/images/act/20160822/img_08.jpg" />
+            <div class="pr">
+                <img src="/public/images/act/20160822/img_09.jpg" />
+                <a href="#orderpr" class="buy_btn1 buynow goodsBuy" data="num3"></a>
+                <a href="#orderpr" class="buy_btn2 buynow goodsBuy" data="num4"></a>
+            </div>
+            <img src="/public/images/act/20160822/img_10.jpg" />
+            <img src="/public/images/act/20160822/img_11.jpg" />
+            <div class="pr">
+                <img src="/public/images/act/20160822/img_12.jpg" />
+                <a href="#orderpr" class="buy_btn1 buynow goodsBuy" data="num5"></a>
+                <a href="#orderpr" class="buy_btn2 buynow goodsBuy" data="num6"></a>
+            </div>
+            <img src="/public/images/act/20160822/img_13.jpg" />
+	    	<div class="pr">
+                <img src="/public/images/act/20160822/img_14.jpg" />
+                <a href="#orderpr" class="buy_btn1 buynow goodsBuy" data="num7"></a>
+                <a href="#orderpr" class="buy_btn2 buynow goodsBuy" data="num8"></a>
+            </div>
+            <img src="/public/images/act/20160822/img_15.jpg" />
+            <img src="/public/images/act/20160822/img_16.jpg" />
+            <div class="pr">
+                <img src="/public/images/act/20160822/img_17.jpg" />
+                <a href="#orderpr" class="buy_btn1 buynow goodsBuy" data="num9"></a>
+                <a href="#orderpr" class="buy_btn2 buynow goodsBuy" data="num10"></a>
+            </div>
+            <img src="/public/images/act/20160822/img_18.jpg" />
+            <img src="/public/images/act/20160822/img_19.jpg" />
+            <div class="pr">
+                <img src="/public/images/act/20160822/img_20.jpg" />
+                <a href="#orderpr" class="buy_btn1 buynow goodsBuy" data="num11"></a>
+                <a href="#orderpr" class="buy_btn2 buynow goodsBuy" data="num12"></a>
+            </div>
+            <img src="/public/images/act/20160822/img_21.jpg" />
+            <img src="/public/images/act/20160822/img_22.jpg" />
+            <img src="/public/images/act/20160822/img_23.jpg" />
+            <div class="pr">
+                <img src="/public/images/act/20160822/img_24.jpg" />
+                <a href="#orderpr" class="buy_btn1 buynow goodsBuy" data="num13"></a>
+                <a href="#orderpr" class="buy_btn2 buynow goodsBuy" data="num14"></a>
+            </div>
+            <img src="/public/images/act/20160822/img_25.jpg" />
+            <div class="pr">
+                <img src="/public/images/act/20160822/img_26.jpg" />
+                <a href="#orderpr" class="buy_btn1 buynow goodsBuy" data="num15"></a>
+                <a href="#orderpr" class="buy_btn2 buynow goodsBuy" data="num16"></a>
+            </div>
+            <!--订单列表-->
+            <div style="background:#fff;">
+                <!--在线订购-->
+                <!-- 七夕情人节  -->
+                <!-- <div class="zx_order" id="orderpr">在线订购</div>
+                <div class="order_con">
+                    <div class="step">
+                        <p>1、在线提交订单</p>
+                        <p>2、客服专员电话回访确认订单</p>
+                        <p>3、货到付款</p>
+                    </div>
+                    
+                </div> -->
+                <script type="text/javascript">
+                    $(function() {
+                        $("#zffs a").on("click", function() {
+                            $(this).siblings().removeClass("select");
+                            $(this).addClass("select");
+                            $(this).find("input").attr("checked", "checked");
+                        })
+                    })
+                </script>
+            </div>
+
+
+<script type="text/javascript">
+{literal}
+	var objNum1 = $("input[name='num1']");
+	var objNum2 = $("input[name='num2']");
+	var objNum3 = $("input[name='num3']");
+	var objNum4 = $("input[name='num4']");
+	var objNum5 = $("input[name='num5']");
+	var objNum6 = $("input[name='num6']");
+	var objNum7 = $("input[name='num7']");
+	var objNum8 = $("input[name='num8']");
+	var objNum9 = $("input[name='num9']");
+	var objNum10 = $("input[name='num10']");
+	var objNum11 = $("input[name='num11']");
+	var objNum12 = $("input[name='num12']");
+	var objNum13 = $("input[name='num13']");
+	var objNum14 = $("input[name='num14']");
+	var objNum15 = $("input[name='num15']");
+	var objNum16 = $("input[name='num16']");
+
+$(function(){
+	
+	number_price();
+
+	var act; //减少按钮
+	// +
+	$(".or_form .w").click(function(){
+		var thisName = $(this).prev().attr("name");
+		if( thisName == 'num13' || thisName == 'num14'  || thisName == 'num15'  || thisName == 'num16' ){
+			if(!check_hg(thisName)) return false;
+		}else{
+            act = $(this).parent().find('.in_num');
+            act.val(parseInt(act.val()) + 1);
+        }
+        number_price();
+    });
+
+
+    $(".or_form .s").click(function(){
+        act = $(this).parent().find('.in_num');
+		if(parseInt(act.val())<=0){
+			return false;
+		}
+		act.val(parseInt(act.val()) - 1);
+		var hgNum = parseInt(objNum13.val()) + parseInt(objNum14.val()) + parseInt(objNum15.val()) + parseInt(objNum16.val());
+
+        //秒杀总价
+        var msTotal = parseInt(objNum1.val()) * parseFloat(objNum1.attr('data-price')) +
+                parseInt(objNum2.val()) * parseFloat(objNum2.attr('data-price')) +
+                parseInt(objNum3.val()) * parseFloat(objNum3.attr('data-price')) +
+                parseInt(objNum4.val()) * parseFloat(objNum4.attr('data-price'));
+
+        //爆款特卖总价
+        var tmTotal = parseInt(objNum5.val()) * parseInt(objNum5.attr('data-price')) +
+                parseInt(objNum6.val()) * parseInt(objNum6.attr('data-price')) +
+                parseInt(objNum7.val()) * parseInt(objNum7.attr('data-price')) +
+                parseInt(objNum8.val()) * parseInt(objNum8.attr('data-price'));
+
+        //买1送1总价
+        var oneBuyOneTotal = parseInt(objNum9.val()) * parseInt(objNum9.attr('data-price')) + 
+				parseInt(objNum10.val()) * parseInt(objNum10.attr('data-price')) +
+                parseInt(objNum11.val()) * parseInt(objNum11.attr('data-price')) +
+                parseInt(objNum12.val()) * parseInt(objNum12.attr('data-price'));
+
+        var generalPrice = msTotal + tmTotal + oneBuyOneTotal;
+
+        if(generalPrice>=200 && generalPrice<400){
+            objNum13.val(0);
+            objNum14.val(0);
+            objNum15.val(0);
+            objNum16.val(0);
+        }else if(generalPrice < 200){
+            objNum13.val(0);
+            objNum14.val(0);
+            objNum15.val(0);
+            objNum16.val(0);
+        }
+        number_price();
+    });
+
+    $(".buynow").click(function(){
+        var num = $(this).attr("data");
+        act = $(".or_form input[name='"+num+"']");
+
+        if( num == 'num14' || num == 'num15' || num == 'num16' || num == 'num17'){
+            if(!check_hg(num)) return false;
+        }else{
+            act.val(parseInt(act.val())+1);
+        }
+        number_price();
+    });
+
+	
+});
+
+//总价
+function number_price(){
+
+    //秒杀总价
+    var msTotal = parseInt(objNum1.val()) * parseFloat(objNum1.attr('data-price')) +
+                  parseInt(objNum2.val()) * parseFloat(objNum2.attr('data-price')) +
+                  parseInt(objNum3.val()) * parseFloat(objNum3.attr('data-price')) +
+                  parseInt(objNum4.val()) * parseFloat(objNum4.attr('data-price'));
+
+    //多件多折（6折2件5折3件4折）
+	//总件数
+	var tmNums = parseInt(objNum5.val()) + parseInt(objNum6.val()) + parseInt(objNum7.val()) + parseInt(objNum8.val());
+	var num5Price = 0;
+	var num6Price = 0;
+	var num7Price = 0;
+	var num8Price = 0;
+	if(tmNums>=3){
+		num5Price = 28;
+		num6Price = 28;
+		num7Price = 39;
+		num8Price = 63;
+	}else if(tmNums == 2){
+		num5Price = 35;
+		num6Price = 35;
+		num7Price = 49;
+		num8Price = 79;
+	}else{
+		num5Price = parseInt(objNum5.attr('data-price'));
+		num6Price = parseInt(objNum6.attr('data-price'));
+		num7Price = parseInt(objNum7.attr('data-price'));
+		num8Price = parseInt(objNum8.attr('data-price'));
+	}
+
+    var tmTotal =  parseInt(objNum5.val()) * num5Price +
+                   parseInt(objNum6.val()) * num6Price +
+                   parseInt(objNum7.val()) * num7Price +
+                   parseInt(objNum8.val()) * num8Price;
+
+    //买1送1总价
+    var oneBuyOneTotal = parseInt(objNum9.val()) * parseInt(objNum9.attr('data-price')) +
+                         parseInt(objNum10.val()) * parseInt(objNum10.attr('data-price')) +
+                         parseInt(objNum11.val()) * parseInt(objNum11.attr('data-price')) +
+                         parseInt(objNum12.val()) * parseInt(objNum12.attr('data-price'));
+
+    //换购商品总价
+    var hgPrice = parseInt(objNum13.val()) * parseInt(objNum13.attr('data-price')) +
+                  parseInt(objNum14.val()) * parseInt(objNum14.attr('data-price')) +
+                  parseInt(objNum15.val()) * parseInt(objNum15.attr('data-price')) +
+				  parseInt(objNum16.val()) * parseInt(objNum16.attr('data-price'));
+
+    var totalPrice = msTotal + tmTotal + oneBuyOneTotal + hgPrice;
+
+    //满足 248 338 388
+    var mzNeedPrice = tmTotal + oneBuyOneTotal + hgPrice;
+    if(mzNeedPrice >= 248 && mzNeedPrice<338){
+        $('#free_gift1').show();
+        $('#free_gift2').hide();
+        $('#free_gift3').hide();
+    }else if(mzNeedPrice>=338 && mzNeedPrice<388){
+        $('#free_gift1').hide();
+        $('#free_gift2').show();
+        $('#free_gift3').hide();
+    }else if(mzNeedPrice>=388){
+        $('#free_gift1').hide();
+        $('#free_gift2').hide();
+        $('#free_gift3').show();
+    }else{
+        $('#free_gift1').hide();
+        $('#free_gift2').hide();
+        $('#free_gift3').hide();
+    }
+
+    //买即赠
+    if(totalPrice > 42){
+        $('#free_gift').show();
+    }else{
+        $('#free_gift').hide();
+    }
+
+    $('.or_form em').html('￥' + totalPrice);
+}
+
+//检查换购是否满足条件
+function check_hg(data){
+    //秒杀总价
+    var msTotal = parseInt(objNum1.val()) * parseFloat(objNum1.attr('data-price')) +
+            parseInt(objNum2.val()) * parseFloat(objNum2.attr('data-price')) +
+            parseInt(objNum3.val()) * parseFloat(objNum3.attr('data-price')) +
+            parseInt(objNum4.val()) * parseFloat(objNum4.attr('data-price'));
+
+    //多件多折
+    var tmTotal = parseInt(objNum5.val()) * parseInt(objNum5.attr('data-price')) +
+            parseInt(objNum6.val()) * parseInt(objNum6.attr('data-price')) +
+            parseInt(objNum7.val()) * parseInt(objNum7.attr('data-price')) +
+            parseInt(objNum8.val()) * parseInt(objNum8.attr('data-price'));
+            //parseInt(objNum9.val()) * parseInt(objNum9.attr('data-price'));
+
+    //买1送1总价
+    var oneBuyOneTotal = parseInt(objNum9.val()) * parseInt(objNum9.attr('data-price')) +
+			parseInt(objNum10.val()) * parseInt(objNum10.attr('data-price')) +
+            parseInt(objNum11.val()) * parseInt(objNum11.attr('data-price')) +
+            parseInt(objNum12.val()) * parseInt(objNum12.attr('data-price'));
+            //parseInt(objNum13.val()) * parseInt(objNum13.attr('data-price'));
+
+    var needPrice = msTotal + tmTotal + oneBuyOneTotal;
+
+    var hgNums = parseInt(objNum13.val()) + parseInt(objNum14.val()) + parseInt(objNum15.val()) + parseInt(objNum16.val());
+
+    if(needPrice>=200 && needPrice<400){
+        //金额满200但不够400
+        if(hgNums>=1){
+            alert('还差一点！非换购产品满400又能多换一件啦！');
+            return false;
+        }
+    }else if(needPrice >= 400){
+        //金额满400
+        if(hgNums>=2){
+            alert('换购产品数量超标啦~');
+            return false;
+        }
+    }else{
+        //未满200不能换购
+        alert('亲，满200才能换购产品哟！');
+        return false;
+    }
+
+    if(data == 'num13'){
+        objNum13.val(parseInt(objNum13.val())+1);
+    }
+    if(data == 'num14'){
+        objNum14.val(parseInt(objNum14.val())+1);
+    }
+    if(data == 'num15'){
+        objNum15.val(parseInt(objNum15.val())+1);
+    }
+    if(data == 'num16'){
+        objNum16.val(parseInt(objNum16.val())+1);
+    }
+    number_price()
+    return true;
+}
+    
+function senbuy() {
+    var buyNums = 0;
+    $('.in_num').each(function(){
+        buyNums += parseInt($(this).val());
+    });
+    if (buyNums <= 0) {
+        alert("来都来到这了，挑件商品再走吧!");
+        return false;
+    }
+    if ($('#username').val() == "" || !/^[\u4E00-\u9FA5\uF900-\uFA2D]{2,}$/.test($('#username').val()) && $('#username').val().length >=2) {
+        alert("请填写正确的收货人姓名!");
+        $('#username').focus();
+        return false;
+    }
+    if ($('#userphone').val() == "" || /^0?(1[34578]\d{9}|1\d+\*{3,}\d+)$/.test($('#userphone').val()) == false) {
+        alert("手机号码不为空或格式不正确，请重新输入");
+        $('#userphone').focus();
+        return false;
+    }
+    if($('input[name="phoneNum"]').val()!=undefined){
+        if($('input[name="phoneNum"]').val()==''){
+            alert("请输入验证码!");
+            $('input[name="phoneNum"]').focus();
+            return false;
+        }
+    }
+    if(parseInt($('select[name="province"]').val())<=0){
+        alert("请您选择收货人所在省份！");
+        return false;
+    }
+    if(parseInt($('select[name="city"]').val())<=0){
+        alert("请您选择收货人所在城市！");
+        return false;
+    }
+    if(parseInt($('select[name="district"]').val())<=0){
+        alert("请您选择收货人所在区域！");
+        return false;
+    }
+    if($('select[name="town"]').children('option').length>1){
+        if(parseInt($('select[name="town"]').val())<=0){
+            alert("请您选择收货人所在街道/镇！");
+            return false;
+        }
+    }
+    if ($('#textfield').val() == "") {
+        alert("请填写收货地址!");
+        $('#textfield').focus();
+        return false;
+    }
+    $("#orderfrm").submit();
+}
+
+
+//60秒倒计时
+var wait=60;
+function time(o) {
+    if (wait == 0) {
+        o.removeAttribute('disabled');
+        o.value="获取验证码";
+        wait = 60;
+    } else {
+        o.setAttribute('disabled', true);
+        o.value= + wait + "秒后重发";
+        wait--;
+        setTimeout(function() {
+                    time(o)
+                },
+                1000)
+    }
+    $('.phone_code').addClass('on');
+}
+$('#getc_btn').click(function(){
+    if($("input[name=userPhone]").val() == '' || /^1[3-9]{1}[0-9]{9}$/.test($("input[name=userPhone]").val()) == false){
+        alert('您输入的手机号有误');
+        return false;
+    }
+    time(this);
+    var mobile = $("input[name=userPhone]").val();
+    $.post('/Act/sendSms',{mobile:mobile, act_goods:'20160822'},function(msg){
+        if(msg.status == '1'){
+            alert(msg.msg);
+        }else{
+            alert(msg.msg);
+        }
+
+    },'json');
+})
+
+//地址联动
+function addressChage(obj, type){
+    var regionParentId = $(obj).val();
+    var optHtml = '<option value="0">请选择</option>';
+    $.getJSON('/Act/changeRegion', {parent_id:regionParentId, type:type} , function(json){
+        if(type==1){
+            $('select[name="city"]').html(getRegionOption(json.data.regions));
+            $('select[name="district"]').html(optHtml);
+            $('select[name="town"]').html(optHtml);
+        }else if(type==2){
+            $('select[name="district"]').html(getRegionOption(json.data.regions));
+            $('select[name="town"]').html(optHtml);
+        }else if(type==3){
+            $('select[name="town"]').html(getRegionOption(json.data.regions));
+        }
+    });
+}
+function getRegionOption(dataObj){
+    var optionHtml = '<option value="0">请选择</option>';
+    $.each(dataObj, function(i, item){
+        optionHtml += '<option value="'+item.region_id+'">'+item.region_name+'</option>';
+    });
+    return optionHtml;
+}
+{/literal}
+</script>
+
+    </body>
+</html>

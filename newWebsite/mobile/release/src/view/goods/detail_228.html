@@ -1,0 +1,283 @@
+<link rel="stylesheet" href="/public/css/detail.css">
+<style scoped>
+	.pa_b{padding-top: 1em;}
+    .pa_t{padding: 1em 1em 0;}
+    .cor_red{font-style: normal;color:#db0742; }
+    .troubs{text-align: center;padding:1em 0;line-height: 1.5em;font-size: 1.2em;}
+    .troubs01{padding:0em 0 1em 1em;}
+    .troubs02{text-align: left;padding:0.5em 1em 0;}
+    .troubs03{padding:1em;line-height: 1.5em;font-size: 1.2em;}
+    .over_main{ overflow: hidden;padding: 0.5em 0 0.3em 1em;}
+    .lefe_img{ float: left; width: 35%;}
+    .lefe_img img{max-width: 199px; width: 100%;}
+    .lefe_text{padding-top: 0.2em; padding-left: 0.5em;}
+    .lefe_text p{display: inline-block;color:#a0a0a0;}
+    .lefe_text p.col{ color: #000;display: inline-block; color: #000; text-align: center;font-weight: bold;}
+    .main_wh{ width: 62%; font-size: 0.8em;}
+    .main_wh span{ font-size: 1em;}
+   /* .si_text{ font-size: 0.8em;}*/
+    .de-3 {padding: 1em 0;}
+    .de-3 li{padding: 0 1em; font-size: 1.2em; margin-bottom: 0.8em;}
+    .de-3 li img{width: 30%; margin-right: 0.8em;}
+    .de-3 li p{display: inline-block;}
+    .de-3 li span{color: #d51838;}
+    .de-4{padding-bottom: 1em;}
+    .de-4 li{width: 100%; padding: 1em 0.8em ; display: table;border-bottom:1px dashed #e1e1e1;}
+    .de-4 li.no_br{border-bottom:0;}
+    .de-4 li img{display: table-cell; max-width: 167px;}
+    .de-4 li .s_steps{width: 70%; padding-left: 0.8em; display: table-cell; vertical-align: middle;}
+    .c_step{overflow: hidden;display: table;margin-bottom:0.5em;}
+    .de-4 li em{font-size: 1.2em; color: #fff;background: #ea2143;display: table-cell;vertical-align: middle;padding:0 0.5em;}
+    .de-4 li span{padding: 0 0.4em; margin-left: 0.4em; color: #ea2143;display: table-cell;}
+    .de-5{padding: 0.8em;}
+    .de-5 li{padding: 0.6em 0.8em 0; font-size: 1.2em;}
+    .de-5 li span{padding: 0 0.4em; margin-right: 0.4em; background: #fe1c42; color: #fff;}
+    .pad_u{ padding: 0.5em 1.2em 0;}
+    .prod-info dt{padding: 0.2em 0.8em; background: #f2f2f2; font-size: 1.2em;}
+    .four_w{padding:0 1em 1em;overflow: hidden;}
+    .f_w{width:22%;float:left;margin-right:3%;}
+    .f_w dt{text-align: center;}
+    .f_w dt img{width:100%;max-width:130px;}
+    .f_w dd b{color:#db0742; display: block;text-align: center;margin-top:0.5em;}
+    .f_w dd p{padding-top:0.5em;}
+    .f_w.l_np{margin-right:0;}
+    .thre_w{padding:0 1em 1em;overflow: hidden;}
+    .t_w{width:30%;float:left;margin-right:3%;padding-top:1em;}
+    .t_w dt{text-align: center;}
+    .t_w dt img{width:100%;max-width:178px;}
+    .t_w dd b{color:#db0742; display: block;text-align: center;margin-top:0.5em;}
+    .t_w dd p{padding-top:0.5em;}
+    .t_w.l_np{margin-right:0;}
+    .two_w{padding:1em;overflow: hidden;}
+    .tw_w{width:45%;float:left;margin-right:3%;padding-bottom:1em;}
+    .bp .tw_w{width:48%;}
+    .m_tw{width:52%;}
+    .tw_w dt{text-align: center;}
+    .tw_w dt img{width:100%;max-width:246px;}
+    .m_tw dt img{width:100%;max-width:285px;}
+    .tw_w dd b{color:#db0742; display: block;text-align: center;margin-top:0.5em;}
+    .tw_w dd p{padding-top:0.5em;text-align: center;}
+    .bp .tw_w dd p{padding-top:0.5em;text-align: left;}
+    .tw_w.l_np{margin-right:0;}
+    .ovh{overflow: hidden;}
+    .two_sk{display: table;width:100%;overflow: hidden;padding-left:1em;}
+    .two_sk dt{display: table-cell; width:40%;text-align: center;}
+    .two_sk dt img{width:85%;max-width: 196px;}
+    .two_sk dd{display: table-cell;vertical-align: middle;padding-left:0.5rem;}
+    .dt_cf p{line-height: 1.5em;font-size:0.85rem;}
+    .detail-case { padding: 0.8em 0.2em 0;}
+	.detail-case li {padding-bottom: 0.8em;}
+	.detail-case li div { padding: 0.4em 0; margin-bottom: 0.4em; background: #f2f2f2; text-align: center; font-size: 1.2em;}
+	.detail-case li em { color: #000;}
+	.detail-case li b { font-size: 1.2em;  color: #fe1c42; display: block;}
+    .detail-box{padding: .5em 1em;}
+</style>
+
+<div class="detail-box">
+    <header class="detail-hd hd">痘印对于生活质量影响超于痘印本身</header>
+    <p class="troubs troubs01 troubs02" >很多情况下，脸上痘印跟自己随意挤压、乱用护肤品、暴晒等有关，不专业的手法、不正确的判断，很容易在去痘时伤及真皮层，留下痘印、疤痕。</p>
+    <div class="thre_w">
+        <dl class="t_w">
+            <dt><img src="/public/images/goods_res/228/save_01.jpg"></dt>
+            <dd>                     
+                <b>影响工作升迁</b>
+            </dd>
+        </dl><dl class="t_w">
+            <dt><img src="/public/images/goods_res/228/save_02.jpg"></dt>
+            <dd>
+                <b>影响社交能力</b>
+            </dd>
+        </dl>
+        <dl class="t_w">
+            <dt><img src="/public/images/goods_res/228/save_03.jpg"></dt>
+            <dd>
+                <b>影响心理情绪</b>
+            </dd>
+        </dl>
+    </div> 
+</div>
+<div class="detail-box">
+    <header class="detail-hd hd">焕新天然"源动力" 拯救痘印肌</header>
+    <img src="/public/images/goods_res/228/img_01.jpg" alt="">
+    <p class="troubs03">针对女性痘痘成因，采用植物干细胞萃取技术提炼多种草本抑痘成分，痘痘“酸毒”微导技术，输送抑痘成分直击痘痘患部，清除毒素脓包，使肌表安全焕新，快速消肿、抑菌、平痘效果，实现真正天然去痘产品。</p>
+</div>
+<ntell></ntell>
+<div class="detail-box">
+    <header class="detail-hd hd">两大技术  4段式淡化痘印 </header>
+    <p class="pa_t">Etioline专利美白成分：具有显著提高肤色修复能力，完美消除痘印痘痕处的顽固色素，抑制色素再生，促使肌肤细胞恢复活力，使肌肤恢复晶莹无暇透亮。<br/>胶原蛋白微分子更新技术： 促进肌肤微胶原蛋白的生长能力，帮助修复因长痘而受损的肌肤，加速表皮焕新，补充缺失的胶原蛋白和营养，使受损细胞回复圆润。</p>
+    <dl class="two_sk">
+        <dd class="dt_cf">
+            <p><i class="cor_red">击散</i> 击散大片面积的色素沉淀</p>
+            <p><i class="cor_red">抑制</i> 抑制肌底色素细胞生成</p>
+            <p><i class="cor_red">代谢</i> 促进肌肤胶原蛋白再生</p>
+            <p><i class="cor_red">修复</i> 修复细胞肌肤回复润泽</p>
+        </dd>
+        <dt><img class="pa_b" src="/public/images/goods_res/228/two_sk.jpg"  alt=""></dt>
+    </dl>
+</div>
+<ntell></ntell>
+<div class="detail-box">
+	<header class="detail-hd hd">六大功效 精准去印</header>
+	<div class="thre_w">
+        <dl class="t_w">
+            <dt><img src="/public/images/goods_res/228/six_m_01.jpg"></dt>
+            <dd>                     
+                <b>深层净化</b>
+                <p>清除肤表角质</p>
+            </dd>
+        </dl><dl class="t_w">
+            <dt><img src="/public/images/goods_res/228/six_m_02.jpg"></dt>
+            <dd> 
+                <b>控油消肿</b>
+                <p>舒缓抗菌消肿</p>
+            </dd>
+        </dl>
+        <dl class="t_w l_np">
+            <dt><img src="/public/images/goods_res/228/six_m_03.jpg"></dt>
+            <dd>
+                <b>深层修复</b>
+                <p>再生胶原蛋白</p>
+            </dd>
+        </dl>
+        <dl class="t_w">
+            <dt><img src="/public/images/goods_res/228/six_m_04.jpg"></dt>
+            <dd>
+                <b>淡化痘印</b>
+                <p>击散排出色素</p>
+            </dd>
+        </dl>
+        <dl class="t_w">
+            <dt><img src="/public/images/goods_res/228/six_m_05.jpg"></dt>
+            <dd>
+                <b>细致嫩白</b>
+                <p>焕发亮白光泽</p>
+            </dd>
+        </dl>
+        <dl class="t_w l_np">
+            <dt><img src="/public/images/goods_res/228/six_m_06.jpg"></dt>
+            <dd>
+                <b>长效保湿</b>
+                <p>水润滋养肌肤</p>
+            </dd>
+        </dl>
+    </div> 
+</div>
+<div class="detail-box">
+	<header class="detail-hd hd">天然植物精华  净白去印</header>
+	<div class="two_w">
+        <div class="ovh">
+            <dl class="tw_w">
+            <dt><img src="/public/images/goods_res/228/cl_01.jpg"></dt>
+            <dd>                     
+                <b>五谷提取物</b>
+                <p>促进肌肤白净<br/>激活细胞再生</p>
+            </dd>
+            </dl>
+            <dl class="tw_w m_tw l_np">
+                <dt><img src="/public/images/goods_res/228/cl_02.jpg"></dt>
+                <dd> 
+                    <b>蜂皇浆</b>
+                    <p>营养美容<br/>肌肤自我修复</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="ovh">
+            <dl class="tw_w">
+            <dt><img src="/public/images/goods_res/228/cl_03.jpg"></dt>
+            <dd>
+                <b>荷荷巴油</b>
+                <p>亲肤保湿<br/>深锁水强控油</p>
+            </dd>
+            </dl>
+            <dl class="tw_w m_tw l_np">
+                <dt><img src="/public/images/goods_res/228/cl_04.jpg"></dt>
+                <dd>
+                    <b>假马齿苋</b>
+                    <p>抗菌收敛<br/>镇静安抚消肿</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="detail-box">
+	<header class="detail-hd hd">4步焕白肌肤淡化痘印</header>
+	 <ul class="de-4">
+        <li>
+            <img src="/public/images/goods_res/228/step_01.jpg" alt="">
+            <div class="s_steps" >
+                <div class="c_step"><span class="si_text">1.清颜：清颜祛痘洁面乳 </span></div>
+                <p>蕴含天然茶树与芦荟精华，细腻泡沫能带走毛孔油腻污垢，一抑制多余油脂分泌，特含蜂王浆，补充肌肤水分，改善粗大毛孔，令肌肤细腻紧致。</p>
+            </div>
+        </li>
+         <li>
+            <img src="/public/images/goods_res/228/step_02.jpg" alt="">
+            <div class="s_steps" >
+                <div class="c_step"><span class="si_text">2.滋润：清本源五谷焕彩肌底液  </span></div>
+                <p>特别萃取五谷养肤精华成分肌底净透保养因子，其超强抗氧力，能为去痘后的肌肤带来全面白皙与细腻肤感，蕴含五谷精华能保养肌底使肌底白润。</p>
+            </div>
+        </li>
+         <li>
+            <img src="/public/images/goods_res/228/step_03.jpg" alt="">
+            <div class="s_steps" >
+                <div class="c_step"><span class="si_text">3.调理：清颜祛痘调理水</span></div>
+                <p>能抑制多余油脂分泌，补充水分，调理肌肤至平衡健康状态。改善因痘痘引起的毛孔粗大、黑头、粉刺等问题，肌肤清爽细腻。</p>
+            </div>
+        </li> 
+        <li class="no_br">
+            <img src="/public/images/goods_res/228/step_04.jpg" alt="">
+            <div class="s_steps" >
+                <div class="c_step"><span class="si_text">4.焕新：平肤祛印修护霜</span></div>
+                <p>可迅速渗透到肌底层，帮助修复受损肌肤，促进肌表焕新，补充缺失的胶原蛋白与营养，缔造肌肤晶莹剔透般水润感。</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="detail-box">
+	<header class="detail-hd hd">大肌肤问题  一套到位</header>
+	 <div class="two_w bp">
+        <div class="ovh">
+            <dl class="tw_w">
+                <dt><img src="/public/images/goods_res/228/bp_01.jpg"></dt>
+                <dd>                     
+                    <p>1、因表皮破损导致色素沉淀   使用后痘印明显淡化</p>
+                </dd>
+            </dl>
+            <dl class="tw_w l_np">
+                <dt><img src="/public/images/goods_res/228/bp_02.jpg"></dt>
+                <dd> 
+                    <p>2、角质层被破坏，皮肤粗糙干燥  使用后肌肤细腻平衡</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="ovh">
+            <dl class="tw_w">
+                <dt><img src="/public/images/goods_res/228/bp_03.jpg"></dt>
+                <dd>
+                    <p>3、真皮层受损留下明显痘痕  使用后痘痕痘印减少很多</p>
+                </dd>
+            </dl>
+            <dl class="tw_w l_np">
+                <dt><img src="/public/images/goods_res/228/bp_04.jpg"></dt>
+                <dd>
+                    <p>4、瘢痕体质，疤痕明显    使用后痕迹减少肌肤白嫩</p>
+                </dd>
+            </dl>
+        </div>
+    </div> 
+</div>
+<div class="detail-box">
+	<header class="detail-hd hd">会员真实心声~~赞不停！！</header>
+	<ul class="detail-case pad_u">
+        <li>
+            <img src="/public/images/goods_res/228/img_02.jpg" alt="">
+            <div>魏菲菲：26岁 | <em>综合型肤质</em><b>没痘印，路人变白富美！</b></div>
+            <p>痘印真的是硬伤！肤色再白，气质再好都得毁！以前我一直想着快点去掉它们，可用了许多产品都没有改善。后来偶尔用了韩国瓷肌祛痘印套装，没想到用了半个月，脸上的油光控制了，痘印也在变淡。现在同事说我皮肤变得好了， 连气质都连升了好几档，哈哈！ 
+            </p>
+        </li>
+        <li>
+            <img src="/public/images/goods_res/228/img_03.jpg" alt="">
+            <div>潘健：25岁 | <em>油性肌肤</em><b>痘印滚粗，男人也要好皮肤！</b></div>
+            <p>作为一名销售人员，仪容仪表很重要，无奈青春期留了一脸痘疤痘印，简直无法忍！朋友说韩国瓷肌祛痘印套装不错，果断买一套回家！还真是好用，洗面奶洗得很干净，调理水涂在脸上凉凉的，非常舒服。1个多月，痘印就消失了，脸上很干净，客人都说我笑容很有魅力~</p>
+        </li>
+    </ul>
+</div>

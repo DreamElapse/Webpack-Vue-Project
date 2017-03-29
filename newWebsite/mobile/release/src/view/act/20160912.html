@@ -1,0 +1,92 @@
+<style>
+.pr{position:relative;}
+.pr a{position: absolute;display: block; width:50%; height:100%; top:0; }
+.pr a.buy_btn1,.pr a.buy_btn3,.pr a.buy_btn5{left:0;}
+.pr a.buy_btn2,.pr a.buy_btn4,.pr a.buy_btn6{left:50%;}
+/*在线下单*/
+.zx_order{background:#db0743; height:2.5em; line-height:2.5em; color:#fff; text-align:center;}
+.order_con{padding:.5em 0.2em;}
+.order_con .step {padding-left:.5em;}
+.order_con .step p{line-height:1.5em; color:#d91414;}
+.order_con .imgs{max-width:276px; width:50%; margin:0px auto; padding-top:1em;}
+.order_con .imgs img{max-width:276px; width:100%; border:solid 1px #d6d6d6;}
+.order_con .p_tit{font-size:1em; color:#646464; line-height:2em; text-align:center; font-weight:normal;}
+.pr_info{padding:.5em;}
+.or_form{color:#515151;}
+.or_form table,.or_form td,.or_form tr{border:1px solid #000;}
+.or_form p{padding:5px 0em; line-height:1.5em;}
+.or_form p span.sel_n{border:solid 1px #d1d1d1; vertical-align:middle; display:inline-block; line-height:25px; height:27px; width:28px; text-align:center; cursor:pointer;}
+.or_form p span.num_txt{padding-left:.5em; display:inline-block;}
+.or_form p span.num_txt i{font-style:normal; color:#d91414;}
+.or_form p span.num_txt em{font-style:normal; color:#d91414;}
+.or_form lable{width:4em; display:inline-block; font-size:1em; line-height:1.7em; height:1.7em; vertical-align:middle;}
+.or_form lable.wi{width:5.3em;}
+.or_form input{width:80%; display:inline-block; border:solid 1px #d1d1d1; line-height:1em; height:1.7em; text-indent:.5em; vertical-align:middle;}
+.or_form input.kcon{width:70%;}
+.or_form input.in_num{width:2.4em; text-align:center; text-indent:0em; margin:0em .2em;}
+.or_form textarea{display:inline-block; border:solid 1px #d1d1d1; width:70%; line-height:1.2em; height:4em; text-indent:.5em; font-family:'Microsoft YaHei';}
+.or_form input.sub{width:90%; margin:0em auto; background:#1dbe56; height:2em; line-height:2em; text-align:center; color:#fff; font-size:1.2em; font-family:'Microsoft YaHei'; border-radius:.2em; margin-bottom:1em;}
+
+#gift_tab tr td:last-child{width: 20%;}
+.silde-addr{display:inline-block;width:80%;overflow:hidden;line-height: 1em;height: 1.7em;vertical-align: middle;float:left;}
+.silde-addr select{display: inline-block;width: 25%;float: left;line-height: 1em;height: 1.7em;border: 0;border-left: 1px solid #ccc;outline:none;}
+.silde-addr select:nth-child(1){border-left:0;}
+/* 支付方式选择 */
+.payment{background: #fff; border-top: 0; padding-top: 0.4em; padding-bottom: 0.8em;}
+.payment ul{padding-bottom: 0.8em;}
+.payment li{width: 25%; padding-top: 0.5em; text-align: center; float: left;}
+.payment li .icon{width: 3.5em; height: 3.5em; background-image: url(/public/images/detail/payment.png); background-size: 17em;}
+.icon-alipay{background-position: -4.2em 0;}
+.icon-tenpay{background-position: -8.4em 0;}
+.icon-unionpay{background-position: -12.8em 0;}
+.payment li p{padding-top: 0.2em; height: 3.5em; display: block;}
+.payment li span{color: #ea2143; white-space: nowrap;}
+.payment .btn-submit{width: 90%; line-height: 1.8em; background: #ea2143; border-radius: 5px; text-align: center; font-size: 1.8em; color: #fff; display: block; margin: 0 auto;}
+</style>
+<img src="/public/images/act/20160912/img_01.jpg" />
+<img src="/public/images/act/20160912/img_02.jpg" />
+<img src="/public/images/act/20160912/img_03.jpg" />
+<img src="/public/images/act/20160912/img_04.jpg" />
+<img src="/public/images/act/20160912/img_05.jpg" />
+<img src="/public/images/act/20160912/img_06.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20160912/img_07.jpg" />
+    <a href="javascript:;"  data="num1"></a>
+    <a href="javascript:;"  data="num2"></a>
+</div>
+<img src="/public/images/act/20160912/img_08.jpg" />
+<img src="/public/images/act/20160912/img_09.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20160912/img_10.jpg" />
+    <a href="javascript:;" data="num3"></a>
+    <a href="javascript:;" data="num4"></a>
+</div>
+<img src="/public/images/act/20160912/img_11.jpg" />
+<a href="javascript:;" data="num5"><img src="/public/images/act/20160912/img_12.jpg" /></a>
+<img src="/public/images/act/20160912/img_13.jpg" />
+<img src="/public/images/act/20160912/img_14.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20160912/img_15.jpg" />
+    <a href="javascript:;" data="num6"></a>
+    <a href="javascript:;" data="num7"></a>
+</div>
+<img src="/public/images/act/20160912/img_16.jpg" />
+<img src="/public/images/act/20160912/img_17.jpg" />
+ <div class="pr">
+    <img src="/public/images/act/20160912/img_18.jpg" />
+    <a href="javascript:;" data="num8"></a>
+    <a href="javascript:;" data="num9"></a>
+</div>
+<img src="/public/images/act/20160912/img_19.jpg" />
+<img src="/public/images/act/20160912/img_20.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20160912/img_21.jpg" />
+    <a href="javascript:;" data="num10"></a>
+    <a href="javascript:;" data="num11"></a>
+</div>
+<img src="/public/images/act/20160912/img_22.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20160912/img_23.jpg" />
+    <a href="javascript:;" data="num12"></a>
+    <a href="javascript:;" data="num13"></a>
+</div>

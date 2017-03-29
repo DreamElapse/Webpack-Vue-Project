@@ -1,0 +1,53 @@
+<style scoped>
+    .pr{position:relative;}
+    .pr a{position: absolute;display: block; width:44%; height:70%; bottom:15%;cursor: pointer;}
+    .pr a.buy_btn1{left:3%;}
+    .pr a.buy_btn2{left:54%;}
+    .pr a.buy_btn3{bottom:55%;}
+    .pr a.buy_btn4{bottom:32%;}
+     .top_click{position:relative;}
+    .top_click a{position:absolute; bottom:4%; left:24%; width:12%; height:14%;cursor: pointer;}
+    .top_click a:nth-of-type(2){left:57%;}
+    .top_click a:nth-of-type(3){left:88%;}
+</style>
+
+<img src="/public/images/act/20160914/img_01.jpg" />
+<div class="top_click">
+    <img src="/public/images/act/20160914/img_02.jpg" />
+    <a class="buy_btn2" @click="buy(packageList[0][0])"></a>
+    <a class="buy_btn2" @click="buy(giftList[0][0])"></a>
+    <a class="buy_btn2" @click="buy(giftList[0][1])"></a>
+</div>
+<img src="/public/images/act/20160914/img_03.jpg" />
+<div class="pr">
+   <img src="/public/images/act/20160914/img_04.jpg" /> 
+   <a class="buy_btn2" @click="buy(giftList[1][6])"></a>
+</div>
+<img src="/public/images/act/20160914/img_05.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20160914/img_06.jpg" />
+    <a class="buy_btn1 buy_btn3" @click="buy(giftList[1][0])"></a>
+    <a class="buy_btn2 buy_btn3" @click="buy(giftList[1][5])"></a>
+</div>
+<div class="pr">
+    <img src="/public/images/act/20160914/img_07.jpg" />
+    <a class="buy_btn1" @click="buy(giftList[1][1])"></a>
+    <a class="buy_btn2" @click="buy(giftList[1][3])"></a>
+</div>
+<img src="/public/images/act/20160914/img_08.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20160914/img_09.jpg" />
+    <a class="buy_btn1 buy_btn6" @click="buy(giftList[1][2])"></a>
+    <a class="buy_btn2 buy_btn7" @click="buy(giftList[1][4])"></a>
+</div>
+<img src="/public/images/act/20160914/img_10.jpg" />
+<div class="pr">
+    <img src="/public/images/act/20160914/img_11.jpg" />
+    <a class="buy_btn1 buy_btn4" @click="buy(giftList[2][1])"></a>
+    <a class="buy_btn2 buy_btn4" @click="buy(giftList[2][2])"></a>
+</div>
+<div class="pr">
+    <img src="/public/images/act/20160914/img_12.jpg" />
+    <a class="buy_btn1" @click="buy(giftList[2][0])"></a>
+    <a class="buy_btn2" @click="buy(giftList[2][3])"></a>
+</div>

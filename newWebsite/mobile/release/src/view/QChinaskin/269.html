@@ -1,0 +1,276 @@
+<style scoped>
+.sh_tit{ font-weight:bold;background: #db0743;text-align: center;line-height: 2.4em;color: #fff;clear: both;}
+.sh_tit_cha{ background:#fff; border-bottom:1px dashed #dc1d6b; color:#db0743;}
+.pro_des{ padding:1em 0.5em;}
+.pro_des div:nth-child(1){ float:left; width:42%; font-size:0.9em; line-height:1.3em}
+.pro_des div:nth-child(1) img{ padding-bottom:10px; width:90%; padding-left:10%;}
+.pro_des div:nth-child(2){ float:right; width:58%; padding-top:56px; text-align:center}
+.pro_des img{ width:90%;}
+.suit_des{ padding:0; border:1px solid #d9d9d9}
+.suit_des h3{ font-weight:normal; color:#5e5e5e; background:#eeeeee; padding:0.2em}
+.suit_des p{padding:0.2em}
+.main .hidden{display: none;}
+.w100 img{width:100%;}
+.w85 img{width:85%;max-width: 490px;}
+.w603{padding-bottom:1em;}
+.w603 img{width:95%;max-width: 603px;}
+.w85 span{text-align: center;display: block;padding:0.8em 0;}
+.w85 h2{font-size: 1.0em;color:#000;}
+.pr{position: relative;}
+.o_order{height: 39%;left: 4%;position: absolute;top: 46%;width: 45%;}
+.on_chat{position: absolute;top:46%;right:4%;width:45%;height:39%;}
+.zlb ul li.ht p{color:#585858;font-size: 0.9em;padding:0 0.8em; }
+.zlb ul li.ht img{width:100%;}
+.js_01 .swinfo .buybut{border:1px solid #bf0238;border-radius: 0.2em;box-shadow: 0 0.1em 0.1em #ccc;}
+.js_02{margin:0; font-size:.8em;}
+.js_02 h3{padding:0.2em 0.8em;}
+.js_02 p{padding:0.2em 0.8em; font-size:0.9em;}
+.suit_des{border:0;}
+.why_c dl{padding:0 0.8em;}
+.why_c dl dt{border-bottom: 1px solid #ccc;text-align: center;padding:0.4em 0 0.8em;}
+.why_c dl dt img{width:100%;max-width: 220px;}
+.why_c dl.w322 dt{padding-bottom: 0;}
+.why_c dl.w322 dt img{width:100%;max-width: 322px;}
+.why_c dl.w322 dt span{display: inline-block;text-align: center;width:54%;}
+.why_c dl dt span{display: inline-block;text-align: center;width:37%;}
+.why_c dl dd h2{color:#000;font-size: 1em;padding:0.5em 0;}
+.b_adv{padding-top:0.6em;}
+.b_tit{background: #ccc;padding:0.4em 0 0.4em 0.6em;color:#000;}
+.b_tit span{display: inline-block;width:6%;}
+.b_tit span img{width:95%;max-width: 40px;}
+.b_adv ul li span{padding:0.6em 0;display: block;}
+.b_adv ul li{text-align: center;}
+.w100 ul li.w_li{ margin:.5em auto; line-height:2em; font-size:0.9em; color:#353535;}
+.w100 ul li .wli_tit{ background:#e86671; width:1em; padding:0.3em 0.6em; margin-right: 1em; color:#fff;}
+.tb_01{ padding:.5em 1em; color:#000;}
+.tb_01 p{ color:#555555; font-size:.8em; line-height:2.6em;}
+.tb_tit{ background:#db0742; width:1em; padding:0.3em 0.8em; margin-right: 1em; color:#fff;}
+.w100 ul li .wli_aft{ font-weight:bold;}
+.w100 .dk_L{ width:34.5%;}
+.w100 .dk_R{ text-align:left; width:62%; font-size:0.8em;padding-top: 2.5em;}
+.red{ color:#db0743;}
+.rm_01{ padding:1em; color:#000;}
+.w_in{ color:#555555; font-size:.7em;}
+.w100 .wb_L{ width:36%;}
+.w100 .wb_R{ text-align:left; width:62%; font-size:0.9em;padding-top: 0.5em;}
+.w100 .wb_R .wb_li{ margin:.5em auto; line-height:2em; font-size:1em; color:#555555; display:block;}
+.w100 .wb_R .wb_li .wli_tit{ background:#e86671; width:1em; padding:0.3em 0.6em; margin-right: 1em; color:#fff;}
+.w100 .wb_R .wb_li .redwb{color:#db0742; font-size:1.4em; line-height: 1.2em;}
+.clear{ clear:both;}
+.imgsn lable{width:3em; display:inline-block; font-size:1em; line-height:1.7em; height:1.7em; vertical-align:middle; color:#515151;}
+.infor_t p { color: #515151;}
+.or_form input {border: 1px solid #d1d1d1;display: inline-block;height: 2.5em;line-height: 2em;text-indent: 0.5em;vertical-align: middle;width: 80%;}
+.or_form input.sub{width:90%; margin:0em auto; background:#1dbe56; height:2em; line-height:2em; text-align:center; color:#fff; font-size:1.2em; font-family:'Microsoft YaHei'; border-radius:.2em; margin-bottom:1em;}
+.w100 .mb_L{ width:31.2%;}
+.w100 .mb_R{ text-align:left; width:61%; font-size:0.8em;padding-top: 1.0em;}
+.w100 .mb_R em{ display:block; background:#f5f5f5;font-size:1em; padding:.3em 1em; color:#6f6f6f; font-weight:bold; margin-bottom:0.5em;}
+.pl20{ padding-left:2em;}
+.hsu_tit{ background:#f5f5f5;font-size:.9em; padding:.3em 1em; color:#000000; font-weight:bold; margin-bottom:0.5em; width:80%; margin:1em auto; text-align:center;}
+.w100 .hss_L{ }
+.w100 .hss_R{ text-align:left;  font-size:0.8em;padding-top: 2.8em;}
+.linedashed{ border-bottom:1px #dcdcdc dashed; height:1px; width:93%; margin:0 auto;}
+.mb_10{ margin-bottom:1em;}
+</style>
+<div class="new-ct main">
+	
+	<div class="focus"><a href="#orderpr" onclick="PIWI_SUBMIT.first_screen_click()"><img src="/public/images/q_goods/269/269b/banner.jpg" alt="" /></a></div>
+	
+	<!--推荐-->
+	<div class="sh_tit">颜值界大咖  李治廷倾情推荐</div>
+	<div class="w100">
+    	<p class="dk_L fl"><img src="/public/images/q_goods/269/269b/img_03.jpg" alt="" /></p>
+        <p class="dk_R fl">
+        	作为艺人，熬夜是常有的事。面对镜头，必须保持皮肤的白皙、干净、柔嫩。为大家推荐天然、安全、有效、持久的瓷肌抑黑焕白套装，有效针对以上6种"暗黄肌"类型。
+        </p>
+    </div>
+	<div class="sh_tit">天然 • 植物成分安全美白</div>
+    <div class="w100"><img src="/public/images/q_goods/269/269b/img_01.jpg" alt="" /></div>
+    <div class="w100"><img src="/public/images/q_goods/269/269b/img_02.jpg" alt="" /></div>
+	<!--介绍-->
+	<!-- <div class="sh_tit">真材实料  绝密档案</div> -->
+	<!-- <div class="js_01">
+		<p class="fl swimg"><img src="/public/images/q_goods/269/js_01.jpg" alt="" /></p>
+		<div class="fl swinfo">
+			<h3>瓷肌抑黑焕白套装</h3>
+			<p><i>原价{$goods_info.market_price}</i><br />   <em>优惠价￥<span>{$goods_info.shop_price}</span></em></p>
+			<div class="buybut"><a href="#orderpr" onclick="BuyNow()">立即购买</a></div>
+		</div>
+	</div> -->
+	<!-- <div class="js_02 suit_des">
+		<h3>套装包含产品</h3>
+		<p>清本源五谷亮白精华霜（V1.0）</br>清本源卸妆洗颜乳（V1.0）</br>清本源角质调整膜（V1.0）</br>净白无瑕五谷焕彩面膜（V1.0）</br>清本源五谷亮白肌底液（V1.0）</br>
+        清本源五谷亮白肌底液（V1.0）（30ml）×1￥228.00元</p>
+		<h3>功效</h3>
+		<p>天然五谷精华能让黄里透黑的肤色明显变白，独创美肤技术使干哑肤质逐渐恢复水嫩透亮，让肌肤宛若新生般白嫩、净透。 </p>		
+	</div> -->
+	<!-- 订购区域&在线订购 -->
+	<!-- {include file="/library/t_chat2.lbi"} -->
+	<!--功效-->
+	<div class="sh_tit">你知道美白有多重要吗？</div>
+	<div class="w100">
+    	<p class="mb_L fl"><img src="/public/images/q_goods/269/269b/mb_01.jpg" alt="" /></p>
+        <p class="mb_R fl">
+        	<em>想变美眉，不用整容，去黄抑黑即可 </em>
+        	俗话说"一白遮三丑"，拥有白嫩的皮肤，给人一种仙女般的美丽，楚楚动人的感觉，蜡黄黯沉的肌肤只会给人黄脸婆、村姑的形象，如果你白一点，就可以很美丽了。
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100">
+        <p class="mb_R pl20 fl">
+        	<em>永久白皙，不能单靠防晒，要坚持美白</em>
+        	虽然你肌肤白皙，但是美白是需要坚持的，日常防晒护理是无法阻隔紫外线伤害，追求完美的你，更需要加强美白，拥有像白炽灯般透亮、净白的肌肤，才能持久亮白美丽。
+        </p>
+    	<p class="mb_L fl"><img src="/public/images/q_goods/269/269b/mb_02.jpg" alt="" /></p>
+        <div class="clear"></div>
+    </div>
+    <!-- 订购区域&在线订购 -->
+	<!-- {include file="/library/t_chat2.lbi"} -->
+	<!--功效-->
+    <div class="sh_tit">美白新科技  黑色素无处可逃</div>
+    <div class="w100">
+    	<h2 class="hsu_tit">天然原料+独创技术=全频健康美白</h2>
+    </div>
+	<div class="w100">
+    	<p class="hss_L fl" style="width:49.3%"><img src="/public/images/q_goods/269/269b/hss_01.jpg" alt="" /></p>
+        <p class="hss_R fl" style="width:40%">
+        	Etioline专利美白成分：最有效酪氨酸酶抑制剂，优秀的抑黑能力结合五谷精华，均匀肤色，降低紫外线照射引起的色素沉着。
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="linedashed"></div>
+    <div class="w100">
+        <p class="hss_R pl20 fl" style="width:40%">
+        	H2H超极渗透技术：与天然原料完美配合，促进细胞新陈代谢，加强水分渗透能力，修复缺水细胞核引起的肌肤问题。
+        </p>
+    	<p class="hss_L fl" style="width:48.5%"><img src="/public/images/q_goods/269/269b/hss_02.jpg" alt="" /></p>
+        <div class="clear"></div>
+    </div>
+    <div class="linedashed"></div>
+    <div class="w100">
+    	<p class="hss_L fl" style="width:46.1%"><img src="/public/images/q_goods/269/269b/hss_03.jpg" alt="" /></p>
+        <p class="hss_R fl" style="width:40%">
+        	DNA美白修复技术：与植物独具的抗氧力相互协助，抵御外界侵害，于内深层修复，让肌肤由内而外绽放透白均匀的完美白皙。
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="sh_tit">仅需三步，分化黑色素，持久透白</div>
+	<div class="w100"><img src="/public/images/q_goods/269/269b/sb_01.jpg" alt="" /></div>
+    <div class="tb_01">
+    	<p><span class="tb_tit">1</span>第一步 微细供氧分子密集渗透肌肤，打开黑色素排泄通道</p>
+        <p><span class="tb_tit">2</span>第二步 肌底注氧，激活老化细胞，全面提亮肤色</p>
+        <p><span class="tb_tit">3</span>第三步 形成肌底保护层，抵御氧化，持久美白</p>
+    </div>
+    <!-- 订购区域&在线订购 -->
+	<!-- {include file="/library/t_chat2.lbi"} -->
+    <div class="sh_tit">天然原料  抑黑焕白</div>
+	<div class="w100"><img src="/public/images/q_goods/269/269b/cj_01.jpg" alt="" /></div>
+	<div class="w100"><img src="/public/images/q_goods/269/269b/cj_02.jpg" alt="" /></div>
+	<div class="w100"><img src="/public/images/q_goods/269/269b/cj_03.jpg" alt="" /></div>
+    <!--5步-->
+    <div class="sh_tit mb_10">5大步骤，还你新生白皙美肌</div>
+    <div class="w100">
+    	<p class="wb_L fl"><img src="/public/images/q_goods/269/269a/wubu_01.jpg" alt="" /></p>
+        <p class="wb_R fl">
+        	<em class="wb_li"><span class="wli_tit">第1步</span> 清本源卸妆洗颜乳</em>
+            <em>净化：彻底洁净肌肤，焕发水润。嫩白深入毛孔，吸附并带走氧化油脂、污垢及老化角质，深度净澈。</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100">
+    	<p class="wb_L fl"><img src="/public/images/q_goods/269/269a/wubu_02.jpg" alt="" /></p>
+        <p class="wb_R fl">
+        	<em class="wb_li"><span class="wli_tit">第2步</span> 清本源角质调整膜</em>
+            <em>疏通：打开肌肤通道，卓越嫩白。保湿洗净废角质，使肌肤机能迅速提升，唤醒活力，有效改善黯哑。</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100">
+    	<p class="wb_L fl"><img src="/public/images/q_goods/269/269a/wubu_03.jpg" alt="" /></p>
+        <p class="wb_R fl">
+        	<em class="wb_li"><span class="wli_tit">第3步</span> 清本源五谷亮白肌底液</em>
+            <em>渗透：补充能量，焕发肌肤水润嫩白。肌底净透因子，精华成分迅速进入肌底释放美白能量，强力击碎黑色素形成。</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100">
+    	<p class="wb_L fl"><img src="/public/images/q_goods/269/269a/wubu_04.jpg" alt="" /></p>
+        <p class="wb_R fl">
+        	<em class="wb_li"><span class="wli_tit">第4步</span> 清本源五谷亮白精华霜</em>
+            <em>抑黑：抑制黑色素，持久美白。丰润的乳霜质地不油腻，有效缓解肌肤干燥、缺水，抗氧抑黑，保持肌肤水感透白。</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <div class="w100">
+    	<p class="wb_L fl"><img src="/public/images/q_goods/269/269a/wubu_05.jpg" alt="" /></p>
+        <p class="wb_R fl">
+        	<em class="wb_li"><span class="wli_tit">第5步</span> 净白无瑕五谷焕彩面膜</em>
+            <em>美白：舒缓肌肤，密集美白。每周使用2-3次，有效舒缓肌肤，消除黯哑，强化肌肤耐受性，补水保湿。</em>
+        </p>
+        <div class="clear"></div>
+    </div>
+    <!--4个阶段-->
+    <div class="sh_tit">四个阶段见证美白效果</div>
+    <div class="w100"><img src="/public/images/q_goods/269/269a/qj_01.jpg" alt="" /></div>
+    <div class="w100">
+    	<ul style="padding:0.2em 0.8em 0.6em;color:#000;">
+        	<li class="w_li"><span class="wli_tit">第一阶段</span>肤色均匀，不再油腻浑浊</li>
+            <li class="w_li"><span class="wli_tit">第二阶段</span>暗沉消褪，肤色提亮一度</li>
+            <li class="w_li"><span class="wli_tit">第三阶段</span>扫尽肌肤暗黄，肌肤水润光泽</li>
+            <li class="w_li"><span class="wli_tit">第四阶段</span>肌肤剔透幼滑，白嫩无暇</li>
+        </ul>
+    </div>	
+    <!-- 订购区域&在线订购 -->
+	<!-- {include file="/library/t_chat2.lbi"} -->
+    
+    
+       
+    
+	<!--案例-->
+	<div class="sh_tit">使用瓷肌，她们白了</div>
+	<div class="w100 w85 w603">
+		<ul>
+			<li>
+				<span><img src="/public/images/q_goods/269/case_01.jpg"></span>
+				<div style="padding:0 0.8em 0.5em;">
+				<h2 style="height:2em;line-height:2em;border-top:1px dashed #ccc">白回来，原来这么简单</h2>
+				<p style="color:#000;">
+				平面设计师：安妮<br />
+				年龄：23岁<br />
+				肤质：干性肤质
+				</p>
+				<p style="color:#666;padding-top:0.4em;">
+				毕业工作两年了，每天面对着电脑，而且还经常性加班。皮肤真的经不住折腾，变得又干有暗沉，一下子像老了好几岁。朋友介绍用了瓷肌的产品，坚持用了一套，效果非常明显，我又是青春无敌小美女了！
+				</p>
+				</div>
+			</li>
+			<li>
+				<span><img src="/public/images/q_goods/269/case_02.jpg"></span>
+				<div style="padding:0 0.8em 0.5em;">
+				<h2 style="height:2em;line-height:2em;border-top:1px dashed #ccc">持久的白，解决天生暗黄</h2>
+				<p style="color:#000;">
+				企业职员：小玲<br />
+				年龄：25岁<br />
+				肤质：混合性肤质
+				</p>
+				<p style="color:#666;padding-top:0.4em;">
+				天生肤质不是很好，皮肤暗黄还容易长痘，试过很多产品都没有持久效果，只能靠化妆遮掩，结果皮肤越来越暗黄。之前在一个论坛看到了瓷肌的产品信息，抱着试一试的想法买了抑黑焕白套装，已经用了快两个月了，还是一直在白，皮肤也变得很细腻，现在的我完全不需要化妆了！
+				</p>
+				</div>
+			</li>
+			<li>
+				<span><img src="/public/images/q_goods/269/case_03.jpg"></span>
+				<div style="padding:0 0.8em 0.5em;">
+				<h2 style="height:2em;line-height:2em;border-top:1px dashed #ccc;">每一步都有惊喜</h2>
+				<p style="color:#000;">
+				美容达人：咖咖萌<br />
+				年龄：19岁<br />
+				肤质：中性肤质
+				</p>
+				<p style="color:#666;padding-top:0.4em;">
+				买了一套，按照客服的指导，按步骤去用，真的每一步用完都是惊喜，最喜欢瓷肌的角质调整膜了，不刺激皮肤，也能把角质清理很干净，还有那一罐大大的面膜，性价比超值，敷一次白一次。
+				</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

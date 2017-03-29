@@ -1,0 +1,200 @@
+<link rel="stylesheet" href="/public/css/topic.css">
+<style scoped>
+    img{display:block;}
+	.by_bt{position:relative;}
+    .by_bt .on_zx{ width:40%; height:2.5em; position:absolute; right:13%; bottom:10%;}
+    .by_bt .on_tel1,.by_bt .on_zx1{bottom:22%;}
+    .by_bt .on_tel2,.by_bt .on_zx2{bottom:4%;}
+    .effect{text-align:center;color:#343434;padding: 1rem 0;}
+    .effect h2{font-size:1.4rem;font-weight: bolder;}
+    .effect span{font-size:1.4rem;border-top:1px solid #343434;border-bottom:1px solid #343434;padding:0.05rem 1rem;margin: 0.1rem 0 0.15rem;display: inline-block;}
+    .effect p{color:#8a8a8a;background:#f7f7f7;}
+    .effect p b{color:#997631;font-size: 0.9rem;}
+    .four_fail{background:#f7f7f7;width:100%;overflow:hidden;}
+    .four_fail ul{width:100%;overflow: hidden;}
+    .four_fail ul li{float:left;width:50%;text-align: center;}
+    .four_fail ul li span{display:block;text-align:center;}
+    .four_fail ul li div{width:89%;display: inline-block;background:#fff;padding:0.4rem 0.4rem 0;box-shadow: 3px 3px 13px #d8d8d8;margin-bottom:1rem}
+    .four_fail ul li span img{display:inline-block;width:100%;max-width: 261px;}
+    .four_fail ul li b{position: relative;display:block;text-align:center;color:#aa7d37;font-size: 0.85rem;padding:0.4rem 0;font-weight: normal;}
+    .four_fail ul li b i{width:0.65rem;height:0.65rem;background:url(/public/images/topic/danban/error.jpg) no-repeat center center;background-size: cover;display: inline-block;margin-right: 0.15rem;}
+    .thr_step{overflow:hidden;background:#fff;text-align: center;padding-bottom:2.5rem;}
+    .thr_step dl{width: 85%;overflow:hidden;display: inline-block;border: 1px solid #2a2a2a;border-right: 2px solid #2a2a2a;margin-bottom: 0.5rem;}
+    .thr_step dl dt{float:left;width:12%;background:#2a2a2a;color:#fff;height:1.5rem;line-height:1.5rem;}
+    .thr_step dl dt b{display:block;}
+    .thr_step dl dd{float:left;width:88%;color:#909090;font-size: 0.8rem;height:1.5rem;line-height:1.5rem;}
+    .by_youself{text-align:center;background:#fff;padding: 2rem 0 1rem;}
+    .by_youself.you{background:#f7f7f7;}
+    .by_youself.star{background:#fff;padding: 2rem 0 0;}
+    .by_youself.star h3{color:#553f34;font-size:1.6rem;line-height:2rem;}
+    .by_youself h3{color:#343434;font-size: 1.35rem;font-weight: bolder;line-height: 1.8rem;}
+    .by_youself p{font-size:0.5rem;color:#d5d5d5;padding-top: 0.5rem;}
+    .by_youself ul{width:88%;display: inline-block;margin-top: 3rem;}
+    .by_youself ul li{float: left;width:47%;border:1px solid #c3c3c3;padding: 0.3rem;text-align:center;margin-right:6%;position: relative;}
+    .by_youself ul li b{position: absolute;top:-0.6rem;left:-0.6rem;width:1.5rem;height:1.5rem;background:#997632;color:#fff;border-radius: 50%;font-size: 0.65rem;
+    line-height: 1.5rem;}
+    .by_youself ul li:nth-child(2){margin-right:0;}
+    .by_youself ul li img{width:100%;max-width:250px;display: inline-block;}
+    .by_youself ul li span{font-size:0.75rem;}
+    .by_youself ul li span{font-weight: bold;color:#2f2c2c;}
+    .by_youself ul li em{color:#9c7018;}
+
+    .topic_comment{}
+    .topic_comment ul{width: 100%;margin: 0 auto;}
+    .topic_comment ul li{ background: #fff;width: 100%;margin: 0 auto 0.5rem;padding:1.5rem 0.5rem 0;}
+    .topic_comment ul li:nth-child(1){padding-bottom:0.5rem;}
+    .maleInfo{ width: 96%;margin: 0 auto;color: #000;}
+    .maleInfo .p1{padding: 0.5rem 0 0.2rem;font-size: 1.2rem;color:#2a2a2a;} 
+    .maleInfo .p1 span{ font-size: 1.6rem;font-weight: bold;margin-left: 0.2rem;vertical-align: middle;}
+    .maleInfo .p2{color:#6f6f6f;} 
+    .maleInfo .p2 span{ font-size: 1rem;}
+    .maleInfo .p2 span.span1{ display: block;clear: both;}
+    .maleInfo .p3{ font-size: 0.85rem;padding: 0.4em 0 2em;color: #6f6f6f;}
+</style>
+
+<section>
+    <img src="/public/images/topic/danban/img_01.jpg"/>
+    <img src="/public/images/topic/danban/img_02.jpg"/>
+    <img src="/public/images/topic/danban/img_03.jpg"/>
+    <img src="/public/images/topic/danban/img_04.jpg"/>
+    <div class="effect">
+        <h2>주근깨가생기다</h2>
+        <span>你的淡斑方法<b>有效吗？</b></span>
+        <p>以下症状<b>超过2项</b>，你的淡斑没效果：</p>
+    </div>
+    <div class="four_fail">
+        <ul>
+            <li>
+                <div>
+                    <span><img src="/public/images/topic/danban/fail_01.jpg" alt=""></span>
+                    <b><i></i>反复暗沉</b>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="/public/images/topic/danban/fail_02.jpg" alt=""></span>
+                    <b><i></i>易损脱皮</b>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="/public/images/topic/danban/fail_03.jpg" alt=""></span>
+                    <b><i></i>频繁干燥</b>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="/public/images/topic/danban/fail_04.jpg" alt=""></span>
+                    <b><i></i>色斑色块</b>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <img v-lazy="'/public/images/topic/danban/img_08.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_09.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_10.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_11.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_12.jpg'"/>
+    <div class="thr_step">
+        <dl>
+            <dt><b>01</b></dt>
+            <dd>FG淡斑因子层层渗透</dd>
+        </dl>
+        <dl>
+            <dt><b>02</b></dt>
+            <dd>传明酸和植物淡斑成分层层消斑</dd>
+        </dl>
+        <dl>
+            <dt><b>03</b></dt>
+            <dd>补充营养和水分，恢复白皙肌肤</dd>
+        </dl>
+    </div>
+    <img v-lazy="'/public/images/topic/danban/img_14.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_15.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_16.jpg'"/>
+    <div class="by_youself">
+        <h3>세라믹분말의증인<br/>瓷粉亲证 淡斑实效</h3>
+        <p>Porcelain powder pro card</p>
+        <ul>
+            <li>
+                <b>01</b>
+                <img v-lazy="'/public/images/topic/danban/self_01.jpg'"/>
+                <span><em>4周期</em>色斑明显减少</span>
+            </li>
+            <li>
+                <b>02</b>
+                <img v-lazy="'/public/images/topic/danban/self_02.jpg'"/>
+                <span><em>8周期</em>色斑反复率降低</span>
+            </li>
+        </ul>
+    </div>
+    <img v-lazy="'/public/images/topic/danban/img_19.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_20.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_21.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_22.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_23.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_24.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_25.jpg'"/>
+    <div class="by_youself you">
+        <h3>제품소개<br/>韩国瓷肌淡斑系列</h3>
+        <p>Porcelain muscle freckle series</p>
+    </div>
+    <div class="by_bt">
+        <img v-lazy="'/public/images/topic/danban/img_27.jpg'"/>
+        <a class="on_zx1 on_zx" href="javascript:;" @click="buy(goodsList[0])"></a>
+    </div>
+    <img v-lazy="'/public/images/topic/danban/img_28.jpg'"/>
+    <div class="by_bt">
+       <img v-lazy="'/public/images/topic/danban/img_29.jpg'"/>
+       <a class="on_zx2 on_zx" href="javascript:;" @click="buy(goodsList[1])"></a> 
+    </div>
+    <img v-lazy="'/public/images/topic/danban/img_30.jpg'"/>
+     <div class="by_bt">
+       <img v-lazy="'/public/images/topic/danban/img_31.jpg'"/>
+       <a class="on_zx2 on_zx" href="javascript:;" @click="buy(goodsList[2])"></a> 
+    </div>
+    <img v-lazy="'/public/images/topic/danban/img_32.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_33.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_34.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_35.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_36.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_37.jpg'"/>
+    <div class="by_youself star">
+        <h3>다렌사용의견<br/>达人使用反馈</h3>
+        <p>Daren use feedback</p>
+    </div>
+    <div class="topic_comment">
+        <ul>
+            <li>
+                <img v-lazy="'/public/images/topic/danban/img_39.jpg'" alt="" />
+                <div class="maleInfo">
+                    <p class="p1">不止无斑，更要亮！选这套错不了！</p>
+                    <p class="p2 clf"><span class="span1">腻腻酱&nbsp;时尚达人&nbsp;&nbsp;鼻翼雀斑</span></p>
+                    <p class="p3">
+                    一直单败他家肌底液，半透明、粘稠的，质感比较纯粹，渗透好快的！我用来辅助吸收的，整套的祛斑套装还是第一次尝试，真的好划算！秒杀鼻梁两边的小雀斑，哈哈，超给力！现在不止没斑斑点点了，还隐隐透出光采，祛斑选这套错不了！推荐。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img v-lazy="'/public/images/topic/danban/img_41.jpg'" alt="" />
+                <div class="maleInfo">
+                    <p class="p1">不愧是祛斑明星套，没斑更白了！</p>
+                    <p class="p2 clf"><span class="span1">菲姐&nbsp;淘女郎&nbsp;&nbsp;晒斑较多</span></p>
+                    <p class="p3">
+                    一直单败他家肌底液，半透明、粘稠的，质感比较纯粹，渗透好快的！我用来辅助吸收的，整套的祛斑套装还是第一次尝试，真的好划算！秒杀鼻梁两边的小雀斑，哈哈，超给力！现在不止没斑斑点点了，还隐隐透出光采，祛斑选这套错不了！推荐。
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="by_youself you">
+        <h3>생산R&D기능<br/>生产研发实力</h3>
+        <p>Production R & D strength</p>
+    </div>
+    <img v-lazy="'/public/images/topic/danban/img_44.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_45.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_46.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_47.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_48.jpg'"/>
+    <img v-lazy="'/public/images/topic/danban/img_49.jpg'"/>
+</section>

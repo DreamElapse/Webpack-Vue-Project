@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="/public/css/topic.css">
+<style scoped>
+	#container .new_tel{ background: #f8ffff; border: 1px solid #c6f1f1; border-width: 1px 0;}
+    .by_bt{position:relative;}
+    .by_bt .on_zx{ width:27%; height:2.5em; position:absolute; right:7%; bottom:17%;}
+    .by_bt .on_zx2{ right:6%; bottom:16%;}
+    #container .new_tel{border: 1px solid #d9d9d9; border-width:1px 0;}
+</style>
+<script>
+    $(function(){
+    	$('#container .new_tel').find('img').each(function(i){
+    		if(i % 2 == 0){
+    			$(this).attr('src', '/public/images/topic/qingjie/on_tel.png');
+    		}else{
+    			$(this).attr('src', '/public/images/topic/qingjie/on_zx.png');
+    		}
+    	});
+    });
+</script>
+
+<section id="container">
+    <div>
+        <img src="/public/images/topic/qingjie/top.jpg" alt="" />
+    </div>
+    <img src="/public/images/topic/qingjie/img_01.jpg" alt="" />
+    <img src="/public/images/topic/qingjie/img_02.jpg" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_03.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_04.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_05.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_07.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_08.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_09.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_10.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_12.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_13.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_14.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_15.jpg'" alt="" />
+    <div class="by_bt">
+        <img v-lazy="'/public/images/topic/qingjie/img_16.jpg'" alt="" />
+        <a class="on_zx" href="javascript:;" @click="buy(goodsList[0])"></a>
+    </div>
+    <div class="by_bt">
+        <img v-lazy="'/public/images/topic/qingjie/img_17.jpg'" alt="" />
+        <a class="on_zx on_zx2" href="javascript:;" @click="buy(goodsList[1])"></a>
+    </div>
+    <img v-lazy="'/public/images/topic/qingjie/img_21.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_22.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_23.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_24.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_25.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_26.jpg'" alt="" />
+    <img v-lazy="'/public/images/topic/qingjie/img_27.jpg'" alt="" />
+    
+    <img  v-lazy="'/public/images/detail/RaD_01.jpg'" alt="" />
+    <div class="topic-box">
+         <div class="RaD">
+            <img v-lazy="'/public/images/detail/RaD_02.jpg'" alt="" />
+            <img v-lazy="'/public/images/detail/RaD_03.jpg'" alt="" />
+            <img v-lazy="'/public/images/detail/RaD_04.jpg'" alt="" />
+            <img v-lazy="'/public/images/detail/RaD_05.jpg'" alt="" />
+            <img v-lazy="'/public/images/detail/RaD_06.jpg'" alt="" />
+            <img v-lazy="'/public/images/detail/RaD_07.jpg'" alt="" />
+        </div>           
+    </div>
+
+</section>

@@ -1,0 +1,209 @@
+<link rel="stylesheet" href="/public/css/topic.css">
+<style scoped>
+.pr{position: relative;}
+img{display:block;}
+.topic-box{ padding: 0;}
+.bg2{ background: #f4f4f4;}
+.topic_top{ padding: 2em 0;}
+.topic_top img{ display: block;margin: 0 auto;}
+.topic_comment{ background: #fee3e8; padding-bottom:0.5em;}
+.topic_comment ul{ background: #fff;width: 96%;margin: 0 auto;padding: 1em 0;}
+.topic_comment ul li{ width: 96%;margin: 0 auto;}
+
+.maleInfo{ width: 96%;margin: 0 auto;color: #000;}
+.maleInfo .p1{ border-bottom: 2px solid #000;padding: 1.5em 0 1em;} 
+.maleInfo .p1 strong{ width: 1.6em;background: #e8163c;color: #fff;font-size: 1.6em;border-radius: 6px;display: inline-block;vertical-align: middle;text-align: center;}
+.maleInfo .p1 span{ font-size: 1.6em;font-weight: bold;margin-left: 0.2em;vertical-align: middle;}
+.maleInfo .p2{ border-bottom: 2px solid #000;padding: 0.5em 0;} 
+.maleInfo .p2 span{ font-size: 1.3em;}
+.maleInfo .p2 span.span1{ display: block;clear: both;}
+.maleInfo .p3{ font-size: 1.2em;text-indent: 2em;padding: 1em 0 2em;color: #888;}
+.img_12{ width: 71.875%;}
+.img_13{ width: 85.156%;}
+.area2 p{ width: 100%;display: table;text-align: center;margin-bottom: 2em;}
+.area2 p span{ display: table-cell;width: 50%;}
+.area2 p span b{ font-size: 1.6em;}
+
+.area1 ul{ width: 96%;margin: 0 auto;}
+.area1 ul li{ position: relative;border-bottom: 2px solid #000;}
+.area1 a{ display:block;width:36%; height:2.5em;line-height:2.5em; position:absolute; right:19%; bottom:57%;color:#fff;text-align:center;}
+.area1 .tips_case{ position: absolute;right: 0;top: 1.2em;width: 15.78%;display: none;}
+.prod1 .tips_case{top:2.2em;}
+.toCheck{ position: relative;left: 0;top: 0;}
+#checkIn{ position: absolute;left: 13%;bottom: 20%;width: 70%;height: 40%;margin: 0 auto;}
+#checkIn ul{ height: 100%;}
+#checkIn ul li{ width: 28%;float: left;height: 31%;position: relative;left: 0;top: 0;text-align: center;color:#f1f1f1;}
+#checkIn ul li:nth-child(2),#checkIn ul li:nth-child(5){margin: 0 8%;}
+#checkIn ul li.mt{}
+#checkIn ul li a{ display: inline-block;width: 1em;height: 1em;border:1px solid #ccc;border-radius: 100%;margin-right:0.5em;}
+#checkIn ul li a i{ display: block;width: 80%;height: 100%;margin: 0 auto;}
+/* #checkIn ul li.cur a{ background: #e8163c;} */
+#checkIn ul li.cur a i{background-image: url(/public/images/topic/meibai/checkIn.png);background-repeat:no-repeat;background-size:contain;background-position: center center;}
+#lookOut{ width:56.5%;position: absolute;left: 41%;margin-left: -21.09%;bottom: 18%;height:3em;line-height:3em;text-align:center;color:#f9f9f9;background:#c70000;border-radius: 0.25em;cursor: pointer;}
+#resultTxt{ width: 90%;position: absolute;left: 50%;margin-left: -45%;top: 13%;text-align: center;font-size: 1.35em;color:#fff;}
+.area1{top:34%;width: 100%;overflow: hidden;}
+#check_box{display:none;}
+.area_01{position: absolute;top:30%;width:100%;}
+.area_01 ul{width:100%;overflow:hidden;padding:0 1rem;}
+.area_01 ul li{width:100%; display:table;}
+.area_01 ul li .fl_pro,.area_01 ul li .fr_dre{display:table-cell;vertical-align:middle;}
+.area_01 ul li .fl_pro{text-align:center;width:45%}
+.area_01 ul li .fl_pro img{display:inline-block;width:62.5%;max-width:164px; }
+.area_01 ul li .fr_dre{width:55%;color:#fff;}
+.area_01 ul li .fr_dre a{background:#c70000;color:#fff;width: 8rem;display: inline-block;height: 2.5rem;line-height: 2.5rem;text-align: center;margin-top:0.8rem;}
+.addbtn_01{position: absolute;top: 61%;right: 12%;width: 38%;height: 14%;}
+.addbtn_02{top: 67%;}
+.addbtn_03{top: 63%;}
+
+
+
+
+/* .area1 ul li{float: left;} */
+
+</style>
+
+<script id="topicReady">
+    for (var i = 0; i < $("#banner ul").children().length; i++) {
+        if (i == 0) {
+            $("#banner ol").append('<li class="cur"></li>');
+        } else {
+            $("#banner ol").append('<li></li>');
+        }
+    }
+    new Swipe(document.getElementById("banner"), {
+        speed: 400,
+        auto: 3000,
+        disableScroll: false,
+        callback: function(index, elem) {
+            $("#banner ol li").removeClass("cur").eq(index).addClass("cur");
+        }
+    });
+
+    $(".meibai-4 .read").click(function() {
+        $(this).closest("li").toggleClass("active").siblings().removeClass("active");
+    });
+
+    $(".meibai-4 p a").click(function() {
+        var y = $($(this).attr("view")).offset().top - $(".header").height();
+        scrollTo(0, y);
+    });
+
+    $('#checkIn ul li').on('click', function() {
+        $(this).toggleClass('cur');
+    });
+
+    $("#lookOut").on('click', function() {
+        var curLen = $("#checkIn ul").find('.cur').length;
+        if (curLen <= 2 && curLen > 0) {
+            $(this).hide();
+            $('#resultTxt').html('你的肌肤初级黑');
+            $('#check_box').show();
+        } else if (curLen > 2) {
+            $(this).hide();
+            $('#resultTxt').html('你的肌肤超级黑');
+            // $('#prod2').insertBefore("#prod1");
+            // $('#prod2').find('.tips2 img').attr('src', '/public/images/topic/meibai/tips1.png');
+            // $('#prod1').find('.tips1 img').attr('src', '/public/images/topic/meibai/tips2.png');
+            $('#check_box').show();
+        } else {
+            return;
+        };
+    });
+</script>
+
+<section>
+    <div class="topic-box">
+        <img src="/public/images/topic/meibai/img_01.jpg" alt="" />
+        <img src="/public/images/topic/meibai/img_02.jpg" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_03.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_04.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_05.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_06.jpg'" alt="" />
+		<img v-lazy="'/public/images/topic/meibai/img_07.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_08.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_09.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_10.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_11.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_12.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_13.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_14.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_15.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_16.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_17.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_18.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_19.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_20.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_21.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_22.jpg'" alt="" />
+    	<div class="pr">
+    		<img v-lazy="'/public/images/topic/meibai/img_23.jpg'" alt="" />
+    		<div id="checkIn">
+	    		<ul class="clf">
+	    			<li><a><i></i></a>黝黑</li>
+	    			<li><a><i></i></a>缺水</li>
+	    			<li><a><i></i></a>暗哑</li>
+	    			<li class="mt"><a><i></i></a>黄气</li>
+	    			<li class="mt"><a><i></i></a>斑点</li>
+	    			<li class="mt"><a><i></i></a>松弛</li>
+	    		</ul>
+	    	</div>
+	    	<div id="lookOut">
+	    		查看结果 >
+	    	</div>
+	    	
+    	</div>
+    	<div class="pr" id="check_box">
+    		<img src="/public/images/topic/meibai/img_24.jpg" alt="" />
+    		<div id="resultTxt"></div>
+    		<div class="area_01">
+				<ul>
+					<li class="clf" id="prod1">
+					   <div class="fl_pro"><img src="/public/images/topic/meibai/pro_01.png" alt="" /></div>
+                       <div class="fr_dre">
+                           <div class="look">
+                                <span>为您推荐:</span> <br>
+                                <span>水感透白基础套装</span>
+                            </div>
+                            <a href="javascript:;" @click="buy(goodsList[2])">去看看 ></a>
+                       </div>
+					</li>
+				</ul>
+		    </div>
+    	</div>
+    	<img v-lazy="'/public/images/topic/meibai/img_25.jpg'" alt="" />
+        <div class="pr">
+            <img v-lazy="'/public/images/topic/meibai/img_26.jpg'" alt="" />
+            <a href="javascript:;" class="addbtn_01" @click="buy(goodsList[2])"></a>
+        </div>
+    	<div class="pr">
+            <img v-lazy="'/public/images/topic/meibai/img_27.jpg'" alt="" />
+            <a href="javascript:;" class="addbtn_01 addbtn_02" @click="buy(goodsList[1])"></a>
+        </div>
+    	<div class="pr">
+            <img v-lazy="'/public/images/topic/meibai/img_28.jpg'" alt="" />
+            <a href="javascript:;" class="addbtn_01 addbtn_03" @click="buy(goodsList[0])"></a>
+        </div>
+    	
+    	<img v-lazy="'/public/images/topic/meibai/img_29.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_30.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_31.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_32.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_44.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_45.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_46.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_47.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_48.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_33.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_34.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_35.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_36.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_37.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_38.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_39.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_40.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_41.jpg'" alt="" />
+        <img v-lazy="'/public/images/topic/meibai/img_42.jpg'" alt="" />
+    	<img v-lazy="'/public/images/topic/meibai/img_43.jpg'" alt="" />
+	</div>
+    
+</section>
